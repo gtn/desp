@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<desp_tables>
+        <table name="block_desp_cultures_items">
+            <id>1</id>
+            <title>sich Leute nicht überall gleich begrüßen oder verabschieden (z. B. Hände schütteln, sich küssen, einander umarmen oder sich gar nicht berühren).</title>
+            <cat>1</cat>
+        </table>
+        <table name="block_desp_cultures_items">
+            <id>2</id>
+            <title>man in verschiedenen Kulturen auf verschiedene Weise höflich ist (z. B. „bitte“, „danke“, „du/Sie“, Türe öffnen, Platz anbieten).</title>
+            <cat>1</cat>
+        </table>
+        <table name="block_desp_cultures_items">
+            <id>3</id>
+            <title>auch freundliche Unterhaltungen zwischen Leuten in verschiedenen Ländern unterschiedlich laut sein können.</title>
+            <cat>1</cat>
+        </table>
+        <table name="block_desp_cultures_items">
+            <id>4</id>
+            <title>nicht alle Leute dasselbe unter Pünktlichkeit verstehen.</title>
+            <cat>1</cat>
+        </table>
+        <table name="block_desp_cultures_items">
+            <id>5</id>
+            <title>Mädchen und Burschen in verschiedenen Kulturen nicht gleich erzogen werden.</title>
+            <cat>1</cat>
+        </table>
+        <table name="block_desp_cultures_items">
+            <id>6</id>
+            <title>der Umgangston zwischen Eltern und Kindern in anderen Kulturen ganz anders sein kann als in meiner Familie.</title>
+            <cat>1</cat>
+        </table>
+        <table name="block_desp_cultures_items">
+            <id>7</id>
+            <title>Kinder in anderen Kulturen weniger oder mehr „dürfen“ oder „müssen“ als ich.</title>
+            <cat>1</cat>
+        </table>
+        <table name="block_desp_cultures_items">
+            <id>8</id>
+            <title>sich Jugendliche in Europa angeblich sehr ähnlich kleiden.</title>
+            <cat>2</cat>
+        </table>
+        <table name="block_desp_cultures_items">
+            <id>9</id>
+            <title>Bekleidungsvorschriften in verschiedenen Kulturen sehr unterschiedlich sein können.</title>
+            <cat>2</cat>
+        </table>
+        <table name="block_desp_cultures_items">
+            <id>10</id>
+            <title>für Mädchen andere Bekleidungsvorschriften gelten können als für Burschen.</title>
+            <cat>2</cat>
+        </table>
+        <table name="block_desp_cultures_items">
+            <id>11</id>
+            <title>Häuser und Wohnungen in manchen Ländern anders aussehen und anders eingerichtet sind als bei uns.</title>
+            <cat>2</cat>
+        </table>
+        <table name="block_desp_cultures_items">
+            <id>12</id>
+            <title>in manchen Ländern Großeltern, Eltern und Kinder zusammen leben und dass oft sehr viele Menschen auf wenig Raum wohnen.</title>
+            <cat>2</cat>
+        </table>
+        <table name="block_desp_cultures_items">
+            <id>13</id>
+            <title>in manchen Ländern viele Kinder selbst bei Schlechtwetter auf der Straße schlafen müssen.</title>
+            <cat>2</cat>
+        </table>
+        <table name="block_desp_cultures_items">
+            <id>14</id>
+            <title>der Schulalltag in vielen Ländern anders abläuft als bei uns.</title>
+            <cat>3</cat>
+        </table>
+        <table name="block_desp_cultures_items">
+            <id>15</id>
+            <title>es nicht in allen Ländern dieselben Schularten gibt.</title>
+            <cat>3</cat>
+        </table>
+        <table name="block_desp_cultures_items">
+            <id>16</id>
+            <title>es in manchen Ländern Fächer gibt, die bei uns nicht unterrichtet werden (und umgekehrt).</title>
+            <cat>3</cat>
+        </table>
+        <table name="block_desp_cultures_items">
+            <id>17</id>
+            <title>es in manchen Ländern mehr, in anderen weniger Prüfungen gibt als bei uns.</title>
+            <cat>3</cat>
+        </table>
+        <table name="block_desp_cultures_items">
+            <id>18</id>
+            <title>Lehrpersonen eine andere Rolle spielen als bei uns.</title>
+            <cat>3</cat>
+        </table>
+        <table name="block_desp_cultures_items">
+            <id>19</id>
+            <title>die Ferien nicht überall gleich lange dauern.</title>
+            <cat>3</cat>
+        </table>
+        <table name="block_desp_cultures_items">
+            <id>20</id>
+            <title>in manchen Ländern Schülerinnen und Schüler Uniformen tragen müssen.</title>
+            <cat>3</cat>
+        </table>
+        <table name="block_desp_cultures_items">
+            <id>21</id>
+            <title>in manchen Ländern Kinder arbeiten oder betteln, statt in die Schule zu gehen.</title>
+            <cat>3</cat>
+        </table>
+        <table name="block_desp_cultures_items">
+            <id>22</id>
+            <title>die Freizeitgestaltung für Jugendliche in vielen westlichen Ländern angeblich sehr ähnlich ist.</title>
+            <cat>3</cat>
+        </table>
+        <table name="block_desp_cultures_items">
+            <id>23</id>
+            <title>nicht alle Kinder Taschengeld bekommen.</title>
+            <cat>3</cat>
+        </table>
+        <table name="block_desp_cultures_items">
+            <id>24</id>
+            <title>in anderen Ländern verschiedene gesetzliche und religiöse Feiertage eingehalten werden.</title>
+            <cat>4</cat>
+        </table>
+        <table name="block_desp_cultures_items">
+            <id>25</id>
+            <title>in verschiedenen Ländern andere Regeln für den Schulbesuch gelten können.</title>
+            <cat>4</cat>
+        </table>
+        <table name="block_desp_cultures_items">
+            <id>26</id>
+            <title>in manchen Ländern Verkehrsregeln strenger oder weniger streng befolgt werden.</title>
+            <cat>4</cat>
+        </table>
+        <table name="block_desp_cultures_items">
+            <id>27</id>
+            <title>die Gesetze für Jugendliche (Alkohol,
+Ausbleiben am Abend …) nicht in allen Ländern gleich sind.</title>
+            <cat>4</cat>
+        </table>
+        <table name="block_desp_cultures_items">
+            <id>28</id>
+            <title>Verbrechen nicht in allen Ländern auf dieselbe Weise bestraft werden.</title>
+            <cat>4</cat>
+        </table>
+        <table name="block_desp_cultures_items">
+            <id>29</id>
+            <title>der Arbeitsalltag an vielen Arbeitsplätzen in den meisten Ländern Europas sehr ähnlich abläuft.</title>
+            <cat>5</cat>
+        </table>
+        <table name="block_desp_cultures_items">
+            <id>30</id>
+            <title>die Arbeitszeiten in verschiedenen Ländern sehr unterschiedlich sein können.</title>
+            <cat>5</cat>
+        </table>
+        <table name="block_desp_cultures_items">
+            <id>31</id>
+            <title>es in vielen Ländern typische „Frauen- und Männerberufe“ gibt.</title>
+            <cat>5</cat>
+        </table>
+        <table name="block_desp_cultures_items">
+            <id>32</id>
+            <title>Kinder in manchen Ländern wie Erwachsene arbeiten müssen.</title>
+            <cat>5</cat>
+        </table>
+        <table name="block_desp_cultures_items">
+            <id>33</id>
+            <title>es anderswo Berufsgruppen gibt, die es in Mitteleuropa nicht (mehr) gibt.</title>
+            <cat>5</cat>
+        </table>
+        <table name="block_desp_cultures_items">
+            <id>34</id>
+            <title>in anderen Ländern die Öffnungszeiten von Geschäften und Ämtern ganz verschieden sein können.</title>
+            <cat>5</cat>
+        </table>
+        <table name="block_desp_cultures_items">
+            <id>35</id>
+            <title>in anderen Kulturen auch andere Verkehrsmittel benutzt werden als in Mitteleuropa.</title>
+            <cat>5</cat>
+        </table>
+        <table name="block_desp_cultures_items">
+            <id>36</id>
+            <title>nicht alle Menschen Zugang zu Internet, Radio/TV und Telefon haben.</title>
+            <cat>5</cat>
+        </table>
+        <table name="block_desp_cultures_items">
+            <id>37</id>
+            <title>der nächste Arzt, das nächste Spital, die nächste Schule in manchen Ländern sehr weit entfernt sein können.</title>
+            <cat>5</cat>
+        </table>
+        <table name="block_desp_cultures_items">
+            <id>38</id>
+            <title>es Sprachen mit mehr als vier Fällen gibt.</title>
+            <cat>6</cat>
+        </table>
+        <table name="block_desp_cultures_items">
+            <id>39</id>
+            <title>es Sprachen gibt, in denen keine Artikel verwendet werden.</title>
+            <cat>6</cat>
+        </table>
+        <table name="block_desp_cultures_items">
+            <id>40</id>
+            <title>die Mehrzahl in verschiedenen Sprachen auf verschiedene Weise gebildet werden kann.</title>
+            <cat>6</cat>
+        </table>
+        <table name="block_desp_cultures_items">
+            <id>41</id>
+            <title>es „Sprachfamilien“ gibt, in denen die einzelnen „Familienmitglieder“ recht ähnlich aussehen und klingen.</title>
+            <cat>6</cat>
+        </table>
+        <table name="block_desp_cultures_items">
+            <id>42</id>
+            <title>es Sprachen gibt, in denen man von rechts nach links oder von oben nach unten schreibt.</title>
+            <cat>6</cat>
+        </table>
+        <table name="block_desp_cultures_items">
+            <id>43</id>
+            <title>es Sprachen gibt, in denen eine andere Schrift verwendet wird als im Deutschen.</title>
+            <cat>6</cat>
+        </table>
+        <table name="block_desp_cultures_items">
+            <id>44</id>
+            <title>es Sprachen gibt, in denen ein ganzes Wort mit einem einzigen Zeichen wiedergegeben werden kann.</title>
+            <cat>6</cat>
+        </table>
+        <table name="block_desp_cultures_items">
+            <id>45</id>
+            <title>Blinde und sehgeschädigte Menschen Zeichen und Wörter in Blindenschrift (Braille) ertasten können.</title>
+            <cat>6</cat>
+        </table>
+        <table name="block_desp_cultures_items">
+            <id>46</id>
+            <title>gehörgeschädigte Menschen mit Hilfe der Gebärdensprache miteinander sprechen können.</title>
+            <cat>6</cat>
+        </table>
+        <table name="block_desp_cultures_items">
+            <id>47</id>
+            <title>es Sprachen gibt, in denen die Aussprache einer Silbe die Bedeutung ganz verändert</title>
+            <cat>6</cat>
+        </table>
+</desp_tables>

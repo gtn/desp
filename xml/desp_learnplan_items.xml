@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<desp_tables>
+        <table name="block_desp_learnplan_items">
+            <id>1</id>
+            <title>CDs (z.B. zu meinem Lehrbuch) anhören; Online-Höraufgaben machen</title>
+            <skillid>1</skillid>
+        </table>
+        <table name="block_desp_learnplan_items">
+            <id>3</id>
+            <title>Native speakers zuhören</title>
+            <skillid>1</skillid>
+        </table>
+        <table name="block_desp_learnplan_items">
+            <id>4</id>
+            <title>Liedtexte (z.B. auf CDs) übersetzen oder ihre Bedeutung aus dem Zusammenhang erraten</title>
+            <skillid>1</skillid>
+        </table>
+        <table name="block_desp_learnplan_items">
+            <id>5</id>
+            <title>Radio-/Fernsehsendungen anhören/ansehen; Podcasts im Internet anhören</title>
+            <skillid>1</skillid>
+        </table>
+        <table name="block_desp_learnplan_items">
+            <id>6</id>
+            <title>Filme/Theateraufführungen besuchen</title>
+            <skillid>1</skillid>
+        </table>
+        <table name="block_desp_learnplan_items">
+            <id>7</id>
+            <title>Filme auf DVD in der Fremdsprache mit deutschen oder fremdsprachigen Untertiteln anschauen</title>
+            <skillid>1</skillid>
+        </table>
+        <table name="block_desp_learnplan_items">
+            <id>8</id>
+            <title>In einem Online-Wörterbuch Wörter suchen und anhören</title>
+            <skillid>1</skillid>
+        </table>
+        <table name="block_desp_learnplan_items">
+            <id>9</id>
+            <title>Bedeutung und Aussprache von neuen Wörtern und Ausdrücken im Wörterbuch oder in einem Online-Wörterbuch nachschlagen</title>
+            <skillid>3</skillid>
+        </table>
+        <table name="block_desp_learnplan_items">
+            <id>10</id>
+            <title>(Längere) Texte lesen, um einen Gesamteindruck zu bekommen</title>
+            <skillid>3</skillid>
+        </table>
+        <table name="block_desp_learnplan_items">
+            <id>11</id>
+            <title>(Längere) Texte lesen, um zu prüfen, ob ich daraus Informationen entnehmen kann/was davon ich schon verstehe</title>
+            <skillid>3</skillid>
+        </table>
+        <table name="block_desp_learnplan_items">
+            <id>12</id>
+            <title>(Längere) Texte zum Vergnügen lesen (z.B. Comics, Erzählungen)</title>
+            <skillid>3</skillid>
+        </table>
+        <table name="block_desp_learnplan_items">
+            <id>13</id>
+            <title>(Kurze) Texte genau lesen (z.B. Reiseprospekte)</title>
+            <skillid>3</skillid>
+        </table>
+        <table name="block_desp_learnplan_items">
+            <id>14</id>
+            <title>Wichtige Textstellen mit farbigen Textmarkern hervorheben oder unterstreichen</title>
+            <skillid>3</skillid>
+        </table>
+        <table name="block_desp_learnplan_items">
+            <id>15</id>
+            <title>Informationen aus Texten auf kleinen Kärtchen notieren (z.B. für Zusammenfassungen, Präsentationen)</title>
+            <skillid>3</skillid>
+        </table>
+        <table name="block_desp_learnplan_items">
+            <id>16</id>
+            <title>Im Internet interessante Texte lesen oder Sprachspiele durchführen</title>
+            <skillid>3</skillid>
+        </table>
+        <table name="block_desp_learnplan_items">
+            <id>17</id>
+            <title>Im Internet Informationen suchen, z.B. zu meinen Hobbys</title>
+            <skillid>3</skillid>
+        </table>
+        <table name="block_desp_learnplan_items">
+            <id>18</id>
+            <title>Alltagsgespräche mit meiner Lernpartnerin oder meinem Lernpartner führen</title>
+            <skillid>4</skillid>
+        </table>
+        <table name="block_desp_learnplan_items">
+            <id>19</id>
+            <title>Alltagsgespräch mit einem native speaker  führen, z.B. über Lieblingsspeisen</title>
+            <skillid>4</skillid>
+        </table>
+        <table name="block_desp_learnplan_items">
+            <id>20</id>
+            <title>In einem Dialog (z.B. Sketch) eine Rolle übernehmen</title>
+            <skillid>4</skillid>
+        </table>
+        <table name="block_desp_learnplan_items">
+            <id>21</id>
+            <title>Mit meinen Mitschülerinnen oder Mitschülern eine Gruppenarbeit/Projektarbeit besprechen und planen</title>
+            <skillid>4</skillid>
+        </table>
+        <table name="block_desp_learnplan_items">
+            <id>22</id>
+            <title>Vor anderen alleine sprechen (z.B. über mein Haustier berichten)</title>
+            <skillid>5</skillid>
+        </table>
+        <table name="block_desp_learnplan_items">
+            <id>23</id>
+            <title>In einer Gruppe über meine Vorlieben (z.B. Fernsehgewohnheiten) sprechen</title>
+            <skillid>5</skillid>
+        </table>
+        <table name="block_desp_learnplan_items">
+            <id>24</id>
+            <title>Einen meiner Lieblingsgegenstände beschreiben und von anderen erraten lassen</title>
+            <skillid>5</skillid>
+        </table>
+        <table name="block_desp_learnplan_items">
+            <id>25</id>
+            <title>Meiner Lernpartnerin oder meinem Lernpartner von meiner Familie erzählen</title>
+            <skillid>5</skillid>
+        </table>
+        <table name="block_desp_learnplan_items">
+            <id>26</id>
+            <title>Eine Präsentation zu einem bestimmten Thema planen und durchführen (z.B. zu einem Buch, einem Film)</title>
+            <skillid>5</skillid>
+        </table>
+        <table name="block_desp_learnplan_items">
+            <id>27</id>
+            <title>Neue Wörter und Ausdrücke aufschreiben und lernen</title>
+            <skillid>2</skillid>
+        </table>
+        <table name="block_desp_learnplan_items">
+            <id>28</id>
+            <title>(Kurze) Texte abschreiben</title>
+            <skillid>2</skillid>
+        </table>
+        <table name="block_desp_learnplan_items">
+            <id>29</id>
+            <title>(Kurze) Texte nach Diktat meiner Lernpartnerin oder meines Lernpartners schreiben</title>
+            <skillid>2</skillid>
+        </table>
+        <table name="block_desp_learnplan_items">
+            <id>30</id>
+            <title>Eigene Texte in der Fremdsprache verfassen (z.B. Berichte, Beschreibungen, Erzählungen, Zusammenfassungen, Tagebucheintragungen, Gedichte)</title>
+            <skillid>2</skillid>
+        </table>
+        <table name="block_desp_learnplan_items">
+            <id>31</id>
+            <title>Eigene Texte oder Texte der Lernpartnerin oder des Lernpartners verbessern und überarbeiten</title>
+            <skillid>2</skillid>
+        </table>
+        <table name="block_desp_learnplan_items">
+            <id>32</id>
+            <title>E-Mails, Chats und Briefe in der Fremdsprache zum Kommunizieren verwenden</title>
+            <skillid>2</skillid>
+        </table>
+</desp_tables>

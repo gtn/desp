@@ -1,0 +1,1060 @@
+
+
+/* ######################################################################################################
+
+** ### Vorbereitende Ma�?nahmen | Reset ##################################################################
+
+** ######################################################################################################
+
+*/
+
+	/* Hiermit werden die Randabstände und border aller HTML-Elemente auf Null gesetzt. Damit wird das       
+
+	** Aussehen der Webseite in unterschiedlichen Browsern vereinheitlicht. 
+
+	*/
+a.lernplanwarnung {color:red;}
+
+	img.c2 {margin:0; padding:0; border:0;}
+    div.c1 {clear:both;}
+
+	* { margin:0; padding: 0; } 
+
+
+
+	/* Das zurücksetzen der Innen- und Au�?enabstände verursacht zu kleine Selectboxen. Dies wird korrigiert */
+
+	option {padding-left: 0.4em}
+
+	
+
+	/*
+
+	** Die nachfolgenden Angaben entstammen dem Artikel 'Useful Code Snippets' von Mike Foskett
+
+	** [http://www.websemantics.co.uk/tutorials/useful_css_snippets/]
+
+	*/
+
+	
+
+	/* Vertikalen Scrollbalken im Netscape & Firefox erzwingen. Dies verhindert, dass zentrierte Layouts 
+
+	** um 10 Pixel springen wenn der Seiteninhalt kleiner wird als die Höhe des Browserfensters. */
+
+	html { height: 100% } 
+
+	body { 
+
+	/*	min-height: 101%;	*/
+
+	/* Beseitigung des Rundungsfehlers bei Schriftgrö�?en im Opera sowie Standardformatierungen */
+
+		font-size: 100.01%; 
+
+	/* FIX: Verhindert, dass positionierte Elemente nicht verschoben werden when die Grö�?e des Browser 
+
+			Fensters geändert wird. */
+
+		position: relative; 
+
+	
+
+	/* Vorgabe der Standardfarben und Textausrichtung*/     
+
+		color: #000;        
+
+		background: #fff;
+
+		text-align: left; 
+
+	} 
+
+	
+
+	/* Standardrahmen zurücksetzen */
+
+	fieldset, img { border:0; }
+
+	
+
+	/* Anpassung für Safari Browser. font-size:100% ist für den Safari in Formularen zu gro�? */ 
+
+	select, input, textarea { font-size: 99% }
+
+	
+
+	
+
+/* ######################################################################################################
+
+** ### Markupfreie CSS-Floatclearing-Lösungen ###########################################################
+
+** ######################################################################################################
+
+*/
+
+
+
+	/* Clearfix-Methode zum Clearen der Float-Umgebungen */
+	 .clearfix:after {
+		content: "."; 
+		display: block; 
+		height: 0; 
+		clear: both; 
+		visibility: hidden;
+	}
+
+	.clearfix {display: inline-block;}
+
+/* Hides from IE-mac \*/
+* html .clearfix  {height: 1%;}
+
+.clearfix  {display: block;}
+
+/* End hide from IE-mac */
+
+/* Diese Angabe bentigt der Safari-Browser zwingend !! */
+	.clearfix  { display: block; } 
+
+	/* Overflow-Methode zum Clearen der Float-Umgebungen */
+	
+	/* angerer das schisst den firefox 3.6 ab:
+	.clearfix {overflow:hidden;}*/
+
+	/* IE-Clearing: Bentigt nur der Internet Explorer und er iehacks.css zugeschaltet */
+
+	#ie_clearing { display: none;}
+
+	
+
+
+
+	
+
+/* ####################################### Ende Clearing ####################################### */
+
+/* ######################################################################################################
+
+** ### Skiplink-Navigation ##############################################################################
+
+** ######################################################################################################
+
+*/
+
+
+
+
+
+#page_margins { 
+	font-family: 'Trebuchet MS', Verdana, Arial, sans-serif;
+	color:#00000;
+	/* font-size: 14px; */
+	/*  background-color:#FeF7E9; */
+	}
+
+
+#top, .copydesp {
+	width: 860px; 
+	position: relative;  
+	margin: 0px auto 0px auto;
+}
+
+.logo {
+	margin: 29px 0 0 0;
+}
+
+
+	
+#page_margins {
+	wwidth: 860px; 
+	position: relative;  
+	margin: 0px auto 0px auto;
+	padding: 0 0 80px 0;
+}
+
+#content {
+	margin: 0;
+	padding: 0;
+}
+
+#page_margins h1 {
+	font-size: 24px !important;
+	font-style:italic;
+	margin-bottom:20px;
+}
+
+#page_margins h1.h1back {
+	font-size: 16px !important;
+	background-color: #fdd68e;
+	font-style: normal;
+	padding: 4px 0;
+	margin-bottom:0px;
+	text-align:left;
+}
+
+.sprachlernplantab th {
+	text-align:left;
+}
+
+
+input.sprachlernplantabth1input {
+/*	width:150px !important; */
+}
+
+h1.h1lesen {
+	padding-left: 50px;
+}
+
+h1.h1schreiben {
+	padding-left: 50px;
+}
+
+h1.h1zusammen {
+	padding-left: 50px;
+}
+
+h1.h1hoeren {
+	padding-left: 50px;
+}
+
+h1.h1gespreaeche {
+	padding-left: 50px;
+}
+
+.page_margins h2 {
+	font-size: 19px !important;
+	font-style:italic;
+	margin: 0 0 20px 0;
+}
+
+.spasslangblock {
+	margin-bottom:40px;
+}
+
+#page_margins table h2 {
+	font-size: 19px;
+	font-style:normal;
+	margin: 10px 0 0 0;
+}
+
+#content hr {
+  border: 0px;
+  border-bottom: 2px solid #FDD68E;
+}
+
+
+.absatz_image_float {
+	margin:  20px 0 20px 0;
+	padding: 0 85px 0 0;
+}
+
+
+
+
+.float_image_left {
+	padding-right:20px; 
+	float:left;
+	margin-bottom:10px;
+}
+
+
+.float_image_right {
+	padding-left:20px; 
+	float:right;
+	margin-bottom:10px;
+}
+
+.clearer {
+	clear: both;
+}
+
+
+/* ####################################### Clearing image absatz float ####################################### */
+		/* Clearfix-Methode zum Clearen der Float-Umgebungen */
+	 .absatz_image_float:after, .absatz_image_float_b:after {
+		content: "."; 
+		display: block; 
+		height: 0; 
+		clear: both; 
+		visibility: hidden;
+	}
+
+	.absatz_image_float, .absatz_image_float_b {display: inline-block;}
+
+/* Hides from IE-mac \*/
+* html .absatz_image_float, .absatz_image_float_b {height: 1%;}
+.absatz_image_float, .absatz_image_float_b {display: block;}
+/* End hide from IE-mac */
+	/* Diese Angabe ben�tigt der Safari-Browser zwingend !! */
+	.absatz_image_float, .absatz_image_float_b { display: block; } 
+	/* Overflow-Methode zum Clearen der Float-Umgebungen */
+	.absatz_image_float, .absatz_image_float_b { overflow:hidden; }
+	/* IE-Clearing: Ben�tigt nur der Internet Explorer und �ber iehacks.css zugeschaltet */
+	#ie_clearing { display: none }
+/* ####################################### Ende Clearing image absatz float ####################################### */
+
+ul#param-control {
+			position: absolute;
+			margin: 0;
+			padding: 0;
+		}
+
+		ul#param-control li {
+			cursor: pointer;
+			float: left;
+			list-style: none outside none;
+			margin: 1px;
+			padding: 2px;
+		}
+		div#params-container {
+			position: relative;
+			padding: 0;
+			margin: 0;
+		}
+table#params input.name {
+			width: 90%;
+			border: none;
+			background-color: transparent;
+		}
+
+		table#params input.value {
+			width: 90%;
+			border: none;
+			background-color: transparent;
+		}
+		
+#messagebox {
+	background: url('images/message.gif') no-repeat left top; 
+	height:144px;
+	margin-left: 20px;
+}
+
+#messagetxt {
+	width: 455px;
+	margin: 35px 0 0 155px;
+	background-color:#feefd4;
+	padding:10px;
+	-moz-box-shadow: 2px 2px 1px #c9c5bb;
+	-webkit-box-shadow: 2px 2px 1px #c9c5bb;
+	box-shadow: 2px 2px 1px #c9c5bb;
+}
+
+table.tableform1, table.tableform2, table.tableform3 {
+	width:100%;
+	border-collapse:collapse;
+}
+
+table.vzartableleg {
+	border-collapse:collapse;
+	width:45%;
+}
+
+table.tableform1 td {
+	width:25%;
+	background-color: #FFFFFF;
+}
+
+table.tableform1 td.tdlang {
+	width:160px;
+}
+
+table.tableform1 td.tddelete {
+	width:11px;
+}
+
+table.tableform2 td, table.tableform3 td, table.vzartableleg td {
+	background-color: #FFFFFF;
+}
+
+table.tableform1 th, table.tableform2 th, table.tableform3 th, table.vzartableleg th {
+	background-color: #FDD68E;
+	font-weight:normal;
+}
+
+table.tableform1 td, table.tableform1 th, table.tableform2 td, table.tableform2 th, table.tableform3 td, table.tableform3 th, table.vzartableleg td, table.vzartableleg th {
+	border: 2px #FDD68E solid !important;
+	padding:5px 10px;
+	vertical-align:top;
+
+}
+
+
+table.vzartableleg th {
+	text-align:left;
+}
+
+table.vzartable td {
+	height:40px;
+}
+
+table.vzartableleg1 {
+	float:left; margin-right:50px;
+}
+
+
+table.tableform1 textarea {
+	border: 0;
+	width: 100%;
+}
+
+.txtsmall {
+	font-size: 12px;
+}
+
+table.tableform2 th.listselect, table.tableform2 td.listselect {
+	width: 65px;
+	vertical-align:bottom;
+
+	text-align:center;
+}
+
+table.tableform2 td.listfirst {
+	width: 15px;
+}
+
+input.topinput {
+	background-color: #FFFFFF;
+	border: 2px dotted #FDD68E;
+	height: 25px;
+	padding:3px 5px;
+}
+
+
+
+table.tableform2 td.listsubquest {
+	padding-left: 45px;
+}
+
+/* ########## Uebersicht Sprachlernplaene ########### */
+
+#messageboxslp1 {
+ 
+	min-height:164px;
+	margin-left: 50px;
+}
+
+#messagetxtslp1 {
+	width: 485px;
+	margin: 38px 0 0 145px;
+	background-color:#feefd4;
+    padding:10px;
+    -moz-box-shadow: 2px 2px 1px #c9c5bb;
+    -webkit-box-shadow: 2px 2px 1px #c9c5bb;
+    box-shadow: 2px 2px 1px #c9c5bb;
+}
+
+#messagetxtslp1 a {
+	color: #000;
+}
+
+#messagetxt a {
+	color: #000;
+}
+
+#messagetxtslp3 a {
+	color: #000;
+}
+
+/* ########## Uebersicht Sprachlernplaene ########### */
+
+#messageboxslp1 {
+ 
+	min-height:164px;
+	margin-left: 50px;
+}
+
+#messagetxtslp1 {
+	width: 485px;
+	margin: 38px 0 0 145px;
+	background-color:#feefd4;
+    padding:10px;
+    -moz-box-shadow: 2px 2px 1px #c9c5bb;
+    -webkit-box-shadow: 2px 2px 1px #c9c5bb;
+    box-shadow: 2px 2px 1px #c9c5bb;
+}
+
+#messageboxslp2 {
+	min-height:172px;
+	margin-left: 0px;
+	margin-top:20px;
+}
+
+#messagetxtslp2 {
+	width: 472px;
+	margin: 35px 0 0 35px;
+	background-color:#feefd4;
+    padding:10px;
+    -moz-box-shadow: -2px 2px 1px #c9c5bb;
+    -webkit-box-shadow: -2px 2px 1px #c9c5bb;
+    box-shadow: -2px 2px 1px #c9c5bb;
+}
+
+
+
+#messagetxtslp2 a {
+    color: #000 !important;
+}
+
+#messagetxtslp2 .messagetxthide {
+    display: none;
+
+}
+
+#messagetxtslp2:hover .messagetxthide {
+    display: block;
+
+}
+
+#messagetxtslp1 .messagetxthide {
+    display: none;
+
+}
+
+#messagetxtslp1:hover .messagetxthide {
+    display: block;
+
+}
+
+#messagetxtslp2:hover .mehrtext {
+    display: none;
+
+}
+
+#messageboxslp3 {
+	 
+	height:156px;
+	margin-left: 50px;
+	margin-top:20px;
+}
+
+#messagetxtslp3 {
+	width: 475px;
+	margin: 35px 0 0 156px;
+	background-color:#feefd4;
+    padding:10px;
+    -moz-box-shadow: 2px 2px 1px #c9c5bb;
+    -webkit-box-shadow: 2px 2px 1px #c9c5bb;
+    box-shadow: 2px 2px 1px #c9c5bb;
+}
+
+#messageboxsg2 {
+	min-height:172px;
+	margin-left: 0px;
+	margin-top:20px;
+}
+
+#messagetxtsg2 {
+	width: 472px;
+	margin: 35px 0 0 35px;
+	background-color:#feefd4;
+    padding:10px;
+    -moz-box-shadow: -2px 2px 1px #c9c5bb;
+    -webkit-box-shadow: -2px 2px 1px #c9c5bb;
+    box-shadow: -2px 2px 1px #c9c5bb;
+}
+
+
+#messagetxthidesuk a {
+    color: #000 !important;
+}
+
+#messagetxthidesuk .messagetxthide {
+    display: none;
+
+}
+
+#messagetxthidesuk:hover .messagetxthide {
+    display: block;
+
+}
+
+#messagetxthidesuk:hover .mehrtext {
+    display: none;
+
+}
+
+
+
+#page_margins a.overview {
+	font-size: 20px;
+	font-style:italic;
+	margin: 0 120px 20px 60px;
+	background-color: #fdd68e;
+	font-style: normal;
+	padding: 4px 0;
+	display: block;
+	color: #646464;
+	padding-left: 50px;
+}
+
+
+
+table.tableform3 th.slp {
+	font-size:12px;
+}
+
+table.tableform3 th.slp2 {
+	width: 95px;
+}
+
+table.tableform3 th.slp3 {
+	width: 120px;
+}
+
+table.tableform3 input {
+	border:0;
+}
+
+table.tableform3 input.date {
+
+	border: 1px solid #c2c2c2;
+}
+
+#page_margins input.date {
+	width: 80px !important;
+}
+
+.selectlernpartner {
+	max-width:180px;
+}
+
+table.tableform3 td {}
+
+table.tableform3 textarea {
+	border: 0;
+	width: 100%;
+}
+
+.tddate {
+	width:60px;
+}
+
+.tdpartner {
+	width:100px;
+}
+
+.tdlang {
+	width:160px;
+}
+
+.tddelete {
+	width:11px;
+}
+
+th.tableses1 {
+	width:260px;
+}
+
+th.tableses2 {
+	text-align:center;
+}
+
+table.overviewses a.overview {
+	
+}
+
+table.overviewses td.1 {
+	background: #f04916 url([[pix:theme|ov_skill1]]) repeat-x 0 0;
+	padding-left:20px;
+}
+
+table.overview_sesyell td {
+	background-color: #ffefd3;
+}
+
+
+table.overviewses a.goto {
+	display:block;
+	background: #ffefd3 url('images/goto.gif') no-repeat center;
+	height:25px;
+}
+
+table.overviewses a:hover.goto {
+	background-color: #fdd68e;
+}
+
+table.overviewses td {
+	vertical-align: middle;
+}
+
+table.tableform3 td.sk1 {
+	width: 20px;
+	vertical-align: middle;
+}
+
+table.tableform3 td.sk2 {
+	width: 310px;
+}
+
+
+table.tableform3 td.sk3 {
+}
+
+table.tableform3 td.kgb2 {
+	width:150px;
+}
+
+table.tableform3 td.kgb25p, table.tableform3 th.kgb25p {
+	width:25%;
+	text-align:left;
+}
+
+table.tableform3 th.kgb2, table.tableform3 th.kgb1, table.tableform3 td.kgb, table.tableform3 th.kgb {
+	text-align:left;
+}
+
+.grey {
+	color: #5c5c5c;
+}
+
+ul.kgblist li {
+	list-style-type:none;
+	padding-left: 20px;
+}
+
+ul.kgblist .kgbdate {
+	margin-right:10px;
+	color: #5c5c5c;
+}
+
+input.headform {
+	border: 1px solid #c2c2c2;
+	padding:5px;
+}
+
+
+table.tableform3 th.vzar1 {
+	width:20px;
+}
+
+table.tableform3 th.vzar3 {
+	width:50px;
+}
+
+table.tableform3 th.vzar1, table.tableform3 th.vzar2, table.tableform3 th.vzar3 {
+	text-align:left;
+}
+
+td.vzar1 input {
+	width:50px;
+}
+
+td.vzar2 input {
+
+}
+
+td.vzar3 input {
+	width:100px;
+}
+
+#messageboxses1 {
+	min-height:143px;
+	margin-left: 38px;
+}
+
+#messagetxtses1 {
+	width: 478px;
+	margin: 35px 0 0 21px;
+	
+	background-color:#feefd4;
+    padding:10px;
+    -moz-box-shadow: -2px 2px 1px #c9c5bb;
+    -webkit-box-shadow: -2px 2px 1px #c9c5bb;
+    box-shadow: -2px 2px 1px #c9c5bb;
+}
+
+#messageboxses2 {
+	 
+	min-height:159px;
+	margin-left: 70px;
+	margin-top:20px;
+}
+
+#messagetxtses2 {
+	width: 475px;
+	margin: 15px 0 0 138px;
+	    background-color:#feefd4;
+    padding:10px;
+    -moz-box-shadow: 2px 2px 1px #c9c5bb;
+    -webkit-box-shadow: 2px 2px 1px #c9c5bb;
+    box-shadow: 2px 2px 1px #c9c5bb;
+}
+
+#messageboxses2 a {
+	color: #000 !important;
+}
+
+#messageboxses2 .messagetxthide {
+	display: none;
+
+}
+
+#messageboxses2:hover .messagetxthide {
+	display: block;
+
+}
+
+#messageboxses2:hover .mehrtext {
+    display: none;
+	
+}
+
+.startsymbhide {
+	text-align: center;
+	margin: 0 auto 0 auto;
+}
+
+.startsymbhide {
+	width:216px;
+}
+
+.startsymbhide .messagetxthide, .messagetxthidetwo {
+	display: none;
+	background-color:#feefd4;
+	margin:0 10px 10px 10px;
+	padding: 10px;
+	-moz-box-shadow: 2px 2px 1px #c9c5bb;
+    -webkit-box-shadow: 2px 2px 1px #c9c5bb;
+    box-shadow: 2px 2px 1px #c9c5bb;
+}
+
+.messageimportantinfo {
+	background-color:#009122;
+	color:#fff;
+	margin:0 10px 10px 10px;
+	padding: 10px;
+	-moz-box-shadow: 2px 2px 1px #c9c5bb;
+    -webkit-box-shadow: 2px 2px 1px #c9c5bb;
+    box-shadow: 2px 2px 1px #c9c5bb;
+}
+
+.startsymbhide .hidebio {
+	margin: 0 auto 0 auto;
+	padding:10px;
+	width: 216px !important;
+}
+
+.startsymbhide:hover .messagetxthide {
+	display: block;
+
+}
+
+
+.mehrtext {
+	color: #f25f2c;
+}
+
+#messagetxtses2 ul {
+	padding-left: 20px;
+	margin: 0;
+}
+
+#page_margins h3 {
+	font-size: 19px;
+	font-style:italic;
+	margin: 0 0 20px 0;
+}
+
+#messageboxsk {
+	background: url('images/message_sk.gif') no-repeat left top; 
+	height:174px;
+	margin-left: 40px;
+}
+
+#messagetxtsk {
+	width: 468px;
+	margin: 27px 0 0 160px;
+	background-color:#feefd4;
+    padding:10px;
+    -moz-box-shadow: 2px 2px 1px #c9c5bb;
+    -webkit-box-shadow: 2px 2px 1px #c9c5bb;
+    box-shadow: 2px 2px 1px #c9c5bb;
+}
+
+
+/* ########## Startseite ########### */
+
+
+#startcol {
+	clear: both;
+	width: 100%;
+	margin: 0 auto 0 auto;
+
+}
+
+#startcolx2 {
+	clear: both;
+	width: 100%;
+	margin: 0 auto 0 auto;
+
+}
+
+#startcols1 {
+	width: 30%;
+	float:left;
+	margin: 0 10px 10px 0;
+	text-align:center;
+}
+
+#startcols2 {
+	width: 30%;
+	float:left;
+	margin: 0 10px 10px 10px;
+	text-align:center;
+}
+
+#startcols3 {
+	width: 30%;
+	float:left;
+	margin: 0 0 10px 10px;
+	text-align:center;
+}
+
+
+
+
+#startcols21 {
+	width: 30%;
+	float:left;
+	margin: 0 10px 10px 0;
+	text-align:center;
+}
+
+#startcols22 {
+	width: 30%;
+	float:left;
+	margin: 0 0 10px 10px;
+	text-align:center;
+}
+
+#startcols23 {
+	width: 30%;
+	float:left;
+	margin: 0 0 10px 10px;
+	text-align:center;
+}
+
+
+#startcol h3, #startcolx2 h3 {
+	font-size: 20px;
+	font-style: italic;
+	margin: 0 0 5px 25px;
+	font-family: 'Trebuchet MS', Verdana, Arial, sans-serif;
+}
+
+#startcol h4, #startcolx2 h4 {
+	font-size: 17px;
+	font-style: italic;
+	font-family: 'Trebuchet MS', Verdana, Arial, sans-serif;
+}
+
+#startcol h5, #startcolx2 h5 {
+	font-size: 13px;
+	font-style: italic;
+	text-transform: none;
+	font-weight:bold;
+	font-family: 'Trebuchet MS', Verdana, Arial, sans-serif;
+	margin: 10px 0 10px 0;
+}
+
+#startcolx2 h5.tog1 {
+	margin: 10px 0 5px 0;
+}
+
+#startcolx2 h5.tog {
+	margin: 5px 0 5px 0;
+}
+
+#startcolx2 h5.togl {
+	margin: 5px 0 33px 0;
+}
+
+
+.startpfeil {
+	margin: 5px 0 5px 0;
+}
+
+.hrline {
+	border:solid #f7b230 1px;
+	height:1px;
+}
+
+#page_margins a {
+	color:#0044cc !imporatant;	
+}
+
+.handwriting {
+	font-family: 'Coming Soon', 'Trebuchet MS', Verdana, Arial, sans-serif;
+}
+
+#page-content #region-main-box #region-post-box #region-main-wrap #region-main .region-content {
+    overflow: auto !important;
+}
+ 
+.mform .fitem .fitemtitle {
+	width: 25% !important;
+}
+
+
+.infoBox {
+background-color:#F9FCFF;
+border:8px solid #0090E0;
+font-family:Arial,Helvetica,sans-serif;
+font-size:12px;
+color:#5F5F5F;
+padding:15px;
+}
+
+h2.desp_sk_zwheader {
+	margin: 30px 0 25px 0;
+}
+
+.sprachenchecklistdesp {
+	margin: 5px 0 0 15px;
+	padding: 0;
+	font-size: 13px;
+}
+
+.spgerstbl{table-layout:fixed;border-collapse: collapse;border:1px black solid;}
+.spgerstbl td{padding:4px;}
+.spgers_h3,.spgers_h4,.spgers_h5{
+	background-color:#6e6e70;color:white;size:24px;font-weight:bold;text-align:center;
+}
+.spgers_s1 {background-color:#e7e7e8;color:black;vertical-align:center;text-align:center;border:1px black solid;}
+.spgers_s2 {background-color:#bdbec1;color:black;font-weight:bold;padding:0 7px;vertical-align:middle;text-align:center;border:1px black solid;}
+.spgers_s3,.spgers_s4,.spgers_s5{font-size:10px;border:1px black solid;vertica-align:top;text-align:left;}
+.spgers_s1 img {padding:5px 3px;}
+.spgers_s2 img {padding:5px 4px;}
+
+.selbox_exaportitems {max-width:170px;font-size:11px;}
+.desp_sp_einstellungen_dossier_select {width:250px;margin-left:0px;margin-bottom:8px;}
+.desp_sp_einstellungen_dossier_select2 {width:250px;margin-left:0px;margin-bottom:3px;}
+.desp_sp_esh3 {padding-bottom:1px;margin-bottom:2px;font-weight:normal;margin-top:0px;}
+.desp_sp_einst_gers {margin:20px 0 10px 0;}
+
+.sp_exaport .desp_sp-view-item-header {font-weight:bold;font-size:18px;}
+.sp_exaport{margin-top:15px;}
+.despsp2{margin-top:20px;}
+
+
+.messagetxtslp2 ul li {
+	font-family: 'Trebuchet MS',Verdana,Arial,sans-serif !important;
+}
+
+body, #page_margins h1, #page_margins h2, h3, h4, h5, h6, p, #page_margins ul, #page_margins ol, #page_margins dl, input, textarea {
+    font-family: 'Trebuchet MS',Verdana,Arial,sans-serif !important;
+}
+
+.link_center {
+	 color: #F25F2C;
+}
+
+h2.despsp2 {
+	font-size: 19px !important;
+}
+h3.despsp3 {
+	font-size: 17px !important;
+}
+
+

@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XMLDB PATH="blocks/desp/db" VERSION="20120703" COMMENT="XMLDB file for Moodle blocks/desp"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../../../lib/xmldb/xmldb.xsd"
+>
+  <TABLES>
+    <TABLE NAME="block_desp_descriptors" COMMENT="die Bildungsstandards=Deskriptoren" NEXT="block_desp_topics">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" UNSIGNED="true" SEQUENCE="true" NEXT="title"/>
+        <FIELD NAME="title" TYPE="text" LENGTH="medium" NOTNULL="true" SEQUENCE="false" COMMENT="der bildungsstandard" PREVIOUS="id" NEXT="crdate"/>
+        <FIELD NAME="crdate" TYPE="int" LENGTH="20" NOTNULL="false" UNSIGNED="true" SEQUENCE="false" PREVIOUS="title" NEXT="skillid"/>
+        <FIELD NAME="skillid" TYPE="int" LENGTH="20" NOTNULL="false" UNSIGNED="true" SEQUENCE="false" PREVIOUS="crdate" NEXT="taxid"/>
+        <FIELD NAME="taxid" TYPE="int" LENGTH="20" NOTNULL="false" UNSIGNED="true" SEQUENCE="false" PREVIOUS="skillid" NEXT="sorting"/>
+        <FIELD NAME="sorting" TYPE="int" LENGTH="10" NOTNULL="false" UNSIGNED="true" SEQUENCE="false" PREVIOUS="taxid" NEXT="sourceid"/>
+        <FIELD NAME="sourceid" TYPE="int" LENGTH="10" NOTNULL="false" UNSIGNED="false" SEQUENCE="false" COMMENT="Die ID des Datensatzes am zentralen Server, fuer Import wichtig" PREVIOUS="sorting" NEXT="source"/>
+        <FIELD NAME="source" TYPE="int" LENGTH="4" NOTNULL="false" UNSIGNED="false" DEFAULT="1" SEQUENCE="false" COMMENT="Beschreibt die Herkunft. 0=Moodleinstanz, 1=Zentraler Server" PREVIOUS="sourceid" NEXT="niveauid"/>
+        <FIELD NAME="niveauid" TYPE="int" LENGTH="20" NOTNULL="false" UNSIGNED="true" DEFAULT="0" SEQUENCE="false" COMMENT="das niveau des descriptors" PREVIOUS="source" NEXT="parent_id"/>
+        <FIELD NAME="parent_id" TYPE="int" LENGTH="20" NOTNULL="false" UNSIGNED="true" SEQUENCE="false" COMMENT="uebergeordneter descriptor" PREVIOUS="niveauid"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id" NEXT="taxid"/>
+        <KEY NAME="taxid" TYPE="foreign" FIELDS="taxid" REFTABLE="block_desp_taxonomies" REFFIELDS="id" PREVIOUS="primary" NEXT="skillid"/>
+        <KEY NAME="skillid" TYPE="foreign" FIELDS="skillid" REFTABLE="block_desp_skills" REFFIELDS="id" PREVIOUS="taxid"/>
+      </KEYS>
+    </TABLE>
+    <TABLE NAME="block_desp_topics" COMMENT="die Deskriptoren" PREVIOUS="block_desp_descriptors" NEXT="block_desp_descrtopic_mm">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" UNSIGNED="true" SEQUENCE="true" NEXT="sorting"/>
+        <FIELD NAME="sorting" TYPE="int" LENGTH="11" NOTNULL="false" UNSIGNED="true" SEQUENCE="false" PREVIOUS="id" NEXT="title"/>
+        <FIELD NAME="title" TYPE="char" LENGTH="255" NOTNULL="false" SEQUENCE="false" PREVIOUS="sorting" NEXT="subjid"/>
+        <FIELD NAME="subjid" TYPE="int" LENGTH="11" NOTNULL="false" UNSIGNED="true" SEQUENCE="false" PREVIOUS="title" NEXT="sourceid"/>
+        <FIELD NAME="sourceid" TYPE="int" LENGTH="10" NOTNULL="false" UNSIGNED="false" SEQUENCE="false" COMMENT="Die ID des Datensatzes am zentralen Server, fuer Import wichtig" PREVIOUS="subjid" NEXT="source"/>
+        <FIELD NAME="source" TYPE="int" LENGTH="4" NOTNULL="false" UNSIGNED="false" DEFAULT="1" SEQUENCE="false" COMMENT="Beschreibt die Herkunft, 0=Moodleinstanz 1=Zentraler Server" PREVIOUS="sourceid"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id" NEXT="subjid"/>
+        <KEY NAME="subjid" TYPE="foreign" FIELDS="subjid" REFTABLE="block_despsubjects" REFFIELDS="id" PREVIOUS="primary"/>
+      </KEYS>
+    </TABLE>
+    <TABLE NAME="block_desp_descrtopic_mm" COMMENT="zuordnung Deskriptoren zu schwerpunkten" PREVIOUS="block_desp_topics" NEXT="block_desp_examples">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" UNSIGNED="true" SEQUENCE="true" NEXT="descrid"/>
+        <FIELD NAME="descrid" TYPE="int" LENGTH="11" NOTNULL="true" UNSIGNED="true" SEQUENCE="false" PREVIOUS="id" NEXT="topicid"/>
+        <FIELD NAME="topicid" TYPE="int" LENGTH="11" NOTNULL="true" UNSIGNED="true" SEQUENCE="false" PREVIOUS="descrid"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id" NEXT="descrid"/>
+        <KEY NAME="descrid" TYPE="foreign" FIELDS="descrid" REFTABLE="block_desp_descriptors" REFFIELDS="id" PREVIOUS="primary" NEXT="topicid"/>
+        <KEY NAME="topicid" TYPE="foreign" FIELDS="topicid" REFTABLE="block_desp_topics" REFFIELDS="id" PREVIOUS="descrid"/>
+      </KEYS>
+    </TABLE>
+    <TABLE NAME="block_desp_examples" COMMENT="Beispiele die fuer bestimmte Deskriptoren bestimmt sind" PREVIOUS="block_desp_descrtopic_mm" NEXT="block_desp_descrexamp_mm">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" UNSIGNED="true" SEQUENCE="true" NEXT="sorting"/>
+        <FIELD NAME="sorting" TYPE="int" LENGTH="11" NOTNULL="false" UNSIGNED="true" SEQUENCE="false" PREVIOUS="id" NEXT="title"/>
+        <FIELD NAME="title" TYPE="char" LENGTH="255" NOTNULL="false" SEQUENCE="false" PREVIOUS="sorting" NEXT="task"/>
+        <FIELD NAME="task" TYPE="char" LENGTH="255" NOTNULL="false" SEQUENCE="false" PREVIOUS="title" NEXT="solution"/>
+        <FIELD NAME="solution" TYPE="char" LENGTH="255" NOTNULL="false" SEQUENCE="false" PREVIOUS="task" NEXT="attachement"/>
+        <FIELD NAME="attachement" TYPE="char" LENGTH="255" NOTNULL="false" SEQUENCE="false" PREVIOUS="solution" NEXT="completefile"/>
+        <FIELD NAME="completefile" TYPE="char" LENGTH="255" NOTNULL="false" SEQUENCE="false" PREVIOUS="attachement" NEXT="description"/>
+        <FIELD NAME="description" TYPE="text" LENGTH="medium" NOTNULL="false" SEQUENCE="false" PREVIOUS="completefile" NEXT="taxid"/>
+        <FIELD NAME="taxid" TYPE="int" LENGTH="11" NOTNULL="true" UNSIGNED="true" SEQUENCE="false" PREVIOUS="description" NEXT="timeframe"/>
+        <FIELD NAME="timeframe" TYPE="char" LENGTH="255" NOTNULL="false" SEQUENCE="false" PREVIOUS="taxid" NEXT="ressources"/>
+        <FIELD NAME="ressources" TYPE="char" LENGTH="255" NOTNULL="false" SEQUENCE="false" PREVIOUS="timeframe" NEXT="tips"/>
+        <FIELD NAME="tips" TYPE="text" LENGTH="medium" NOTNULL="false" SEQUENCE="false" PREVIOUS="ressources" NEXT="externalurl"/>
+        <FIELD NAME="externalurl" TYPE="char" LENGTH="255" NOTNULL="false" SEQUENCE="false" PREVIOUS="tips" NEXT="externalsolution"/>
+        <FIELD NAME="externalsolution" TYPE="char" LENGTH="255" NOTNULL="false" SEQUENCE="false" PREVIOUS="externalurl" NEXT="externaltask"/>
+        <FIELD NAME="externaltask" TYPE="char" LENGTH="255" NOTNULL="false" SEQUENCE="false" PREVIOUS="externalsolution" NEXT="sourceid"/>
+        <FIELD NAME="sourceid" TYPE="int" LENGTH="10" NOTNULL="false" UNSIGNED="false" SEQUENCE="false" COMMENT="Die ID des Datensatzes am zentralen Server, fuer Import wichtig" PREVIOUS="externaltask" NEXT="source"/>
+        <FIELD NAME="source" TYPE="int" LENGTH="4" NOTNULL="false" UNSIGNED="false" DEFAULT="1" SEQUENCE="false" COMMENT="Beschreibt die Herkunft. 0=Moodleinstanz, 1=Zentraler Server" PREVIOUS="sourceid" NEXT="lang"/>
+        <FIELD NAME="lang" TYPE="int" LENGTH="20" NOTNULL="false" UNSIGNED="true" DEFAULT="0" SEQUENCE="false" COMMENT="language" PREVIOUS="source"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id" NEXT="taxid"/>
+        <KEY NAME="taxid" TYPE="foreign" FIELDS="taxid" REFTABLE="block_desp_taxonomies" REFFIELDS="id" PREVIOUS="primary"/>
+      </KEYS>
+    </TABLE>
+    <TABLE NAME="block_desp_descrexamp_mm" COMMENT="zuordung Deskriptoren zu beispielen" PREVIOUS="block_desp_examples" NEXT="block_desp_taxonomies">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" UNSIGNED="true" SEQUENCE="true" NEXT="descrid"/>
+        <FIELD NAME="descrid" TYPE="int" LENGTH="11" NOTNULL="true" UNSIGNED="true" SEQUENCE="false" PREVIOUS="id" NEXT="exampid"/>
+        <FIELD NAME="exampid" TYPE="int" LENGTH="11" NOTNULL="true" UNSIGNED="true" SEQUENCE="false" PREVIOUS="descrid"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id" NEXT="descrid"/>
+        <KEY NAME="descrid" TYPE="foreign" FIELDS="descrid" REFTABLE="block_desp_descriptors" REFFIELDS="id" PREVIOUS="primary" NEXT="exampid"/>
+        <KEY NAME="exampid" TYPE="foreign" FIELDS="exampid" REFTABLE="block_desp_examples" REFFIELDS="id" PREVIOUS="descrid"/>
+      </KEYS>
+    </TABLE>
+    <TABLE NAME="block_desp_taxonomies" COMMENT="blumsche taxonomie, attribute zu den beispielen" PREVIOUS="block_desp_descrexamp_mm" NEXT="block_desp_skills">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" UNSIGNED="true" SEQUENCE="true" NEXT="sorting"/>
+        <FIELD NAME="sorting" TYPE="int" LENGTH="11" NOTNULL="false" UNSIGNED="true" SEQUENCE="false" PREVIOUS="id" NEXT="title"/>
+        <FIELD NAME="title" TYPE="text" LENGTH="medium" NOTNULL="false" SEQUENCE="false" PREVIOUS="sorting" NEXT="parentid"/>
+        <FIELD NAME="parentid" TYPE="int" LENGTH="20" NOTNULL="false" UNSIGNED="false" SEQUENCE="false" COMMENT="Uebergeordnete ID" PREVIOUS="title" NEXT="sourceid"/>
+        <FIELD NAME="sourceid" TYPE="int" LENGTH="20" NOTNULL="true" UNSIGNED="false" SEQUENCE="false" PREVIOUS="parentid"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+      </KEYS>
+    </TABLE>
+    <TABLE NAME="block_desp_skills" COMMENT="ESP, Faehgigkeiten" PREVIOUS="block_desp_taxonomies" NEXT="block_desp_lang">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" UNSIGNED="true" SEQUENCE="true" NEXT="sorting"/>
+        <FIELD NAME="sorting" TYPE="int" LENGTH="10" NOTNULL="false" UNSIGNED="true" SEQUENCE="false" PREVIOUS="id" NEXT="title"/>
+        <FIELD NAME="title" TYPE="char" LENGTH="255" NOTNULL="false" SEQUENCE="false" PREVIOUS="sorting"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+      </KEYS>
+    </TABLE>
+    <TABLE NAME="block_desp_lang" COMMENT="block_desp_lang table retrofitted from MySQL" PREVIOUS="block_desp_skills" NEXT="block_desp_check_item">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="11" NOTNULL="true" UNSIGNED="true" SEQUENCE="true" NEXT="name"/>
+        <FIELD NAME="name" TYPE="text" LENGTH="small" NOTNULL="true" SEQUENCE="false" PREVIOUS="id" NEXT="userid"/>
+        <FIELD NAME="userid" TYPE="int" LENGTH="20" NOTNULL="false" UNSIGNED="false" DEFAULT="0" SEQUENCE="false" PREVIOUS="name"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+      </KEYS>
+    </TABLE>
+    <TABLE NAME="block_desp_check_item" COMMENT="block_desp_check_item table retrofitted from MySQL" PREVIOUS="block_desp_lang" NEXT="block_desp_lanhistories">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="11" NOTNULL="true" UNSIGNED="true" SEQUENCE="true" NEXT="languageid"/>
+        <FIELD NAME="languageid" TYPE="int" LENGTH="11" NOTNULL="true" UNSIGNED="false" SEQUENCE="false" PREVIOUS="id" NEXT="descriptorid"/>
+        <FIELD NAME="descriptorid" TYPE="int" LENGTH="11" NOTNULL="true" UNSIGNED="false" SEQUENCE="false" PREVIOUS="languageid" NEXT="einschaetzung_selbst"/>
+        <FIELD NAME="einschaetzung_selbst" TYPE="int" LENGTH="11" NOTNULL="true" UNSIGNED="false" SEQUENCE="false" PREVIOUS="descriptorid" NEXT="einschaetzung_fremd"/>
+        <FIELD NAME="einschaetzung_fremd" TYPE="int" LENGTH="11" NOTNULL="true" UNSIGNED="false" SEQUENCE="false" PREVIOUS="einschaetzung_selbst" NEXT="lernziel"/>
+        <FIELD NAME="lernziel" TYPE="text" LENGTH="small" NOTNULL="true" SEQUENCE="false" PREVIOUS="einschaetzung_fremd" NEXT="erreicht"/>
+        <FIELD NAME="erreicht" TYPE="text" LENGTH="small" NOTNULL="true" SEQUENCE="false" PREVIOUS="lernziel" NEXT="lernpartnerid"/>
+        <FIELD NAME="lernpartnerid" TYPE="int" LENGTH="20" NOTNULL="false" UNSIGNED="true" DEFAULT="0" SEQUENCE="false" COMMENT="der lernpartner, irgenein anderer teilnehmer dieses kurses" PREVIOUS="erreicht"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id" NEXT="languageid"/>
+        <KEY NAME="languageid" TYPE="foreign" FIELDS="languageid" REFTABLE="block_desp_lang" REFFIELDS="id" PREVIOUS="primary" NEXT="descriptorid"/>
+        <KEY NAME="descriptorid" TYPE="foreign" FIELDS="descriptorid" REFTABLE="block_desp_descriptors" REFFIELDS="id" PREVIOUS="languageid"/>
+      </KEYS>
+    </TABLE>
+    <TABLE NAME="block_desp_lanhistories" COMMENT="block_desp_lanhistories table retrofitted from MySQL" PREVIOUS="block_desp_check_item" NEXT="block_desp_check_lang">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="20" NOTNULL="true" UNSIGNED="true" SEQUENCE="true" NEXT="langid"/>
+        <FIELD NAME="langid" TYPE="int" LENGTH="11" NOTNULL="true" UNSIGNED="true" SEQUENCE="false" PREVIOUS="id" NEXT="partner"/>
+        <FIELD NAME="partner" TYPE="text" LENGTH="small" NOTNULL="true" SEQUENCE="false" COMMENT="family: mit wem bisher gelernt: wo school: Gegenstaende/partner" PREVIOUS="langid" NEXT="reason"/>
+        <FIELD NAME="reason" TYPE="text" LENGTH="small" NOTNULL="true" SEQUENCE="false" COMMENT="family: gelegenheit bisher gelernt: gelegenheit school: beschreibung/thema" PREVIOUS="partner" NEXT="period"/>
+        <FIELD NAME="period" TYPE="text" LENGTH="small" NOTNULL="true" SEQUENCE="false" COMMENT="family: wie haeufig bisher gelernt: wie lange school: zeitraum/Jahr" PREVIOUS="reason" NEXT="userid"/>
+        <FIELD NAME="userid" TYPE="int" LENGTH="20" NOTNULL="true" UNSIGNED="true" SEQUENCE="false" PREVIOUS="period" NEXT="scope"/>
+        <FIELD NAME="scope" TYPE="int" LENGTH="1" NOTNULL="true" UNSIGNED="false" SEQUENCE="false" COMMENT="1.. family 2..sprachen bisher 3..school" PREVIOUS="userid" NEXT="dossier"/>
+        <FIELD NAME="dossier" TYPE="char" LENGTH="255" NOTNULL="false" SEQUENCE="false" PREVIOUS="scope"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id" NEXT="langid"/>
+        <KEY NAME="langid" TYPE="foreign" FIELDS="langid" REFTABLE="block_desp_lang" REFFIELDS="id" PREVIOUS="primary" NEXT="userid"/>
+        <KEY NAME="userid" TYPE="foreign" FIELDS="userid" REFTABLE="user" REFFIELDS="id" PREVIOUS="langid"/>
+      </KEYS>
+    </TABLE>
+    <TABLE NAME="block_desp_check_lang" COMMENT="block_desp_check_lang table retrofitted from MySQL" PREVIOUS="block_desp_lanhistories" NEXT="block_desp_learnplans">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="20" NOTNULL="true" UNSIGNED="true" SEQUENCE="true" NEXT="userid"/>
+        <FIELD NAME="userid" TYPE="int" LENGTH="20" NOTNULL="true" UNSIGNED="false" SEQUENCE="false" PREVIOUS="id" NEXT="langid"/>
+        <FIELD NAME="langid" TYPE="int" LENGTH="11" NOTNULL="true" UNSIGNED="false" SEQUENCE="false" PREVIOUS="userid"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+      </KEYS>
+    </TABLE>
+    <TABLE NAME="block_desp_learnplans" COMMENT="Lernplaene" PREVIOUS="block_desp_check_lang" NEXT="block_desp_cultures">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="20" NOTNULL="true" UNSIGNED="true" SEQUENCE="true" NEXT="userid"/>
+        <FIELD NAME="userid" TYPE="int" LENGTH="20" NOTNULL="true" UNSIGNED="true" SEQUENCE="false" PREVIOUS="id" NEXT="langid"/>
+        <FIELD NAME="langid" TYPE="int" LENGTH="11" NOTNULL="true" UNSIGNED="true" SEQUENCE="false" PREVIOUS="userid" NEXT="skillid"/>
+        <FIELD NAME="skillid" TYPE="int" LENGTH="11" NOTNULL="true" UNSIGNED="true" SEQUENCE="false" PREVIOUS="langid" NEXT="starttime"/>
+        <FIELD NAME="starttime" TYPE="text" LENGTH="small" NOTNULL="false" SEQUENCE="false" PREVIOUS="skillid" NEXT="endtime"/>
+        <FIELD NAME="endtime" TYPE="text" LENGTH="small" NOTNULL="false" SEQUENCE="false" PREVIOUS="starttime" NEXT="partner"/>
+        <FIELD NAME="partner" TYPE="text" LENGTH="small" NOTNULL="false" SEQUENCE="false" PREVIOUS="endtime" NEXT="donetime"/>
+        <FIELD NAME="donetime" TYPE="text" LENGTH="small" NOTNULL="false" SEQUENCE="false" COMMENT="erledigt am" PREVIOUS="partner" NEXT="title"/>
+        <FIELD NAME="title" TYPE="text" LENGTH="medium" NOTNULL="false" SEQUENCE="false" COMMENT="bezeichnung" PREVIOUS="donetime" NEXT="lernpartner_kommentar"/>
+        <FIELD NAME="lernpartner_kommentar" TYPE="text" LENGTH="big" NOTNULL="false" SEQUENCE="false" COMMENT="Kommentar des Partners" PREVIOUS="title" NEXT="lernpartnerid"/>
+        <FIELD NAME="lernpartnerid" TYPE="int" LENGTH="20" NOTNULL="false" UNSIGNED="true" DEFAULT="0" SEQUENCE="false" COMMENT="Lernparnter" PREVIOUS="lernpartner_kommentar" NEXT="immer_wieder"/>
+        <FIELD NAME="immer_wieder" TYPE="text" LENGTH="small" NOTNULL="false" SEQUENCE="false" PREVIOUS="lernpartnerid" NEXT="kommentar_gelesen"/>
+        <FIELD NAME="kommentar_gelesen" TYPE="int" LENGTH="11" NOTNULL="false" UNSIGNED="false" DEFAULT="0" SEQUENCE="false" COMMENT="Speichert ob der User den Lernpartnerkommentar gelesen hat oder nicht" PREVIOUS="immer_wieder" NEXT="lernpartner_einschaetzung"/>
+        <FIELD NAME="lernpartner_einschaetzung" TYPE="int" LENGTH="11" NOTNULL="false" UNSIGNED="false" DEFAULT="0" SEQUENCE="false" PREVIOUS="kommentar_gelesen"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id" NEXT="userid"/>
+        <KEY NAME="userid" TYPE="foreign" FIELDS="userid" REFTABLE="user" REFFIELDS="id" PREVIOUS="primary" NEXT="langid"/>
+        <KEY NAME="langid" TYPE="foreign" FIELDS="langid" REFTABLE="block_desp_lang" REFFIELDS="id" PREVIOUS="userid" NEXT="skillid"/>
+        <KEY NAME="skillid" TYPE="foreign" FIELDS="skillid" REFTABLE="block_desp_skills" REFFIELDS="id" PREVIOUS="langid"/>
+      </KEYS>
+    </TABLE>
+    <TABLE NAME="block_desp_cultures" COMMENT="Sprachen und Kulturen erforschen" PREVIOUS="block_desp_learnplans" NEXT="block_desp_learnpartners">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" UNSIGNED="true" SEQUENCE="true" NEXT="item"/>
+        <FIELD NAME="item" TYPE="int" LENGTH="11" NOTNULL="true" UNSIGNED="true" SEQUENCE="false" COMMENT="ich habe geoert dass" PREVIOUS="id" NEXT="experience"/>
+        <FIELD NAME="experience" TYPE="text" LENGTH="medium" NOTNULL="false" SEQUENCE="false" COMMENT="gehoert wann wo wie" PREVIOUS="item" NEXT="dossier"/>
+        <FIELD NAME="dossier" TYPE="text" LENGTH="small" NOTNULL="false" SEQUENCE="false" COMMENT="im dossier zu finden unter" PREVIOUS="experience" NEXT="userid"/>
+        <FIELD NAME="userid" TYPE="int" LENGTH="20" NOTNULL="true" UNSIGNED="true" SEQUENCE="false" PREVIOUS="dossier"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id" NEXT="userid"/>
+        <KEY NAME="userid" TYPE="foreign" FIELDS="userid" REFTABLE="user" REFFIELDS="id" PREVIOUS="primary"/>
+      </KEYS>
+    </TABLE>
+    <TABLE NAME="block_desp_learnpartners" COMMENT="Lernpartner" PREVIOUS="block_desp_cultures" NEXT="block_desp_niveaus">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" UNSIGNED="true" SEQUENCE="true" NEXT="userid_self"/>
+        <FIELD NAME="userid_self" TYPE="int" LENGTH="20" NOTNULL="true" UNSIGNED="true" SEQUENCE="false" PREVIOUS="id" NEXT="userid_foreign"/>
+        <FIELD NAME="userid_foreign" TYPE="int" LENGTH="20" NOTNULL="true" UNSIGNED="true" SEQUENCE="false" PREVIOUS="userid_self"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id" NEXT="userid_self"/>
+        <KEY NAME="userid_self" TYPE="foreign" FIELDS="userid_self" REFTABLE="user" REFFIELDS="id" PREVIOUS="primary" NEXT="userid_foreign"/>
+        <KEY NAME="userid_foreign" TYPE="foreign" FIELDS="userid_foreign" REFTABLE="user" REFFIELDS="id" PREVIOUS="userid_self"/>
+      </KEYS>
+    </TABLE>
+    <TABLE NAME="block_desp_niveaus" COMMENT="Default comment for the table, please edit me" PREVIOUS="block_desp_learnpartners" NEXT="block_desp_cultures_items">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" UNSIGNED="true" SEQUENCE="true" NEXT="skillid"/>
+        <FIELD NAME="skillid" TYPE="int" LENGTH="20" NOTNULL="true" UNSIGNED="true" DEFAULT="0" SEQUENCE="false" PREVIOUS="id" NEXT="levelcode"/>
+        <FIELD NAME="levelcode" TYPE="text" LENGTH="small" NOTNULL="false" SEQUENCE="false" PREVIOUS="skillid" NEXT="title"/>
+        <FIELD NAME="title" TYPE="text" LENGTH="medium" NOTNULL="false" SEQUENCE="false" PREVIOUS="levelcode" NEXT="sorting"/>
+        <FIELD NAME="sorting" TYPE="int" LENGTH="11" NOTNULL="false" UNSIGNED="true" SEQUENCE="false" PREVIOUS="title" NEXT="parent_niveau"/>
+        <FIELD NAME="parent_niveau" TYPE="int" LENGTH="20" NOTNULL="false" UNSIGNED="true" SEQUENCE="false" PREVIOUS="sorting"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+      </KEYS>
+    </TABLE>
+    <TABLE NAME="block_desp_cultures_items" COMMENT="cultures items" PREVIOUS="block_desp_niveaus" NEXT="block_desp_niveau_texte">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" UNSIGNED="true" SEQUENCE="true" NEXT="title"/>
+        <FIELD NAME="title" TYPE="text" LENGTH="medium" NOTNULL="false" SEQUENCE="false" PREVIOUS="id" NEXT="cat"/>
+        <FIELD NAME="cat" TYPE="int" LENGTH="11" NOTNULL="false" UNSIGNED="true" SEQUENCE="false" COMMENT="kategorie" PREVIOUS="title" NEXT="userid"/>
+        <FIELD NAME="userid" TYPE="int" LENGTH="20" NOTNULL="false" UNSIGNED="true" SEQUENCE="false" COMMENT="individueller eintragq" PREVIOUS="cat"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id" NEXT="cat"/>
+        <KEY NAME="cat" TYPE="foreign" FIELDS="cat" REFTABLE="block_desp_cultures_item_cat" REFFIELDS="id" COMMENT="kategorie" PREVIOUS="primary"/>
+      </KEYS>
+    </TABLE>
+    <TABLE NAME="block_desp_niveau_texte" COMMENT="Texte für Niveaus oberste ebene" PREVIOUS="block_desp_cultures_items" NEXT="block_desp_learnplans_lang">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" UNSIGNED="true" SEQUENCE="true" NEXT="skillid"/>
+        <FIELD NAME="skillid" TYPE="int" LENGTH="20" NOTNULL="true" UNSIGNED="true" DEFAULT="0" SEQUENCE="false" PREVIOUS="id" NEXT="niveauid"/>
+        <FIELD NAME="niveauid" TYPE="int" LENGTH="20" NOTNULL="true" UNSIGNED="true" DEFAULT="0" SEQUENCE="false" PREVIOUS="skillid" NEXT="title"/>
+        <FIELD NAME="title" TYPE="text" LENGTH="medium" NOTNULL="false" SEQUENCE="false" PREVIOUS="niveauid"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id" NEXT="skillid"/>
+        <KEY NAME="skillid" TYPE="foreign" FIELDS="skillid" REFTABLE="block_desp_skills" REFFIELDS="id" PREVIOUS="primary" NEXT="niveauid"/>
+        <KEY NAME="niveauid" TYPE="foreign" FIELDS="niveauid" REFTABLE="block_desp_niveaus" REFFIELDS="id" PREVIOUS="skillid"/>
+      </KEYS>
+    </TABLE>
+    <TABLE NAME="block_desp_learnplans_lang" COMMENT="lernplaene zu sprachen zuordnen" PREVIOUS="block_desp_niveau_texte" NEXT="block_desp_begegnung">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" UNSIGNED="true" SEQUENCE="true" NEXT="userid"/>
+        <FIELD NAME="userid" TYPE="int" LENGTH="20" NOTNULL="true" UNSIGNED="true" DEFAULT="0" SEQUENCE="false" PREVIOUS="id" NEXT="langid"/>
+        <FIELD NAME="langid" TYPE="int" LENGTH="20" NOTNULL="true" UNSIGNED="true" DEFAULT="0" SEQUENCE="false" PREVIOUS="userid"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id" NEXT="langid"/>
+        <KEY NAME="langid" TYPE="foreign" FIELDS="langid" REFTABLE="block_desp_lang" REFFIELDS="id" PREVIOUS="primary" NEXT="userid"/>
+        <KEY NAME="userid" TYPE="foreign" FIELDS="userid" REFTABLE="user" REFFIELDS="id" PREVIOUS="langid"/>
+      </KEYS>
+    </TABLE>
+    <TABLE NAME="block_desp_begegnung" COMMENT="Begegnungen mit Sprachen und Kulturen" PREVIOUS="block_desp_learnplans_lang" NEXT="block_desp_learnplan_items">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" UNSIGNED="true" SEQUENCE="true" NEXT="title"/>
+        <FIELD NAME="title" TYPE="text" LENGTH="medium" NOTNULL="false" SEQUENCE="false" PREVIOUS="id" NEXT="datum"/>
+        <FIELD NAME="datum" TYPE="text" LENGTH="small" NOTNULL="false" SEQUENCE="false" COMMENT="datum" PREVIOUS="title" NEXT="shortdescription"/>
+        <FIELD NAME="shortdescription" TYPE="text" LENGTH="medium" NOTNULL="false" SEQUENCE="false" COMMENT="Kurzbeschreibung" PREVIOUS="datum" NEXT="reaction"/>
+        <FIELD NAME="reaction" TYPE="text" LENGTH="medium" NOTNULL="false" SEQUENCE="false" COMMENT="Wie war deine erste Reaktion" PREVIOUS="shortdescription" NEXT="reflection"/>
+        <FIELD NAME="reflection" TYPE="text" LENGTH="medium" NOTNULL="false" SEQUENCE="false" COMMENT="Hast du mit jemandem darüber gesprochen" PREVIOUS="reaction" NEXT="knowledge"/>
+        <FIELD NAME="knowledge" TYPE="text" LENGTH="medium" NOTNULL="false" SEQUENCE="false" COMMENT="Hast du später dazu mehr erfahren" PREVIOUS="reflection" NEXT="learnd"/>
+        <FIELD NAME="learnd" TYPE="text" LENGTH="medium" NOTNULL="false" SEQUENCE="false" COMMENT="Was hast du durch diese Erfahrung über dich und das Leben herausgefunden" PREVIOUS="knowledge" NEXT="later"/>
+        <FIELD NAME="later" TYPE="text" LENGTH="medium" NOTNULL="false" SEQUENCE="false" COMMENT="Einige Zeit später" PREVIOUS="learnd" NEXT="country"/>
+        <FIELD NAME="country" TYPE="text" LENGTH="small" NOTNULL="false" SEQUENCE="false" COMMENT="Land" PREVIOUS="later" NEXT="userid"/>
+        <FIELD NAME="userid" TYPE="int" LENGTH="20" NOTNULL="true" UNSIGNED="true" SEQUENCE="false" COMMENT="userid" PREVIOUS="country"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id" NEXT="userid"/>
+        <KEY NAME="userid" TYPE="foreign" FIELDS="userid" REFTABLE="user" REFFIELDS="id" COMMENT="benutzer" PREVIOUS="primary"/>
+      </KEYS>
+    </TABLE>
+    <TABLE NAME="block_desp_learnplan_items" COMMENT="vorgegebene Aussagen bei den Lernplänen" PREVIOUS="block_desp_begegnung" NEXT="block_desp_cultures_item_cat">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" UNSIGNED="true" SEQUENCE="true" NEXT="title"/>
+        <FIELD NAME="title" TYPE="text" LENGTH="medium" NOTNULL="false" SEQUENCE="false" PREVIOUS="id" NEXT="skillid"/>
+        <FIELD NAME="skillid" TYPE="int" LENGTH="11" NOTNULL="false" UNSIGNED="true" SEQUENCE="false" COMMENT="hoeren, lesen...." PREVIOUS="title"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id" NEXT="skillid"/>
+        <KEY NAME="skillid" TYPE="foreign" FIELDS="skillid" REFTABLE="block_desp_skills" REFFIELDS="id" COMMENT="block_desp_skills" PREVIOUS="primary"/>
+      </KEYS>
+    </TABLE>
+    <TABLE NAME="block_desp_cultures_item_cat" COMMENT="Kategorien für Kulturen Items" PREVIOUS="block_desp_learnplan_items" NEXT="block_desp_verzeichnisse">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" UNSIGNED="true" SEQUENCE="true" NEXT="title"/>
+        <FIELD NAME="title" TYPE="text" LENGTH="medium" NOTNULL="true" SEQUENCE="false" COMMENT="bezeichnung" PREVIOUS="id"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+      </KEYS>
+    </TABLE>
+    <TABLE NAME="block_desp_verzeichnisse" COMMENT="Verzeichnis der Arbeiten" PREVIOUS="block_desp_cultures_item_cat">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" UNSIGNED="true" SEQUENCE="true" NEXT="nr"/>
+        <FIELD NAME="nr" TYPE="int" LENGTH="11" NOTNULL="false" UNSIGNED="true" SEQUENCE="false" COMMENT="Nummer" PREVIOUS="id" NEXT="title"/>
+        <FIELD NAME="title" TYPE="text" LENGTH="medium" NOTNULL="false" SEQUENCE="false" COMMENT="Bezeichnung" PREVIOUS="nr" NEXT="langid"/>
+        <FIELD NAME="langid" TYPE="int" LENGTH="11" NOTNULL="true" UNSIGNED="true" SEQUENCE="false" COMMENT="Sprache" PREVIOUS="title" NEXT="dokument"/>
+        <FIELD NAME="dokument" TYPE="text" LENGTH="medium" NOTNULL="false" SEQUENCE="false" COMMENT="dokument" PREVIOUS="langid" NEXT="datum"/>
+        <FIELD NAME="datum" TYPE="text" LENGTH="small" NOTNULL="false" SEQUENCE="false" COMMENT="Datum" PREVIOUS="dokument" NEXT="aussortiert"/>
+        <FIELD NAME="aussortiert" TYPE="text" LENGTH="small" NOTNULL="false" SEQUENCE="false" COMMENT="Aussortiert am" PREVIOUS="datum" NEXT="beispiel"/>
+        <FIELD NAME="beispiel" TYPE="text" LENGTH="medium" NOTNULL="false" SEQUENCE="false" PREVIOUS="aussortiert" NEXT="feld1"/>
+        <FIELD NAME="feld1" TYPE="text" LENGTH="medium" NOTNULL="false" SEQUENCE="false" COMMENT="Reservefeld, noch nciht belegt" PREVIOUS="beispiel"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+      </KEYS>
+    </TABLE>
+  </TABLES>
+</XMLDB>

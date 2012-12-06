@@ -1,0 +1,438 @@
+
+#languages table.overviewses,#languages table.tableform1{
+	border: 0;width:540pt;
+}
+
+ttable.overviewses td.lanhist_tdleft {border-bottom: 1pt black solid ;border-right: 1pt black solid ;border-left: 1pt black solid;}
+ttable.overviewses td.lanhist {border-bottom: 1pt black solid ;border-right: 1pt black solid;}
+ttable.overviewses td.lanhist_tdright {border-bottom: 1pt black solid ;border-right: 1pt black solid;}
+
+table.overviewses th{background-color:#e7e7e8;}
+#languages table.overviewses th{background-color:#e7e7e8;}
+.hz1 {height:60pt;}
+.hz3 {height:260pt;}
+.hz9 {height:360pt;}
+
+.ws1 {width:1pt;}
+.ws2 {width:115pt;}
+.ws3 {width:14pt;}
+.ws4 {width:410pt;}
+
+.underl {border-bottom: 1pt black solid;font-size: 14pt;font-weight:bold;}
+
+h2.despsp2{margin-top:10pt;padding-top:10pt;font-style:italian;}
+
+.spgerstbl{border-collapse: collapse;border:1px black solid;}
+.spgerstbl td{padding:3pt;}
+td.spgers_h3,td.spgers_h4,td.spgers_h5{
+	color:white;size:18pt;font-weight:bold;text-align:center;
+}
+td.spgers_h1 {width:20pt;}
+td.spgers_h2 {width:29pt;}
+td.spgers_h3,td.spgers_h4,td.spgers_h5 {width:200pt;}
+td.spgers_s1 {width:20pt;background-color:#e7e7e8;color:black;vertical-align:center;text-align:center;border:1pt black solid;}
+td.spgers_s2 {width:29pt;background-color:#bdbec1;color:black;font-weight:bold;padding:auto;margin:auto;border:1pt black solid;}
+td.spgers_s3,.spgers_s4,.spgers_s5{width:200pt;font-size:7pt;border:1pt black solid;vertica-align:top;text-align:left;}
+td.spgers_s1 img {padding:4pt 2pt;}
+td.spgers_s2 img {padding:auto;margin:auto;}
+
+
+body { 
+	background: none;
+	background-position: top center;
+	background-repeat: repeat-x;
+	}
+	
+#page_margins {
+
+	padding: 0 0 60pt 0;
+}
+
+
+h1 {
+	font-size: 18pt;
+	font-style:normal;
+	margin-bottom:15pt;
+}
+
+h2 {
+	font-size: 14pt;
+	font-style:italic;
+	margin-top:22pt;
+	margin-bottom: 7pt;
+	color:#868889;
+}
+
+h3 {
+	font-size: 14pt;
+	font-style:italic;
+	margin-top:15pt;
+	margin-bottom: 15pt;
+	color:#868889;
+}
+
+
+
+.sp_exaport p {
+	display: inline;
+}
+span.sp_exaporttxt {
+	padding-left:7pt;
+}
+
+
+
+.view-item-header {
+	font-weight: bold;
+}
+
+.spasslangblock {
+	margin-bottom:30pt;
+}
+
+table.tableform1, table.tableform2, table.tableform3 {
+	width:100%;
+	border-collapse:collapse;
+}
+
+table.vzartableleg {
+	border-collapse:collapse;
+	width:45%;
+}
+
+table.tableform1 td {
+	width:25%;
+	background-color: #FFFFFF;
+}
+
+table.tableform2 td, table.tableform3 td, table.vzartableleg td {
+	background-color: #FFFFFF;
+}
+
+table.tableform1 th, table.tableform2 th, table.tableform3 th, table.vzartableleg th {
+	background-color: #ececed;
+	font-weight:normal;
+}
+
+table.tableform1 td, table.tableform1 th, table.tableform2 td, table.tableform2 th, table.tableform3 td, table.tableform3 th, table.vzartableleg td, table.vzartableleg th {
+	border: 0,5pt solid #000;
+	padding:4pt 7pt;
+	vertical-align:top;
+}
+
+table.vzartableleg th {
+	text-align:left;
+}
+
+table.vzartable td {
+	height:30pt;
+}
+
+table.vzartableleg1 {
+	float:left; margin-right:37pt;
+}
+
+
+table.tableform1 textarea {
+	border: 0;
+	width: 100%;
+}
+
+.txtsmall {
+	font-size: 9pt;
+}
+
+table.tableform2 th.listselect, table.tableform2 td.listselect {
+	width: 49pt;
+	vertical-align:bottom;
+	font-size:9pt;
+	text-align:center;
+}
+
+table.tableform2 td.listfirst {
+	width: 11pt;
+}
+
+input.topinput {
+	background-color: #FFFFFF;
+	border: 2pt dotted #FDD68E;
+	height: 19pt;
+	padding:2pt 4pt;
+}
+
+
+
+table.tableform2 td.listsubquest {
+	padding-left: 34pt;
+}
+
+
+
+table.tableform3 th.slp {
+	font-size:9pt;
+}
+
+table.tableform3 th.slp2 {
+	width: 71pt;
+}
+
+table.tableform3 th.slp3 {
+	width: 90pt;
+}
+
+table.tableform3 input {
+	border:0;
+}
+
+table.tableform3 input.date {
+	margin-right: 2pt;
+	border: 1pt solid #c2c2c2;
+
+}
+
+table.tableform3 td {}
+
+table.tableform3 textarea {
+	border: 0;
+	width: 100%;
+}
+
+th.tableses1 {
+	width:195pt;
+}
+
+th.tableses2 {
+	text-align:center;
+}
+
+
+table.overviewses td.1 {
+	background: #f04916 url([[pix:theme|ov_skill1]]) repeat-x 0 0;
+	padding-left:15pt;
+}
+
+table.overview_sesyell td {
+	background-color: #ffefd3;
+}
+
+
+table.overviewses a.goto {
+	display:block;
+	background: #ffefd3 url('images/goto.gif') no-repeat center;
+	height:19pt;
+}
+
+table.overviewses a:hover.goto {
+	background-color: #fdd68e;
+}
+
+table.overviewses td {
+	vertical-align: middle;
+}
+
+table.tableform3 td.sk1 {
+	width: 15pt;
+	vertical-align: middle;
+}
+
+table.tableform3 td.sk2 {
+	width: 233pt;
+}
+
+
+table.tableform3 td.sk3 {
+}
+
+table.tableform3 td.kgb2 {
+	width:113pt;
+}
+
+table.tableform3 td.kgb25p, table.tableform3 th.kgb25p {
+	width:25%;
+	text-align:left;
+}
+
+table.tableform3 th.kgb2, table.tableform3 th.kgb1, table.tableform3 td.kgb, table.tableform3 th.kgb {
+	text-align:left;
+}
+
+.sp_exaport .desp_sp-view-item-header {font-weight:bold;font-size:14pt;}
+.sp_exaport{margin-top:12pt;}
+
+/* neu von exastud*/
+body {
+	font-family: 'Open Sans', sans-serif,'Trebuchet MS', Verdana, Arial;
+	color: #000;
+	font-size: 12pt;
+	background-color: #fff;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+#printsectionhoch {
+	width: 595, 3pt;
+	background-color: #fff;
+	height: 842;
+	position: relative;
+}
+
+.printpage {
+	margin: 60 52.5 0 52.5;
+}
+
+.printderpass {
+	font-size: 22.5pt;
+}
+
+.printpersonalinfo,.printblock {
+	border: 0.25pt solid #848484;
+	border-radius: 3.75pt;
+	margin-top: 37.5pt;
+	width: 600pt;
+	padding: 15pt;
+}
+
+.printtable {
+	width: 600pt;
+}
+
+.printpersonalinfo table,.printblock table {
+	width: 100%;
+}
+
+.printblock h2 {
+	font-size: 18pt;
+	margin: 0pt;
+	padding: 0pt;
+}
+
+.printblockinfo {
+	margin-bottom: 22.5pt;
+}
+
+.printpersonalinfo  table td {
+	
+}
+
+img.printpersonalinfo_img {
+	width: 100pt;
+}
+
+td.printpersonalinfo_imgcontainer {
+	text-align: right;
+	width: 40%;
+}
+
+td.printpersonalinfo_heading {
+	font-size: 18;
+	height: 18;
+	vertical-align: bottom;
+	width: 60%;
+}
+
+td.printpersonalinfo_subheading {
+	font-size: 9pt;
+	height: 22.5pt;
+	border-top: 0.75pt solid #848484;
+	vertical-align: top;
+}
+
+.printtable tr.printrowgrey,.printtable tr.printrowheading,.printtable tr.printrowsubheading
+	{
+	background-color: #dcdcdc;
+}
+
+.printtable tr.printrowheading {
+	font-weight: bold;
+	font-style: italic;
+	color: #545454;
+	font-size: 13.5pt;
+	vertical-align: middle;
+}
+
+.printtable tr.printrowheading h3 {
+	font-weight: bold;
+	font-style: normal;
+	color: #000;
+	font-size: 16.5pt;
+	margin: 0pt;
+	padding: 0pt;
+}
+
+.printtable tr.printrowsubheading {
+	font-weight: bold;
+	font-style: italic;
+	color: #545454;
+}
+
+.printtable tr.printrowheadingtwo {
+	font-weight: bold;
+	margin-top: 15pt;
+}
+
+.printtable tr.printsummary {
+	font-weight: bold;
+}
+
+.printblock td {
+	padding: 3.75pt;
+}
+
+.printtabletrenner {
+	height: 18.75pt;
+}
+
+td.assessment {
+	width: 5%;
+}
+
+td.descriptor {
+	width: 90%;
+}
+
+td.legend {
+	width: 15%;
+}
+
+td.text {
+	width: 85%;
+}
+
+table.ratingtable {
+	
+	-webkit-border-radius: 3.75pt;
+	-moz-border-radius: 3.75pt;
+	border-radius: 3.75pt;
+	border-collapse: collapse;
+}
+
+table.bordertable td {
+		border: 1pt solid #848484;
+}
+
+table.ratingtable .ratings td, .ratingtable .ratinguser td, .ratingtable .ratingtext td {
+		border: 1pt solid #848484;
+}
+
+.ratingheading h3 {
+	display: inline;
+}
+
+.ratingsubhead {
+	font-size: 9pt;
+	padding-left: 12pt;
+}
+
+.ratingtable .ratingfirst, .ratingtable .rating {
+	text-align: center;
+}
+
+.ratingtable .rating, .ratinguser td {
+	background-color:#dcdcdc;
+}
+
+.ratinguser td {
+	background-color:#dcdcdc;
+	font-size: 9pt;
+}
+
+#languages h3.despsp3 {margin-bottom:2pt;padding-bottom:2pt;}
