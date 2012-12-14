@@ -503,8 +503,8 @@ if ($showgers==true){
 		</table></div>
 		';
 	}else{
-		$inhalt.='<br /><div style="page-break-before:always"><img src="images/gers1.jpg" alt="Gers Tabelle 1" width="550" height="520" /><br />';
-		$inhalt.='<img src="images/gers2.jpg" alt="Gers Tabelle 2" width="550" height="532" style="margin-top:10px;"></div>';
+		$inhalt.='<br /><div style="page-break-before:always"><img src="images/gers1.png" alt="Gers Tabelle 1" width="522" height="755" /><br />';
+		$inhalt.='<img src="images/gers2.png" alt="Gers Tabelle 2" width="522" height="755" style="margin-top:10px;"></div>';
 	}
 }
 
