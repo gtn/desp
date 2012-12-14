@@ -7,7 +7,7 @@ require_once dirname(__FILE__) . '/lib/div.php';
 $courseid = optional_param('courseid', $COURSE->id, PARAM_SEQUENCE);
 $es = optional_param('es', 0, PARAM_INT);
 $est="";
-$langcode="_".get_string("langcode","block_desp");
+$langcode=get_string("langcode","block_desp");
 if (optional_param('sveeinstellung', "", PARAM_TEXT)!=""){
 	if (function_exists("clean_param_array")) $USER->desp=clean_param_array($_POST["sprache"],PARAM_SEQUENCE,true);
 	else $USER->desp=optional_param('sprache', '', PARAM_SEQUENCE);

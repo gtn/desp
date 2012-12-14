@@ -8,7 +8,7 @@
 					</div>
 			</div>
 	    <div id="messageboxslp2" style="background: url(images/message_sp2.gif) no-repeat left top;">
-        <div id="messagetxtslp2">###sprachenpass_inhalt2###<a href="http://www.europass.at" alt="Europass Sprachenpass"><span style="color:#F25F2C !important;">###europasssprachenpass###</span></a>.
+        <div id="messagetxtslp2">###sprachenpass_inhalt2###<a href="http://www.europass.at/article/articleview/6/1/3" alt="Europass Sprachenpass"><span style="color:#F25F2C !important;">###europasssprachenpass###</span></a>.
          </div>
       </div>	
 	

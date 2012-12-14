@@ -234,7 +234,7 @@ function block_desp_get_examplelink($descrid,$lang){
 	$returntext = "";
 	if($examples){
 		//$returntext = "Aufgabenbeispiel";
-		$returntext = get_string('Aufgabenbeispiel', 'block_desp')." ";
+		$returntext = "returnt".get_string('Aufgabenbeispiel', 'block_desp')." ";
 	}
 	foreach($examples as $example) {
 		$e = $DB->get_record('block_desp_examples',array("id"=>$example->exampid));

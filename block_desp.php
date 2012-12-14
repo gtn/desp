@@ -123,8 +123,8 @@ $context = get_context_instance(CONTEXT_SYSTEM);
         $this->content->text.=' <a title="evaluate competences" href="' . $CFG->wwwroot . '/blocks/desp/sprachenbiografie.php?courseid=' . $courseid . '">' . get_string('sprachenbiografie', 'block_desp') . '</a><br/>';
         $this->content->text.='<img src="' . $CFG->wwwroot . '/blocks/desp/images/dossier.gif" height="16" width="16" alt="' . get_string("dossier", "block_desp") . '" />';
         $this->content->text.=' <a title="evaluate competences" href="' . $CFG->wwwroot . '/blocks/exaport/view_items.php?courseid=' . $courseid . '">' . get_string('dossier', 'block_desp') . '</a><br/>';
-		$this->content->text.='<img src="' . $CFG->wwwroot . '/blocks/desp/images/begleitheft.gif" height="16" width="16" alt="' . get_string("lehrerinnenbegleitheft", "block_desp") . '" />';
-        $this->content->text.=' <a title="evaluate competences" href="LLL_ESP_M_2012_komplett.pdf">' . get_string('lehrerinnenbegleitheft', 'block_desp') . '</a>';
+		$this->content->text.='<img class="lehrerbegleitheft" src="' . $CFG->wwwroot . '/blocks/desp/images/begleitheft.gif" height="16" width="16" alt="' . get_string("lehrerinnenbegleitheft", "block_desp") . '" />';
+        $this->content->text.=' <a class="lehrerbegleitheft" title="evaluate competences" href="LLL_ESP_M_2012_komplett.pdf">' . get_string('lehrerinnenbegleitheft', 'block_desp') . '</a>';
     }
 
 }

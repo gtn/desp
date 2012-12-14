@@ -499,4 +499,3 @@ $string['sp_filelinks'] = 'show links to files';
 $string['sprechen'] = 'speaking';
 $string['verstehen'] = 'understanding';
 $string['hoehren'] = 'hearing';
-$string['langcode'] = 'en';

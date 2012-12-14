@@ -607,4 +607,3 @@ $string['sp_filelinks'] = 'Links zu Dateien anzeigen';
 $string['sprechen'] = 'sprechen';
 $string['verstehen'] = 'verstehen';
 $string['hoehren'] = 'hearing';
-$string['langcode'] = 'de';
