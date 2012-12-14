@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<exabis_competences_tables>
+	<table name="block_desp_edulevels">
+		<uid>1</uid>
+		<title><![CDATA[education Level 1]]></title>
+		<sorting>1</sorting>
+	</table>
+		<table name="block_desp_schooltypes">
+		<uid>1</uid>
+		<title><![CDATA[Schooltype1]]></title>
+		<elid>1</elid>
+		<sorting>1</sorting>
+		<isoez>1</isoez>
+	</table>
+	<table name="block_desp_subjects">
+		<uid>1</uid>
+		<title><![CDATA[Subject 1]]></title>
+		<titleshort><![CDATA[Sub Short1]]></titleshort>
+		<stid>1</stid>
+		<sorting>1</sorting>
+	</table>
+	<table name="block_desp_topics">
+		<uid>1</uid>
+		<title><![CDATA[Top1]]></title>
+		<titleshort><![CDATA[Top1]]></titleshort>
+		<subjid>1</subjid>
+		<sorting>1</sorting>
+		<description></description>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>1</uid>
+		<title><![CDATA[Descriptor 1]]></title>
+		<niveauid>1</niveauid>
+		<sorting>1</sorting>
+		<skillid>1</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_taxonomies">
+		<uid>1</uid>
+		<title><![CDATA[Tax 1]]></title>
+		<sorting>1</sorting>
+		<parent_tax>0</parent_tax>
+	</table>
+	<table name="block_desp_skills">
+		<uid>1</uid>
+		<title><![CDATA[Skill 1]]></title>
+		<sorting>1</sorting>
+	</table>
+	<table name="block_desp_niveaus">
+		<uid>1</uid>
+		<title><![CDATA[A1]]></title>
+		<parent_niveau>1</parent_niveau>
+		<sorting>1</sorting>
+	</table>
+	<table name="block_desp_niveau_texte">
+		<uid>1</uid>
+		<title><![CDATA[Niveau Text1]]></title>
+		<niveauid>1</niveauid>
+		<skillid>1</skillid>
+	</table>
+	<table name="block_desp_descrtopic_mm">
+		<descrid>1</descrid>
+		<topicid>1</topicid>
+	</table>
+	<table name="block_desp_descrexamp_mm">
+		<exampid>1</exampid>
+		<descrid>1</descrid>
+		<source>2</source>
+	</table>
+</exabis_competences_tables>

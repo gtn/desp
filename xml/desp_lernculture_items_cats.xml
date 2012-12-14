@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<desp_tables>
+        <table name="block_desp_cultures_item_cat">
+            <id>1</id>
+            <title>Cat1</title>
+        </table>
+</desp_tables>

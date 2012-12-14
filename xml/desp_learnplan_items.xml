@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<desp_tables>
+        <table name="block_desp_learnplan_items">
+            <id>1</id>
+            <title>Test Item 1</title>
+            <skillid>1</skillid>
+        </table>
+</desp_tables>
