@@ -43,8 +43,28 @@
 	</table>
 	<table name="block_desp_skills">
 		<uid>1</uid>
-		<title><![CDATA[Skill 1]]></title>
-		<sorting>1</sorting>
+		<title><![CDATA[Hören]]></title>
+		<sorting>1792</sorting>
+	</table>
+	<table name="block_desp_skills">
+		<uid>2</uid>
+		<title><![CDATA[Schreiben]]></title>
+		<sorting>2816</sorting>
+	</table>
+	<table name="block_desp_skills">
+		<uid>3</uid>
+		<title><![CDATA[Lesen]]></title>
+		<sorting>2048</sorting>
+	</table>
+	<table name="block_desp_skills">
+		<uid>4</uid>
+		<title><![CDATA[An Gesprächen teilnehmen]]></title>
+		<sorting>2304</sorting>
+	</table>
+	<table name="block_desp_skills">
+		<uid>5</uid>
+		<title><![CDATA[Zusammenhängend sprechen]]></title>
+		<sorting>2560</sorting>
 	</table>
 	<table name="block_desp_niveaus">
 		<uid>1</uid>
