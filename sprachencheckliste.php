@@ -14,9 +14,9 @@ $PAGE->set_url($url);
 $tlang=required_param('desplang', PARAM_INT);
 $tskill=required_param('skillid', PARAM_INT);
 $tniveau=required_param('niveauid', PARAM_INT);
-
+$langcode=get_string("langcode","block_desp");
 $language = $DB->get_record_sql(
-	'SELECT user_lang.*, lang.name,lang.id as ulangid FROM {block_desp_check_lang} AS user_lang'.
+	'SELECT user_lang.*, lang.'.$langcode.',lang.id as ulangid FROM {block_desp_check_lang} AS user_lang'.
 	' JOIN {block_desp_lang} AS lang ON lang.id=user_lang.langid'.
 	' WHERE user_lang.id = ? AND user_lang.userid = ?', array($tlang, $USER->id));
 if (!$language) die('no language');
@@ -184,7 +184,7 @@ echo '<script type="text/javascript" src="lib/wz_tooltip.js"></script>';
 <div id="page_margins">
     <div id="content">
 
-        <h1 class="h1back h1lesen" style="background: #fdd68e url('images/ov_skill<?php echo $skill->id ?>.gif') no-repeat left top; height: 33px; padding-left: 50px;padding-top:15px;"><?php echo $language->name.' '.$skill->title.' '.$niveau->title; ?></h1>
+        <h1 class="h1back h1lesen" style="background: #fdd68e url('images/ov_skill<?php echo $skill->id ?>.gif') no-repeat left top; height: 33px; padding-left: 50px;padding-top:15px;"><?php echo $language->$langcode.' '.$skill->title.' '.$niveau->title; ?></h1>
 
         <br />
 

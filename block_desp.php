@@ -6,7 +6,7 @@ class block_desp extends block_base {
 
     function init() {
         $this->title = get_string('blocktitle', 'block_desp');
-        $this->version = 2012070301;
+        $this->version = 2012160103;
     }
 
     // The PHP tag and the curly bracket for the class definition

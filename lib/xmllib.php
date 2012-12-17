@@ -501,14 +501,19 @@ function block_desp_import_languages($filename) {
 	        $xml = simplexml_load_file($filename);
                 if($xml) {
                     foreach ($xml->table as $item) {
-						$sql = "SELECT * FROM {block_desp_lang} WHERE ".$DB->sql_compare_text("name") . " = '".$item->name."'";
-                        $lang = $DB->get_record_sql($sql);
-						
-						if(!$lang) {
-							$item->userid=0;
-							block_desp_insert_item($item,"block_desp_lang");
-						}
+											$sql = "SELECT * FROM {block_desp_lang} WHERE id = '".$item->id."'";
+					            $lang = $DB->get_record_sql($sql);
+											
+											if(!$lang) {
+												$item->userid=0;
+												block_desp_insert_item($item,"block_desp_lang");
+											}else{
+												$item->userid=0;
+												block_desp_update_langitem($item,"block_desp_lang");
+											}
                     }
+                    $sql="UPDATE {block_desp_lang} SET en=de WHERE en=''";
+                    $DB->execute($sql);
                 }
 	}
 }
@@ -538,6 +543,9 @@ function block_desp_insert_item($item,$tablename){
 	$DB->insert_record($tablename, $item);
 }
 
-
+function block_desp_update_langitem($item,$tablename){
+	global $DB;
+	$DB->update_record($tablename, $item);
+}
 
 ?>

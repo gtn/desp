@@ -26,8 +26,8 @@
 *  This copyright notice MUST APPEAR in all copies of the script!
 ***************************************************************/
 
-$exaport_version = 2012070305;   // The current version is a date (YYYYMMDDXX)
-$plugin->version = 2012070305;
+$exaport_version = 2012160103;   // The current version is a date (YYYYMMDDXX)
+$plugin->version = 2012160103;
 // NOTE: see revision.txt for internal version number
 $plugin->maturity  = MATURITY_BETA;
 $plugin->release  = "1.0";

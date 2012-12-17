@@ -37,6 +37,32 @@ function xmldb_block_desp_upgrade($oldversion) {
 	                
 	      //upgrade_block_savepoint(true, 2009011700, 'block_desp');
     }
+    if ($oldversion < 2012160103) {
+    	
+    	$table = new xmldb_table('block_desp_lang');
+    	$field = new xmldb_field('en');
+			$field->set_attributes(XMLDB_TYPE_TEXT, 'medium', null, null, null, null, null); // [XMLDB_ENUM, null,] Moodle 2.x deprec
+        // Conditionally launch add temporary fields
+        if (!$dbman->field_exists($table, $field)) {
+            $dbman->add_field($table, $field);
+        }
+      $field = new xmldb_field('de');
+			$field->set_attributes(XMLDB_TYPE_TEXT, 'medium', null, null, null, null, null); // [XMLDB_ENUM, null,] Moodle 2.x deprec
+        // Conditionally launch add temporary fields
+        if (!$dbman->field_exists($table, $field)) {
+            $dbman->add_field($table, $field);
+        }
+        $sql = "UPDATE {block_desp_lang} SET de=name";
+				$DB->execute($sql);
+				
+				$field = new xmldb_field('name');
+				$dbman->drop_field($table, $field);
+        ////
+        
+	                
+	      //upgrade_block_savepoint(true, 2009011700, 'block_desp');
+    }
+    
     return $result;
 }
 

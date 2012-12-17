@@ -37,10 +37,11 @@ echo '<script type="text/javascript" src="lib/simpletreemenu.js"></script>
 <form method="post" action="<?php echo $_SERVER['PHP_SELF'].'?courseid='.$courseid; ?>">
 <?php echo get_string("filter", "block_desp") ?>
 <?php
-$myLanguagesSql = 'SELECT lang.name,lang.id  
+$langcode=get_string("langcode","block_desp");
+$myLanguagesSql = 'SELECT lang.'.$langcode.',lang.id  
 	FROM {block_desp_examples} AS ex
 	INNER JOIN {block_desp_lang} AS lang ON ex.lang=lang.id
-	GROUP BY lang.id, lang.name ORDER BY lang.name';
+	GROUP BY lang.id, lang.'.$langcode.' ORDER BY lang.'.$langcode;
 $myLanguages = $DB->get_records_sql($myLanguagesSql);
 ?>
 <select name="langid">
@@ -48,7 +49,7 @@ $myLanguages = $DB->get_records_sql($myLanguagesSql);
 			foreach ($myLanguages as $language) {
 				echo '<option value="'.$language->id.'"';
 				if ($langid==$language->id) echo ' selected="selected"';
-				echo '>'.$language->name.'</option>';
+				echo '>'.$language->$langcode.'</option>';
 			}
 			?>
 			<input type="submit" value="<?php echo get_string("filteranwenden", "block_desp") ?>" />

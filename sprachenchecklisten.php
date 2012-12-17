@@ -59,12 +59,12 @@ if ($do == 'change-language') {
 
 
 
-
-$myLanguagesSql = 'SELECT check_lang.*, lang.name
+$langcode=get_string("langcode","block_desp");
+$myLanguagesSql = 'SELECT check_lang.*, lang.'.$langcode.'
 	FROM {block_desp_check_lang} AS check_lang
 	JOIN {block_desp_lang} AS lang ON check_lang.langid=lang.id
 	WHERE check_lang.userid = ?
-	ORDER BY lang.name';
+	ORDER BY lang.'.$langcode;
 
 $myLanguages = $DB->get_records_sql($myLanguagesSql, array($USER->id));
 
@@ -87,7 +87,7 @@ $otherLanguages = $DB->get_records_sql('SELECT *
 		FROM {block_desp_check_lang}
 		WHERE userid = ?
 	)
-	ORDER BY name', array($USER->id, $USER->id));
+	ORDER BY '.$langcode, array($USER->id, $USER->id));
 
 
 
@@ -168,7 +168,7 @@ block_desp_print_header("sprachenchecklisten");
 	<?php foreach ($myLanguages as $language): ?>
         <table class="tableform3 overviewses">
             <tr>
-                <th class="tableses1"><?php echo $language->name; ?>
+                <th class="tableses1"><?php echo $language->$langcode; ?>
 					<!-- a href="javascript:changeLanguage(<?php echo $language->id; ?>);">ändern</a -->
 					<a href="javascript:deleteLanguage(<?php echo $language->id; ?>);"><?php echo get_string('loeschen','block_desp'); ?></a></th>
 				<?php foreach ($niveaus as $niveau) {
@@ -203,7 +203,7 @@ block_desp_print_header("sprachenchecklisten");
 		<select name="langid">
 			<?php
 			foreach ($otherLanguages as $language) {
-				echo '<option value="'.$language->id.'">'.$language->name.'</option>';
+				echo '<option value="'.$language->id.'">'.$language->$langcode.'</option>';
 			}
 			?>
 		</select>

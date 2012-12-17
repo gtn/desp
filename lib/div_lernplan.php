@@ -132,13 +132,14 @@ function block_desp_get_skill_title($skid){
 }
 function block_desp_get_lang_title($langid){
 	global $DB;
-	$sql="SELECT l.name FROM {block_desp_learnplans_lang} cl INNER JOIN {block_desp_lang} l ON l.id=cl.langid ";
+	$langcode=get_string("langcode","block_desp");
+	$sql="SELECT l.".$langcode." FROM {block_desp_learnplans_lang} cl INNER JOIN {block_desp_lang} l ON l.id=cl.langid ";
 	$sql.="WHERE cl.id=".$langid;
 
 	$lang = $DB->get_record_sql($sql);
 	//$lang = $DB->get_record('block_desp_lang', array("id" => $langid));
 	if (!empty($lang)){
-		return $lang->name;
+		return $lang->$langcode;
 	}else return "";
 }
 

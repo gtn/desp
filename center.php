@@ -72,7 +72,8 @@ $inhalt='<table class="tableform3 sprachlernplantab" id="params">
                      <th class="slp"></th>
                 </tr></thead>';
 	$ids=block_desp_ist_lernplanueberschreitung(4);
-	$sql = "SELECT lp.*,la.name as langname FROM {block_desp_learnplans} lp INNER JOIN {block_desp_learnplans_lang} l ON l.id=lp.langid INNER JOIN {block_desp_lang} la ON la.id=l.langid WHERE lp.userid=".$USER->id." AND lp.id IN (".$ids.") ORDER BY lp.langid,skillid";
+	$langcode=get_string("langcode","block_desp");
+	$sql = "SELECT lp.*,la.".$langcode." as langname FROM {block_desp_learnplans} lp INNER JOIN {block_desp_learnplans_lang} l ON l.id=lp.langid INNER JOIN {block_desp_lang} la ON la.id=l.langid WHERE lp.userid=".$USER->id." AND lp.id IN (".$ids.") ORDER BY lp.langid,skillid";
 	//echo $sql;
 	$lp_items = $DB->get_records_sql($sql);
 	$i=0;

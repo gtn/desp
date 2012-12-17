@@ -17,7 +17,7 @@ function block_desp_get_first_lernpartner_check_item($checkitemid) {
 
 	// read first item data
 	$sql = 
-		'SELECT lernplans.id, lernplans.title, u.id AS uid, u.firstname, u.lastname, skill.id AS skillid, lang.name AS language, check_lang.id AS userlanguageid, skill.title AS skill'.
+		'SELECT lernplans.id, lernplans.title, u.id AS uid, u.firstname, u.lastname, skill.id AS skillid, lang.$langcode AS language, check_lang.id AS userlanguageid, skill.title AS skill'.
 		' FROM {block_desp_learnplans} AS lernplans'.
 		' JOIN {block_desp_skills} AS skill ON lernplans.skillid=skill.id'.
 		' JOIN {user} AS u ON u.id=lernplans.userid'.
@@ -32,10 +32,10 @@ function block_desp_get_first_lernpartner_check_item($checkitemid) {
 
 function block_desp_get_all_lernpartner_check_item($checkitem) {
 	global $USER, $DB;
-	
+	$langcode=get_string("langcode","block_desp");
 	// read all items
 	$sql = 
-		'SELECT lernplans.id, lernplans.title, lernplans.lernpartner_kommentar, lernplans.lernpartner_einschaetzung, u.id AS uid, u.firstname, u.lastname, lang.name AS language, skill.title AS skill'.
+		'SELECT lernplans.id, lernplans.title, lernplans.lernpartner_kommentar, lernplans.lernpartner_einschaetzung, u.id AS uid, u.firstname, u.lastname, lang.'.$langcode.' AS language, skill.title AS skill'.
 		' FROM {block_desp_learnplans} AS lernplans'.
 		' JOIN {block_desp_skills} AS skill ON lernplans.skillid=skill.id'.
 		' JOIN {user} AS u ON u.id=lernplans.userid'.

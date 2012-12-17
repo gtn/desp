@@ -2,8 +2,9 @@
 
 function get_lernpartner($userid){
 	global $DB;
+	$langcode=get_string("langcode","block_desp");
 	$sql = 
-	'SELECT lernplans.id, lernplans.title,lernplans.lernpartner_einschaetzung,lernplans.lernpartner_kommentar, u.id AS uid, u.firstname, u.lastname, lang.name AS language, skill.title AS skill'.
+	'SELECT lernplans.id, lernplans.title,lernplans.lernpartner_einschaetzung,lernplans.lernpartner_kommentar, u.id AS uid, u.firstname, u.lastname, lang.'.$langcode.' AS language, skill.title AS skill'.
 	' FROM {block_desp_learnplans} AS lernplans'.
 	' JOIN {block_desp_skills} AS skill ON lernplans.skillid=skill.id'.
 	' JOIN {user} AS u ON u.id=lernplans.userid'.
@@ -11,14 +12,15 @@ function get_lernpartner($userid){
 	' JOIN {block_desp_lang} AS lang ON check_lang.langid=lang.id'.
 	' WHERE lernplans.lernpartnerid=?'.
 	' GROUP BY u.id, lang.id, skill.id'.
-	' ORDER BY u.lastname, u.firstname, lang.name, skill.sorting, lernplans.title';
+	' ORDER BY u.lastname, u.firstname, lang.'.$langcode.', skill.sorting, lernplans.title';
 return $items = $DB->get_records_sql($sql, array($userid));
 }
 
 function get_lernpartner_check($userid){
 	global $DB;
+	$langcode=get_string("langcode","block_desp");
 	$sql = 
-	'SELECT check_item.id,check_item.einschaetzung_fremd, u.id AS uid, u.firstname, u.lastname, lang.name AS language, skill.title AS skill, niveau.title AS niveau'.
+	'SELECT check_item.id,check_item.einschaetzung_fremd, u.id AS uid, u.firstname, u.lastname, lang.'.$langcode.' AS language, skill.title AS skill, niveau.title AS niveau'.
 	' FROM {block_desp_check_lang} AS check_lang'.
 	' JOIN {user} AS u ON u.id=check_lang.userid'.
 	' JOIN {block_desp_lang} AS lang ON check_lang.langid=lang.id'.
@@ -29,7 +31,7 @@ function get_lernpartner_check($userid){
 	' JOIN {block_desp_niveaus} AS niveau ON (niveau.id=niveau_sub.parent_niveau OR (niveau_sub.parent_niveau=0 AND niveau.id=niveau_sub.id))'.
 //	' WHERE 1=0'. // testen wenn es keine lernpartner gibt
 	' GROUP BY u.id, lang.id, skill.id, niveau.id'.
-	' ORDER BY u.lastname, u.firstname, lang.name, skill.sorting, niveau.title';
+	' ORDER BY u.lastname, u.firstname, lang.'.$langcode.', skill.sorting, niveau.title';
 return $items = $DB->get_records_sql($sql, array($userid));
 }
 function full_bewertung($wert,$bereich){

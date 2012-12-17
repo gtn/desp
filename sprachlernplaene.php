@@ -2,7 +2,7 @@
 global $DB, $COURSE,$CFG;
 require_once dirname(__FILE__) . '/inc.php';
 require_once dirname(__FILE__) . '/lib/div.php';
-
+$langcode=get_string("langcode","block_desp");
 $courseid = optional_param('courseid', $COURSE->id, PARAM_ALPHANUM);
 $do = optional_param('do', null, PARAM_ALPHANUMEXT);
 
@@ -53,11 +53,11 @@ if ($do == 'change-language') {
 
 
 
-$myLanguagesSql = 'SELECT check_lang.*, lang.name
+$myLanguagesSql = 'SELECT check_lang.*, lang.'.$langcode.'
 	FROM {block_desp_learnplans_lang} AS check_lang
 	JOIN {block_desp_lang} AS lang ON check_lang.langid=lang.id
 	WHERE check_lang.userid = ?
-	ORDER BY lang.name';
+	ORDER BY lang.'.$langcode;
 
 $myLanguages = $DB->get_records_sql($myLanguagesSql, array($USER->id));
 /*
@@ -79,7 +79,7 @@ $otherLanguages = $DB->get_records_sql('SELECT *
 		FROM {block_desp_learnplans_lang}
 		WHERE userid = ?
 	)
-	ORDER BY name', array($USER->id, $USER->id));
+	ORDER BY '.$langcode, array($USER->id, $USER->id));
 	
 	/*von sprachenchecklisten ende*/
 block_desp_print_header("sprachlernplaene");
@@ -162,7 +162,7 @@ if (!empty($lernplansalarm)){
 <?php foreach ($myLanguages as $language): ?>
         <table class="tableform3 overviewses overview_sesyell">
             <tr>
-                <th class="tableses1"><?php echo $language->name; ?>
+                <th class="tableses1"><?php echo $language->$langcode; ?>
 					<!-- a href="javascript:changeLanguage(<?php echo $language->id; ?>);">Ã¤ndern</a -->
 					<a href="javascript:deleteLanguage(<?php echo $language->id; ?>);"><?php echo get_string('loeschen','block_desp'); ?></a></th>
 				
@@ -183,7 +183,7 @@ endforeach; ?>
 		<div><select name="langid">
 			<?php
 			foreach ($otherLanguages as $language) {
-				echo '<option value="'.$language->id.'">'.$language->name.'</option>';
+				echo '<option value="'.$language->id.'">'.$language->$langcode.'</option>';
 			}
 			?>
 		</select>

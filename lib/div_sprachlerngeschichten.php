@@ -76,8 +76,10 @@ function block_desp_slg_getTrRows($scope=1,$felder,$courseid,$exaport=false){
 
 function block_desp_createLanguageSelector($selectedval,$scope=1){
 	global $DB, $USER;
+	$langcode=get_string("langcode","block_desp");
+	//if ($langcode=="de") $langcode="name";
 	$inhalt='<select name="langid[]">';
-	$allLanguages = $DB->get_records_select('block_desp_lang', 'userid=0 OR userid='.$USER->id, null,'name');
+	$allLanguages = $DB->get_records_select('block_desp_lang', 'userid=0 OR userid='.$USER->id, null,$langcode);
 	$otherLanguages = $DB->get_records_sql('SELECT *
 	FROM {block_desp_lang}
 	WHERE (userid=0 OR userid=?)
@@ -85,12 +87,12 @@ function block_desp_createLanguageSelector($selectedval,$scope=1){
 		FROM {block_desp_lanhistories}
 		WHERE userid = ? AND scope='.$scope.' AND langid<>'.$selectedval.'
 	)
-	ORDER BY name', array($USER->id, $USER->id));
+	ORDER BY '.$langcode, array($USER->id, $USER->id));
 	
 	foreach ($allLanguages as $language) {
 					$inhalt.='<option value="'.$language->id.'" ';
 					if ($language->id==$selectedval) $inhalt.=' selected="selected"';
-					$inhalt.='>'.$language->name.'</option>';
+					$inhalt.='>'.$language->$langcode.'</option>';
 	}
 	$inhalt.='</select>';
 	return $inhalt;

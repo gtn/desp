@@ -4,7 +4,7 @@ require_once dirname(__FILE__) . '/inc.php';
 
 $courseid = optional_param('courseid', $COURSE->id, PARAM_ALPHANUM);
 $do = optional_param('do', null, PARAM_ALPHANUMEXT);
-
+	$langcode=get_string("langcode","block_desp");
 require_login($courseid);
 
 $course = $DB->get_record('course', array("id" => $courseid));
@@ -16,7 +16,8 @@ if ($do == 'add-language') {
 
 	$newLanguage = new StdClass;
 	$newLanguage->userid = $USER->id;
-	$newLanguage->name = $name;
+	$newLanguage->de = $name;
+	$newLanguage->en = $name;
 
 	$DB->insert_record('block_desp_lang', $newLanguage);
 
@@ -73,12 +74,12 @@ function block_desp_lang_references($id) {
 $myLanguages = $DB->get_records_sql('SELECT *
 	FROM {block_desp_lang}
 	WHERE userid = ?
-	ORDER BY name', array($USER->id));
+	ORDER BY '.$langcode, array($USER->id));
 
 $otherLanguages = $DB->get_records_sql('SELECT *
 	FROM {block_desp_lang}
 	WHERE userid = 0
-	ORDER BY name');
+	ORDER BY '.$langcode);
 
 
 
@@ -105,16 +106,17 @@ block_desp_print_header("sprachen");
 	</form>
 
 	<?php 
-	
+
 		if ($myLanguages):
 			?>
         <table class="tableform3 overviewses">
             <tr>
                 <th class="tableses1" colspan="2"><?php echo get_string('sprache','block_desp'); ?></th>
             </tr>
+       
 			<?php foreach ($myLanguages as $language): ?>
             <tr>
-                <td><?php echo $language->name; ?></td>
+                <td><?php echo $language->$langcode; ?></td>
                 <td><?php 
 					if ($references = block_desp_lang_references($language->id)) {
 						echo join(', ', $references);

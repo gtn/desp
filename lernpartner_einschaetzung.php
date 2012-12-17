@@ -14,10 +14,10 @@ $PAGE->set_url($url);
 
 function block_desp_get_first_lernpartner_check_item($checkitemid) {
 	global $USER, $DB;
-
+$langcode=get_string("langcode","block_desp");
 	// read first item data
 	$sql = 
-		'SELECT u.id AS uid, check_item.id AS firstid, u.firstname, u.lastname, check_lang.id AS userlanguageid, lang.name AS language, '.
+		'SELECT u.id AS uid, check_item.id AS firstid, u.firstname, u.lastname, check_lang.id AS userlanguageid, lang.'.$langcode.' AS language, '.
 		' skill.id AS skillid, skill.title AS skill, niveau.id AS niveauid, niveau.title AS niveau'.
 		' FROM {block_desp_check_lang} AS check_lang'.
 		' JOIN {user} AS u ON u.id=check_lang.userid'.
