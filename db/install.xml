@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<XMLDB PATH="blocks/desp/db" VERSION="20120703" COMMENT="XMLDB file for Moodle blocks/desp"
+<XMLDB PATH="blocks/desp/db" VERSION="20121217" COMMENT="XMLDB file for Moodle blocks/desp"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="../../../lib/xmldb/xmldb.xsd"
 >
@@ -111,9 +111,10 @@
     </TABLE>
     <TABLE NAME="block_desp_lang" COMMENT="block_desp_lang table retrofitted from MySQL" PREVIOUS="block_desp_skills" NEXT="block_desp_check_item">
       <FIELDS>
-        <FIELD NAME="id" TYPE="int" LENGTH="11" NOTNULL="true" UNSIGNED="true" SEQUENCE="true" NEXT="name"/>
-        <FIELD NAME="name" TYPE="text" LENGTH="small" NOTNULL="true" SEQUENCE="false" PREVIOUS="id" NEXT="userid"/>
-        <FIELD NAME="userid" TYPE="int" LENGTH="20" NOTNULL="false" UNSIGNED="false" DEFAULT="0" SEQUENCE="false" PREVIOUS="name"/>
+        <FIELD NAME="id" TYPE="int" LENGTH="11" NOTNULL="true" UNSIGNED="true" SEQUENCE="true" NEXT="de"/>
+        <FIELD NAME="de" TYPE="text" LENGTH="small" NOTNULL="false" SEQUENCE="false" PREVIOUS="id" NEXT="userid"/>
+        <FIELD NAME="userid" TYPE="int" LENGTH="20" NOTNULL="false" UNSIGNED="false" DEFAULT="0" SEQUENCE="false" PREVIOUS="de" NEXT="en"/>
+        <FIELD NAME="en" TYPE="text" LENGTH="small" NOTNULL="false" SEQUENCE="false" COMMENT="english" PREVIOUS="userid"/>
       </FIELDS>
       <KEYS>
         <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
