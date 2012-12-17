@@ -325,19 +325,14 @@ table#params input.name {
 		}
 		
 #messagebox {
-	background: url('images/message.gif') no-repeat left top; 
-	height:144px;
+
 	margin-left: 20px;
 }
 
 #messagetxt {
-	width: 455px;
-	margin: 35px 0 0 155px;
-	background-color:#feefd4;
+
 	padding:10px;
-	-moz-box-shadow: 2px 2px 1px #c9c5bb;
-	-webkit-box-shadow: 2px 2px 1px #c9c5bb;
-	box-shadow: 2px 2px 1px #c9c5bb;
+
 }
 
 table.tableform1, table.tableform2, table.tableform3 {
@@ -430,18 +425,12 @@ table.tableform2 td.listsubquest {
 
 #messageboxslp1 {
  
-	min-height:164px;
-	margin-left: 50px;
 }
 
 #messagetxtslp1 {
-	width: 485px;
-	margin: 38px 0 0 145px;
-	background-color:#feefd4;
+
     padding:10px;
-    -moz-box-shadow: 2px 2px 1px #c9c5bb;
-    -webkit-box-shadow: 2px 2px 1px #c9c5bb;
-    box-shadow: 2px 2px 1px #c9c5bb;
+
 }
 
 #messagetxtslp1 a {
@@ -460,34 +449,25 @@ table.tableform2 td.listsubquest {
 
 #messageboxslp1 {
  
-	min-height:164px;
-	margin-left: 50px;
+
 }
 
 #messagetxtslp1 {
-	width: 485px;
-	margin: 38px 0 0 145px;
-	background-color:#feefd4;
+
     padding:10px;
-    -moz-box-shadow: 2px 2px 1px #c9c5bb;
-    -webkit-box-shadow: 2px 2px 1px #c9c5bb;
-    box-shadow: 2px 2px 1px #c9c5bb;
+
 }
 
 #messageboxslp2 {
-	min-height:172px;
+
 	margin-left: 0px;
 	margin-top:20px;
 }
 
 #messagetxtslp2 {
-	width: 472px;
-	margin: 35px 0 0 35px;
-	background-color:#feefd4;
+
     padding:10px;
-    -moz-box-shadow: -2px 2px 1px #c9c5bb;
-    -webkit-box-shadow: -2px 2px 1px #c9c5bb;
-    box-shadow: -2px 2px 1px #c9c5bb;
+
 }
 
 
@@ -522,36 +502,26 @@ table.tableform2 td.listsubquest {
 }
 
 #messageboxslp3 {
-	 
-	height:156px;
-	margin-left: 50px;
+
 	margin-top:20px;
 }
 
 #messagetxtslp3 {
-	width: 475px;
-	margin: 35px 0 0 156px;
-	background-color:#feefd4;
+
     padding:10px;
-    -moz-box-shadow: 2px 2px 1px #c9c5bb;
-    -webkit-box-shadow: 2px 2px 1px #c9c5bb;
-    box-shadow: 2px 2px 1px #c9c5bb;
+
 }
 
 #messageboxsg2 {
-	min-height:172px;
+
 	margin-left: 0px;
 	margin-top:20px;
 }
 
 #messagetxtsg2 {
-	width: 472px;
-	margin: 35px 0 0 35px;
-	background-color:#feefd4;
+
     padding:10px;
-    -moz-box-shadow: -2px 2px 1px #c9c5bb;
-    -webkit-box-shadow: -2px 2px 1px #c9c5bb;
-    box-shadow: -2px 2px 1px #c9c5bb;
+
 }
 
 
@@ -749,36 +719,20 @@ td.vzar3 input {
 }
 
 #messageboxses1 {
-	min-height:143px;
-	margin-left: 38px;
+
 }
 
 #messagetxtses1 {
-	width: 478px;
-	margin: 35px 0 0 21px;
-	
-	background-color:#feefd4;
     padding:10px;
-    -moz-box-shadow: -2px 2px 1px #c9c5bb;
-    -webkit-box-shadow: -2px 2px 1px #c9c5bb;
-    box-shadow: -2px 2px 1px #c9c5bb;
 }
 
 #messageboxses2 {
-	 
-	min-height:159px;
-	margin-left: 70px;
+
 	margin-top:20px;
 }
 
 #messagetxtses2 {
-	width: 475px;
-	margin: 15px 0 0 138px;
-	    background-color:#feefd4;
     padding:10px;
-    -moz-box-shadow: 2px 2px 1px #c9c5bb;
-    -webkit-box-shadow: 2px 2px 1px #c9c5bb;
-    box-shadow: 2px 2px 1px #c9c5bb;
 }
 
 #messageboxses2 a {
@@ -857,19 +811,12 @@ td.vzar3 input {
 }
 
 #messageboxsk {
-	background: url('images/message_sk.gif') no-repeat left top; 
-	height:174px;
-	margin-left: 40px;
+
 }
 
 #messagetxtsk {
-	width: 468px;
-	margin: 27px 0 0 160px;
-	background-color:#feefd4;
     padding:10px;
-    -moz-box-shadow: 2px 2px 1px #c9c5bb;
-    -webkit-box-shadow: 2px 2px 1px #c9c5bb;
-    box-shadow: 2px 2px 1px #c9c5bb;
+
 }
 
 
@@ -1055,6 +1002,33 @@ h2.despsp2 {
 }
 h3.despsp3 {
 	font-size: 17px !important;
+}
+
+.startsymbhide img {
+	display: none;
+}
+#messageboxslp1, #messageboxslp2, #messagebox, #messageboxslp1, #messageboxslp3, #messageboxsg2, #messageboxses1, #messageboxses2, #messageboxsk {
+	background: none !important;
+}
+
+#messagetxtslp1, #messagetxtslp3 {
+	width: 100% !important;
+}
+
+.overview_sesyell a, .sprachlernplantab h1, .overviewses img, .ov_skill1, .ov_skill2, .ov_skill3, .ov_skill4, .ov_skill5 {
+		background-image: none !important;
+}
+
+.ov_skill1, .ov_skill2, .ov_skill3, .ov_skill4, .ov_skill5 {
+padding-left: 10px !important;
+}
+
+.sprachlernplantab h1 {
+	padding-left: 0 !important;
+}
+
+.startsymbhide h4 {
+	margin-bottom: 0 !important;
 }
 
 
