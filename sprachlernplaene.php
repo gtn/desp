@@ -152,7 +152,7 @@ if (!empty($lernplansalarm)){
 	$inhalt= '
 	<div class="messageimportantinfo" style="display:;">
 		<div style="font-size:35px;font-weight: bold; float:left;font-family: Times, Verdana, Arial, sans-serif; padding-right:20px;">!</div>
-		<div>Du hast dein vorgegebenes Ziel in den Sprachlern-Pl&auml;nen &uuml;berschritten.<br />Bereiche mit &uuml;berschritten Sprachlern-Pl&auml;nen werden in roter Farbe dargestellt.</div> 
+		<div>'.get_string('meinesprachlernplaene_inhalt4','block_desp').'</div> 
 	</div>
 	';
 	echo $inhalt;
