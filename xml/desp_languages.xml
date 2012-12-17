@@ -2,242 +2,242 @@
 <desp_tables>
   <table name="block_desp_lang">
 		<id>1</id>
-		<name>Bengali</name>
+		<de>Bengali</de>
 		<en></en>
 	</table>
 		<table name="block_desp_lang">
 		<id>2</id>
-		<name>Deutsch</name>
+		<de>Deutsch</de>
 		<en>German</en>
 	</table>
   <table name="block_desp_lang">
 		<id>3</id>
-		<name>Albanisch</name>
+		<de>Albanisch</de>
 		<en>Albania</en>
 	</table>
  <table name="block_desp_lang">
 		<id>4</id>
-		<name>Arabisch</name>
+		<de>Arabisch</de>
 		<en></en>
 	</table>
  <table name="block_desp_lang">
 		<id>5</id>
-		<name>Bosnisch</name>
+		<de>Bosnisch</de>
 		<en></en>
 	</table>
  <table name="block_desp_lang">
 		<id>6</id>
-		<name>Bulgarisch</name>
+		<de>Bulgarisch</de>
 		<en></en>
 	</table>
  <table name="block_desp_lang">
 		<id>7</id>
-		<name>Burgenland-Kroatisch</name>
+		<de>Burgenland-Kroatisch</de>
 		<en></en>
 	</table>
  <table name="block_desp_lang">
 		<id>8</id>
-		<name>Chinesisch</name>
+		<de>Chinesisch</de>
 		<en></en>
 	</table>
  <table name="block_desp_lang">
 		<id>9</id>
-		<name>Dänisch</name>
+		<de>Dänisch</de>
 		<en></en>
 	</table>
  <table name="block_desp_lang">
 		<id>10</id>
-		<name>Englisch</name>
+		<de>Englisch</de>
 		<en>English</en>
 	</table>
  <table name="block_desp_lang">
 		<id>11</id>
-		<name>Finnisch</name>
+		<de>Finnisch</de>
 		<en></en>
 	</table>
  <table name="block_desp_lang">
 		<id>12</id>
-		<name>Französisch</name>
+		<de>Französisch</de>
 		<en>French</en>
 	</table>
  <table name="block_desp_lang">
 		<id>13</id>
-		<name>Griechisch</name>
+		<de>Griechisch</de>
 		<en></en>
 	</table>
  <table name="block_desp_lang">
 		<id>14</id>
-		<name>Gujarati</name>
+		<de>Gujarati</de>
 		<en></en>
 	</table>
 	 <table name="block_desp_lang">
 		<id>15</id>
-		<name>Hebräisch</name>
+		<de>Hebräisch</de>
 		<en></en>
 	</table>
 		      <table name="block_desp_lang">
 		<id>16</id>
-		<name>Hindi</name>
+		<de>Hindi</de>
 		<en></en>
 	</table>
  <table name="block_desp_lang">
 		<id>17</id>
-		<name>Indonesisch</name>
+		<de>Indonesisch</de>
 		<en></en>
 	</table>
  <table name="block_desp_lang">
 		<id>18</id>
-		<name>Italienisch</name>
+		<de>Italienisch</de>
 		<en>Italian</en>
 	</table>
  <table name="block_desp_lang">
 		<id>19</id>
-		<name>Japanisch</name>
+		<de>Japanisch</de>
 		<en></en>
 	</table>
  <table name="block_desp_lang">
 		<id>20</id>
-		<name>Koreanisch</name>
+		<de>Koreanisch</de>
 		<en></en>
 	</table>
  <table name="block_desp_lang">
 		<id>21</id>
-		<name>Kroatisch</name>
+		<de>Kroatisch</de>
 		<en></en>
 	</table>
  <table name="block_desp_lang">
 		<id>22</id>
-		<name>Kurdisch</name>
+		<de>Kurdisch</de>
 		<en></en>
 	</table>
  <table name="block_desp_lang">
 		<id>23</id>
-		<name>Mazedonisch</name>
+		<de>Mazedonisch</de>
 		<en></en>
 	</table>
 	      <table name="block_desp_lang">
 		<id>24</id>
-		<name>Marathi</name>
+		<de>Marathi</de>
 		<en></en>
 	</table>
  <table name="block_desp_lang">
 		<id>25</id>
-		<name>Niederländisch</name>
+		<de>Niederländisch</de>
 		<en></en>
 	</table>
 	     <table name="block_desp_lang">
 		<id>26</id>
-		<name>Norwegisch</name>
+		<de>Norwegisch</de>
 		<en></en>
 	</table>
  <table name="block_desp_lang">
 		<id>27</id>
-		<name>Persisch</name>
+		<de>Persisch</de>
 		<en></en>
 	</table>
  <table name="block_desp_lang">
 		<id>28</id>
-		<name>Philippinisch</name>
+		<de>Philippinisch</de>
 		<en></en>
 	</table>
  <table name="block_desp_lang">
 		<id>29</id>
-		<name>Polnisch</name>
+		<de>Polnisch</de>
 		<en></en>
 	</table>
  <table name="block_desp_lang">
 		<id>30</id>
-		<name>Portugiesisch</name>
+		<de>Portugiesisch</de>
 		<en></en>
 	</table>
  <table name="block_desp_lang">
 		<id>31</id>
-		<name>Romanes</name>
+		<de>Romanes</de>
 		<en></en>
 	</table>
  <table name="block_desp_lang">
 		<id>32</id>
-		<name>Rumänisch</name>
+		<de>Rumänisch</de>
 		<en></en>
 	</table>
  <table name="block_desp_lang">
 		<id>33</id>
-		<name>Russisch</name>
+		<de>Russisch</de>
 		<en>Russian</en>
 	</table>
  <table name="block_desp_lang">
 		<id>34</id>
-		<name>Schwedisch</name>
+		<de>Schwedisch</de>
 		<en></en>
 	</table>
  <table name="block_desp_lang">
 		<id>35</id>
-		<name>Serbisch</name>
+		<de>Serbisch</de>
 		<en></en>
 	</table>
  <table name="block_desp_lang">
 		<id>36</id>
-		<name>Slowakisch</name>
+		<de>Slowakisch</de>
 		<en></en>
 	</table>
  <table name="block_desp_lang">
 		<id>37</id>
-		<name>Slowenisch</name>
+		<de>Slowenisch</de>
 		<en></en>
 	</table>
  <table name="block_desp_lang">
 		<id>38</id>
-		<name>Spanisch</name>
+		<de>Spanisch</de>
 		<en>Spanish</en>
 	</table>
  <table name="block_desp_lang">
 		<id>39</id>
-		<name>Tamil</name>
+		<de>Tamil</de>
 		<en></en>
 	</table>
  <table name="block_desp_lang">
 		<id>40</id>
-		<name>Telugu</name>
+		<de>Telugu</de>
 		<en></en>
 	</table>
 	      <table name="block_desp_lang">
 		<id>41</id>
-		<name>Thailändisch</name>
+		<de>Thailändisch</de>
 		<en></en>
 	</table>
  <table name="block_desp_lang">
 		<id>42</id>
-		<name>Tschechisch</name>
+		<de>Tschechisch</de>
 		<en></en>
 	</table>
  <table name="block_desp_lang">
 		<id>43</id>
-		<name>Türkisch</name>
+		<de>Türkisch</de>
 		<en></en>
 	</table>
  <table name="block_desp_lang">
 		<id>44</id>
-		<name>Ukrainisch</name>
+		<de>Ukrainisch</de>
 		<en></en>
 	</table>
 	      <table name="block_desp_lang">
 		<id>45</id>
-		<name>Ungarisch</name>
+		<de>Ungarisch</de>
 		<en></en>
 	</table>
        <table name="block_desp_lang">
 		<id>46</id>
-		<name>Urdu</name>
+		<de>Urdu</de>
 		<en></en>
 	</table>
  <table name="block_desp_lang">
 		<id>47</id>
-		<name>Vietnamesisch</name>
+		<de>Vietnamesisch</de>
 		<en></en>
 	</table>
 	<table name="block_desp_lang">
 		<id>48</id>
-		<name>Weißrussisch</name>
+		<de>Weißrussisch</de>
 		<en></en>
 	</table>
 </desp_tables>
