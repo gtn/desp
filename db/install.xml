@@ -114,7 +114,7 @@
         <FIELD NAME="id" TYPE="int" LENGTH="11" NOTNULL="true" UNSIGNED="true" SEQUENCE="true" NEXT="de"/>
         <FIELD NAME="de" TYPE="text" LENGTH="small" NOTNULL="false" SEQUENCE="false" PREVIOUS="id" NEXT="userid"/>
         <FIELD NAME="userid" TYPE="int" LENGTH="20" NOTNULL="false" UNSIGNED="false" DEFAULT="0" SEQUENCE="false" PREVIOUS="de" NEXT="en"/>
-        <FIELD NAME="en" TYPE="text" LENGTH="small" NOTNULL="false" SEQUENCE="false" COMMENT="english" PREVIOUS="userid"/>
+        <FIELD NAME="en" TYPE="text" LENGTH="small" NOTNULL="true" SEQUENCE="false" COMMENT="english" PREVIOUS="userid"/>
       </FIELDS>
       <KEYS>
         <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
