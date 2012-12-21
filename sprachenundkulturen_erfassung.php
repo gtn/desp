@@ -15,7 +15,7 @@ $category = $DB->get_record('block_desp_cultures_item_cat',array("id" => $catid)
 
 $category->titleshort = str_replace(" ","",strtolower($category->title));
 if($catid == 5)
-	$category->titleshort = "arbeitundoeffentlichesleben";
+	$category->titleshort = "arbeitenundoeffentlichesleben";
 
 require_login($courseid);
 $course = $DB->get_record('course', array("id" => $courseid));
@@ -137,7 +137,7 @@ else{$tdossier='<textarea cols="" rows="5" name="text2n[]" class="sk3"></textare
 						<div>
 					<input type="hidden" name="data" value="gesendet" /></div>';
 								$i=1;
-								$kategoriename=$category->title;
+								$kategoriename=get_string(strtolower(str_replace("ö", "oe", str_replace(" ", "", $category->title))), 'block_desp');
 								$inhalt.='<h2 class="desp_sk_zwheader">'.$kategoriename.'</h2>';
 								$inhalt.='		
 										

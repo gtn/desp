@@ -309,7 +309,7 @@ function block_desp_print_header($item_identifier,$closehead=true,$printit=true)
 			$navlinks[] = array('name' => get_string('sprachenbiografie', 'block_desp'), 'link' => 'sprachenbiografie.php?courseid='.$COURSE->id, 'type' => 'misc');
 			$navlinks[] = array('name' => get_string('sprachenchecklisten', 'block_desp'), 'link' => 'sprachenchecklisten.php?courseid='.$COURSE->id, 'type' => 'misc');
 		}
-		if($item_identifier == "miteinanderleben" || $item_identifier == "kleidungundwohnen" || $item_identifier == "schuleundfreizeit" || $item_identifier == "regelnundgesetze" || $item_identifier == "arbeitundoeffentlichesleben" || $item_identifier == "wirerforschensprachenundschriften") {
+		if($item_identifier == "miteinanderleben" || $item_identifier == "kleidungundwohnen" || $item_identifier == "schuleundfreizeit" || $item_identifier == "regelnundgesetze" || $item_identifier == "arbeitenundoeffentlichesleben" || $item_identifier == "wirerforschensprachenundschriften") {
 			$navlinks[] = array('name' => get_string('sprachenbiografie', 'block_desp'), 'link' => 'sprachenbiografie.php?courseid='.$COURSE->id, 'type' => 'misc');
 			$navlinks[] = array('name' => get_string("sprachenundkulturen_items", "block_desp"), 'link' => 'sprachenundkulturen_items.php?courseid='.$COURSE->id, 'type' => 'misc');
 		}
