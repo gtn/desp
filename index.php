@@ -96,6 +96,7 @@ echo block_desp_lernplanalarm();
 		<div id="startcols3">
 			<div class="clearfix">
 				<div class="startsymbhide" onmouseover="toggleDiv('toggledossier')" onmouseout="toggleDivOut('toggledossier')">
+				<?php if($DB->get_record('block',array("name"=>"exaport"))) {?>
 				<h3>
 					<a href="<?php echo $CFG->wwwroot;?>/blocks/exaport/view_items.php?courseid=<?php echo $courseid ?>">
 						<?php echo get_string('dossier','block_desp'); ?>	
@@ -104,7 +105,12 @@ echo block_desp_lernplanalarm();
 				
 					<a href="<?php echo $CFG->wwwroot;?>/blocks/exaport/view_items.php?courseid=<?php echo $courseid ?>">
 						<img src="images/symdossgr.jpg" alt="Dossier" /></a>
-				
+				<?php } else { ?>
+				<h3>
+						<?php echo get_string('dossier','block_desp'); ?>	
+				</h3>
+						<img src="images/symdossgr.jpg" alt="Dossier" />
+				<?php } ?>
 				</div>
 			</div>
 		</div>
