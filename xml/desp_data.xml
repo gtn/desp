@@ -5,7 +5,7 @@
 		<title><![CDATA[education Level 1]]></title>
 		<sorting>1</sorting>
 	</table>
-		<table name="block_desp_schooltypes">
+	<table name="block_desp_schooltypes">
 		<uid>1</uid>
 		<title><![CDATA[Schooltype1]]></title>
 		<elid>1</elid>
@@ -29,8 +29,64 @@
 	</table>
 	<table name="block_desp_descriptors">
 		<uid>1</uid>
-		<title><![CDATA[Descriptor 1]]></title>
-		<niveauid>1</niveauid>
+		<title><![CDATA[Descriptor A1.1]]></title>
+		<niveauid>5</niveauid>
+		<sorting>1</sorting>
+		<skillid>1</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>2</uid>
+		<title><![CDATA[Descriptor A1.2]]></title>
+		<niveauid>6</niveauid>
+		<sorting>1</sorting>
+		<skillid>1</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>3</uid>
+		<title><![CDATA[Descriptor B1.1]]></title>
+		<niveauid>7</niveauid>
+		<sorting>1</sorting>
+		<skillid>1</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>4</uid>
+		<title><![CDATA[Descriptor B1.2]]></title>
+		<niveauid>8</niveauid>
+		<sorting>1</sorting>
+		<skillid>1</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5</uid>
+		<title><![CDATA[Descriptor A2.1]]></title>
+		<niveauid>13</niveauid>
+		<sorting>1</sorting>
+		<skillid>1</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>6</uid>
+		<title><![CDATA[Descriptor A2.2]]></title>
+		<niveauid>14</niveauid>
+		<sorting>1</sorting>
+		<skillid>1</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>7</uid>
+		<title><![CDATA[Descriptor B2.1]]></title>
+		<niveauid>15</niveauid>
+		<sorting>1</sorting>
+		<skillid>1</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>8</uid>
+		<title><![CDATA[Descriptor B2.2]]></title>
+		<niveauid>16</niveauid>
 		<sorting>1</sorting>
 		<skillid>1</skillid>
 		<parent_id>0</parent_id>
@@ -69,22 +125,195 @@
 	<table name="block_desp_niveaus">
 		<uid>1</uid>
 		<title><![CDATA[A1]]></title>
+		<parent_niveau>0</parent_niveau>
+		<sorting>128</sorting>
+	</table>
+	<table name="block_desp_niveaus">
+		<uid>2</uid>
+		<title><![CDATA[A2]]></title>
+		<parent_niveau>0</parent_niveau>
+		<sorting>256</sorting>
+	</table>
+	<table name="block_desp_niveaus">
+		<uid>3</uid>
+		<title><![CDATA[B1]]></title>
+		<parent_niveau>0</parent_niveau>
+		<sorting>512</sorting>
+	</table>
+	<table name="block_desp_niveaus">
+		<uid>4</uid>
+		<title><![CDATA[B2]]></title>
+		<parent_niveau>0</parent_niveau>
+		<sorting>768</sorting>
+	</table>
+	<table name="block_desp_niveaus">
+		<uid>5</uid>
+		<title><![CDATA[A1.1]]></title>
 		<parent_niveau>1</parent_niveau>
-		<sorting>1</sorting>
+		<sorting>1024</sorting>
+	</table>
+	<table name="block_desp_niveaus">
+		<uid>6</uid>
+		<title><![CDATA[A1.2]]></title>
+		<parent_niveau>1</parent_niveau>
+		<sorting>1280</sorting>
+	</table>
+	<table name="block_desp_niveaus">
+		<uid>7</uid>
+		<title><![CDATA[A2.1]]></title>
+		<parent_niveau>2</parent_niveau>
+		<sorting>1536</sorting>
+	</table>
+	<table name="block_desp_niveaus">
+		<uid>8</uid>
+		<title><![CDATA[A2.2]]></title>
+		<parent_niveau>2</parent_niveau>
+		<sorting>1792</sorting>
+	</table>
+	<table name="block_desp_niveaus">
+		<uid>9</uid>
+		<title><![CDATA[B1.1]]></title>
+		<parent_niveau>3</parent_niveau>
+		<sorting>2048</sorting>
+	</table>
+	<table name="block_desp_niveaus">
+		<uid>10</uid>
+		<title><![CDATA[B1.2]]></title>
+		<parent_niveau>3</parent_niveau>
+		<sorting>2304</sorting>
+	</table>
+	<table name="block_desp_niveaus">
+		<uid>11</uid>
+		<title><![CDATA[B2.1]]></title>
+		<parent_niveau>4</parent_niveau>
+		<sorting>2560</sorting>
+	</table>
+	<table name="block_desp_niveaus">
+		<uid>12</uid>
+		<title><![CDATA[B2.2]]></title>
+		<parent_niveau>4</parent_niveau>
+		<sorting>2816</sorting>
 	</table>
 	<table name="block_desp_niveau_texte">
-		<uid>1</uid>
-		<title><![CDATA[Niveau Text1]]></title>
+		<uid>5</uid>
+		<title><![CDATA[Ich kann einzelne vertraute Namen, Wörter und ganz einfache Sätze verstehen, z.B. auf Schildern, Plakaten oder in Katalogen.]]></title>
+		<niveauid>1</niveauid>
+		<skillid>3</skillid>
+	</table>
+	<table name="block_desp_niveau_texte">
+		<uid>33</uid>
+		<title><![CDATA[Ich kann kurze, einfache Texte verstehen. Ich kann in einfachen Alltagstexten (z.B. Anzeigen, Prospekten, Speisekarten oder Fahrplänen) konkrete, vorhersehbare Informationen auffinden, und ich kann kurze, einfache persÃ¶nliche Briefe verstehen.]]></title>
+		<niveauid>2</niveauid>
+		<skillid>3</skillid>
+	</table>
+	<table name="block_desp_niveau_texte">
+		<uid>34</uid>
+		<title><![CDATA[Ich kann Texte verstehen, in denen vor allem sehr gebrÃ¤uchliche Alltags- oder Berufssprache vorkommt. Ich kann private Briefe verstehen, in denen von Ereignissen, Gefühlen und Wünschen berichtet wird. ]]></title>
+		<niveauid>3</niveauid>
+		<skillid>3</skillid>
+	</table>
+	<table name="block_desp_niveau_texte">
+		<uid>40</uid>
+		<title><![CDATA[Ich kann über Themen, die mir vertraut sind oder mich persönlich interessieren, einfache zusammenhängende Texte schreiben. Ich kann persönliche Briefe schreiben und darin von Erfahrungen und Eindrücken berichten.]]></title>
+		<niveauid>3</niveauid>
+		<skillid>2</skillid>
+	</table>
+	<table name="block_desp_niveau_texte">
+		<uid>43</uid>
+		<title><![CDATA[Ich kann kurze, einfache Notizen und Mitteilungen schreiben. Ich kann  einen ganz einfachen persönlichen Brief schreiben, z.B. um mich für etwas zu bedanken.]]></title>
+		<niveauid>2</niveauid>
+		<skillid>2</skillid>
+	</table>
+	<table name="block_desp_niveau_texte">
+		<uid>46</uid>
+		<title><![CDATA[Ich kann eine kurze einfache Postkarte schreiben, z.B. Feriengrüße. Ich kann auf Formularen, z.B. in Hotels, Namen, Adresse, Nationalität usw. eintragen.]]></title>
+		<niveauid>1</niveauid>
+		<skillid>2</skillid>
+	</table>
+	<table name="block_desp_niveau_texte">
+		<uid>49</uid>
+		<title><![CDATA[Ich kann die Hauptpunkte verstehen, wenn klare Standardsprache verwendet wird und wenn es um vertraute Dinge aus Arbeit, Schule und Freizeit usw. geht. Ich kann kurze ErzÃ¤hlungen verstehen. Ich kann vielen Radio- und Fernsehsendungen über aktuelle Ereignisse und über Themen aus meinem Berufs- oder Interessensgebiet die Hauptinformationen entnehmen, wenn relativ langsam und deutlich gesprochen wird.]]></title>
+		<niveauid>3</niveauid>
+		<skillid>1</skillid>
+	</table>
+	<table name="block_desp_niveau_texte">
+		<uid>52</uid>
+		<title><![CDATA[Ich kann einzelne Sätze und die gebrÃ¤uchlichsten Wörter verstehen, wenn es um für mich wichtige Dinge geht (z.B. sehr einfache  Informationen zur Person und zur Familie, Einkaufen, Arbeit, nähere Umgebung), sofern langsam und deutlich gesprochen wird. Ich verstehe das Wesentliche von kurzen, klaren und einfachen  Mitteilungen und Durchsagen.]]></title>
+		<niveauid>2</niveauid>
+		<skillid>1</skillid>
+	</table>
+	<table name="block_desp_niveau_texte">
+		<uid>55</uid>
+		<title><![CDATA[Ich kann vertraute Wörter und ganz einfache Sätze  verstehen, die sich auf mich selbst, meine Familie und auf konkrete Dinge um mich herum beziehen, wenn sehr langsam und deutlich gesprochen wird.]]></title>
 		<niveauid>1</niveauid>
 		<skillid>1</skillid>
+	</table>
+	<table name="block_desp_niveau_texte">
+		<uid>58</uid>
+		<title><![CDATA[Ich kann in einfachen, zusammenhängenden Sätzen sprechen, um Erfahrungen und Ereignisse oder meine Träume, Hoffnungen und Ziele zu beschreiben. Ich kann kurz meine Meinungen und Pläne erklären und begründen. Ich kann eine Geschichte erzählen oder eine Handlung eines Buches oder Films wiedergeben und meine Reaktionen beschreiben.]]></title>
+		<niveauid>3</niveauid>
+		<skillid>5</skillid>
+	</table>
+	<table name="block_desp_niveau_texte">
+		<uid>61</uid>
+		<title><![CDATA[Ich kann mit einer Reihe von Sätzen und mit einfachen Mitteln z.B. meine Familie, andere Leute, meine Wohnsituation, meine Ausbildung und meine gegenwärtige oder letzte berufliche Tätigkeit beschreiben.]]></title>
+		<niveauid>2</niveauid>
+		<skillid>5</skillid>
+	</table>
+	<table name="block_desp_niveau_texte">
+		<uid>64</uid>
+		<title><![CDATA[Ich kann einfache Wendungen und Sätze gebrauchen, um Leute, die ich kenne, zu beschreiben und um zu beschreiben, wo ich wohne.]]></title>
+		<niveauid>1</niveauid>
+		<skillid>5</skillid>
+	</table>
+	<table name="block_desp_niveau_texte">
+		<uid>67</uid>
+		<title><![CDATA[Ich kann die meisten Situationen bewältigen, denen  man auf Reisen im Sprachgebiet begegnet. Ich kann ohne Vorbereitung an Gesprächen über Themen teilnehmen, die mir vertraut sind, die mich persönlich interessieren oder die sich auf Themen des Alltags wie Familie, Hobbys, Arbeit. Reisen aktuelle Ereignisse usw. beziehen.]]></title>
+		<niveauid>3</niveauid>
+		<skillid>4</skillid>
+	</table>
+	<table name="block_desp_niveau_texte">
+		<uid>70</uid>
+		<title><![CDATA[Ich kann mich in einfachen, routinemäßigen Situationen verständigen, in denen es um einen einfachen, direkten Austausch von Informationen und um vertraute Themen und Tätigkeiten geht. Ich kann ein sehr kurzes Kontaktgespräch führen, verstehe aber normalerweise nicht genug, um selbst das Gespräch in Gang zu halten.]]></title>
+		<niveauid>2</niveauid>
+		<skillid>4</skillid>
+	</table>
+	<table name="block_desp_niveau_texte">
+		<uid>73</uid>
+		<title><![CDATA[Ich kann mich auf einfache Art verständigen, wenn mein Gesprächspartner/meine Gesprächspartnerin  bereit ist, etwas langsamer zu wiederholen oder anders zu sagen, und mir dabei hilft zu formulieren, was ich zu sagen versuche. Ich kann einfache Fragen stellen und beantworten, sofern es sich um unmittelbar notwendige Dinge und um sehr vertraute Themen handelt.]]></title>
+		<niveauid>1</niveauid>
+		<skillid>4</skillid>
 	</table>
 	<table name="block_desp_descrtopic_mm">
 		<descrid>1</descrid>
 		<topicid>1</topicid>
 	</table>
-	<table name="block_desp_descrexamp_mm">
-		<exampid>1</exampid>
-		<descrid>1</descrid>
-		<source>2</source>
+	<table name="block_desp_descrtopic_mm">
+		<descrid>2</descrid>
+		<topicid>1</topicid>
+	</table>
+	<table name="block_desp_descrtopic_mm">
+		<descrid>3</descrid>
+		<topicid>1</topicid>
+	</table>
+	<table name="block_desp_descrtopic_mm">
+		<descrid>4</descrid>
+		<topicid>1</topicid>
+	</table>
+	<table name="block_desp_descrtopic_mm">
+		<descrid>5</descrid>
+		<topicid>1</topicid>
+	</table>
+	<table name="block_desp_descrtopic_mm">
+		<descrid>6</descrid>
+		<topicid>1</topicid>
+	</table>
+	<table name="block_desp_descrtopic_mm">
+		<descrid>7</descrid>
+		<topicid>1</topicid>
+	</table>
+	<table name="block_desp_descrtopic_mm">
+		<descrid>8</descrid>
+		<topicid>1</topicid>
 	</table>
 </exabis_competences_tables>
