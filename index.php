@@ -124,7 +124,12 @@ echo block_desp_lernplanalarm();
 </div>
 
 <div id="toggledossier" class="messagetxthidetwo" style="display:none;">
-	 <?php echo get_string('dossier_inhalt','block_desp'); ?>
+	 <?php
+	 if($DB->get_record('block',array("name"=>"exaport")))
+	 	echo get_string('dossier_inhalt','block_desp');
+	 else 
+	 	echo get_string('dossier_fehlt','block_desp');
+	 ?>
 </div>
 		
 		 <br />

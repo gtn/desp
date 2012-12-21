@@ -68,6 +68,7 @@ $string['esp2'] = 'Your language portfolio consists of three parts: the passport
 $string['sprachenpass_inhalt'] = 'The <b>language passport</b> is a summary (of checklists) of your language biography. For each language you speak, an individual profile can be filled out. The passport is generated automatically.';
 $string['sprachenbiografie_inhalt'] = 'The <b>language biography</b> of the DELP describes your life as a language learner: which language/s do you speak at home? Which language/s do you speak with your friends? Which language/s do you speak at school? Where did you learn this/these language/s? Why would you like to learn a new language? The language biography also contains checklists, which will help you assess the knowledge you already have in a language and which learning goals you should aim at next.';
 $string['dossier_inhalt'] = 'The <b>portfolio</b> has the function of a folder. Here you should - just like in a file folder - document especially successful work which you are proud of: Written tasks of any type, but also audio- and videoclips. Also you can archive certificates and acknowledgments that you have received for learning languages outside of school.';
+$string['dossier_fehlt'] = 'To use the portfolio function the site administrator has to install the exabis ePortfolio block';
 $string['texte'] = 'Texts: Angela Horak, Margarete Nezbeda, Rose Oehler, Gunther Abuja';
 $string['koordination'] = 'Coordination: Anita Keiper, Ulrich Pichler, Stephan Waba';
 $string['programmierung'] = 'development: ';
