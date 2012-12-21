@@ -96,7 +96,7 @@ block_desp_splg_savedata(1);
 
 <br /><br />
 <p>
-	<?php echo get_string('weitere','block_desp'); ?><a href="http://www.oesz.at/download/esp_plattform/Schuelerbereich/A10_Projekte_Sprachen_Schriften.pdf"><span class="mehrtext"><?php echo get_string('vorschlaegefuerforschungsprojekte','block_desp'); ?></span></a><?php echo get_string('und','block_desp'); ?><a href="a11.pdf"><span class="mehrtext"><?php echo get_string('voxmiprojekte','block_desp'); ?></span></a><?php echo get_string('findestaufplattform','block_desp'); ?>
+	<?php echo get_string('weitere','block_desp'); ?><a href="http://www.oesz.at/download/esp_plattform/Schuelerbereich/A10_Projekte_Sprachen_Schriften.pdf"><span class="mehrtext"><?php echo get_string('vorschlaegefuerforschungsprojekte','block_desp'); ?></span></a><?php echo get_string('findestaufplattform','block_desp'); ?>
 </p>
 
 
