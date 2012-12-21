@@ -609,3 +609,4 @@ $string['sprechen'] = 'sprechen';
 $string['verstehen'] = 'verstehen';
 $string['hoehren'] = 'hearing';
 $string['langcode'] = 'de';
+$string['noimport'] = 'Es wurden noch keine Daten importiert, deswegen fehlen einige Inhalte. Bitte verständige den zuständigen Website-Administrator!';

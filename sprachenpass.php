@@ -24,6 +24,9 @@ $PAGE->set_url($url);
 //$inhalt=block_desp_print_header("sprachenpass",true,false);
 $inhalt="";
 
+if(!block_desp_checkimport())
+	header("Location: ".$CFG->wwwroot."/blocks/desp/index.php?courseid=".$courseid);
+
 //$niveaus =  $DB->get_records('block_desp_niveaus', array('parent_niveau'=>0), 'sorting');
 $niveaus = array();
 $p_niveaus =  $DB->get_records('block_desp_niveaus', array('parent_niveau'=>0), 'sorting');

@@ -188,6 +188,10 @@ function block_desp_splitdatum($datumstr){
 		}
 		return $ds;
 }
+function block_desp_checkimport() {
+	global $DB;
+	return ($DB->get_records('block_desp_niveaus')) ? true : false;
+}
 function block_desp_lernplanalarm(){
 	global $USER;
 	$lernplansalarm=block_desp_ist_lernplanueberschreitung(1);

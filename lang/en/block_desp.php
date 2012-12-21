@@ -501,3 +501,4 @@ $string['sprechen'] = 'speaking';
 $string['verstehen'] = 'understanding';
 $string['hoehren'] = 'hearing';
 $string['langcode'] = 'en';
+$string['noimport'] = 'No data has been imported yet, so some content is missing, please notify your site administator';

@@ -52,6 +52,28 @@ echo $hdrtmp;
         <p><b><?php echo get_string('esp2','block_desp'); ?></b></p>
         <br />
 <?php
+if(!block_desp_checkimport()) {
+	echo '
+	<div class="messageimportantinfo">
+		<div style="font-size:25px;font-weight: bold; float:left;font-family: Times, Verdana, Arial, sans-serif; padding-right:20px;">!</div>
+		<div>'.get_string('noimport','block_desp').'</div> 
+	</div>
+	';
+	?>
+	<br />
+	<div class="top"><p><a href="http://www.bmukk.gv.at/"><img src="images/bmukk.png" alt="bm:ukk"></a>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.oesz.at/"><img src="images/oesz.png" alt="Das Fachinstitut für Innovationen im Sprachenlernen und -lehren."></a>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.gtn-solutions.com"><img src="images/gtn.png" alt=""></a>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"><img src="images/vph.png" alt=""></a>
+	</p></div>
+	<br />
+	<?php echo get_string('texte','block_desp'); ?><br />
+	<?php echo get_string('koordination','block_desp'); ?><br />
+	<?php echo get_string('programmierung','block_desp'); ?><a href="http://www.gtn-solutions.com">gtn GmbH</a></div>
+	<?php
+	echo $OUTPUT->footer($course);
+	exit;
+}
 echo block_desp_lernplanalarm();
 ?>
 <div id="startcol" class="clearfix">

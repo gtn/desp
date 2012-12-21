@@ -11,6 +11,10 @@ require_login($courseid);
 $course = $DB->get_record('course',array("id"=>$courseid));
 $url = '/blocks/desp/sprachenbiografie.php';
 $PAGE->set_url($url);
+
+if(!block_desp_checkimport())
+	header("Location: ".$CFG->wwwroot."/blocks/desp/index.php?courseid=".$courseid);
+
 block_desp_print_header("sprachenbiografie");
 
 $new_comments = block_desp_check_new_learnplan_comments();
