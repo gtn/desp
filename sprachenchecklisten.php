@@ -157,11 +157,13 @@ block_desp_print_header("sprachenchecklisten");
             </div>
         </div>
 
+        <?php if(current_language() == "de") { ?>
         <br /><br /> 
         		<p style="text-align:center;">
 					<a href="images/ses_grafik.gif"><img src="images/ses_grafik_kl.gif" alt="Sprachencheckliste Beispiel" /></a>
 				</p>
         <br />
+        <?php } ?>
 
        
 
