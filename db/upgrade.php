@@ -53,13 +53,15 @@ function xmldb_block_desp_upgrade($oldversion) {
             $dbman->add_field($table, $field);
         }
         $sql = "UPDATE {block_desp_lang} SET de=name";
-				$DB->execute($sql);
 				
+        try {
+        	$DB->execute($sql);
 				$field = new xmldb_field('name');
 				$dbman->drop_field($table, $field);
-        ////
-        
-	                
+        } catch (Exception $e) {
+        	
+        }
+				
 	      //upgrade_block_savepoint(true, 2009011700, 'block_desp');
     }
     
