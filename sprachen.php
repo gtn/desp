@@ -100,9 +100,11 @@ block_desp_print_header("sprachen");
         </div>
 
 	<form method="post" action="<?php echo $_SERVER['REQUEST_URI'] ?>">
-		<input type="hidden" name="do" value="add-language" />
-		<input type="text" name="name" />
-		<input type="submit" value="<?php echo get_string('sprachehinzu','block_desp'); ?>" />
+		<div>
+			<input type="hidden" name="do" value="add-language" />
+			<input type="text" name="name" />
+			<input type="submit" value="<?php echo get_string('sprachehinzu','block_desp'); ?>" />
+		</div>
 	</form>
 
 	<?php 
@@ -121,7 +123,7 @@ block_desp_print_header("sprachen");
 					if ($references = block_desp_lang_references($language->id)) {
 						echo join(', ', $references);
 					} else {
-						echo '<a href="sprachen.php?courseid='.$COURSE->id.'&do=delete-language&id='.$language->id.'">'.get_string('loeschen','block_desp').'</a>';
+						echo '<a href="sprachen.php?courseid='.$COURSE->id.'&amp;do=delete-language&amp;id='.$language->id.'">'.get_string('loeschen','block_desp').'</a>';
 					}
 				?></td>
             </tr>

@@ -48,7 +48,7 @@ block_desp_print_header("sprachlerngeschichten");
 			<div id="messageboxslp3" style="background: url('images/message_lp.gif') no-repeat left top;margin-left: 20px;">
           		<div id="messagetxtslp3" style="width: 455px;">
           			<a href="<?php echo $CFG->wwwroot;?>/blocks/desp/sprachlerngeschichte_schule.php?courseid=<?php echo $courseid ?>">
-            	    <?php echo get_string('sprachlicheschwerpunkt_inhalt', 'block_desp');?>
+            	  <?php echo get_string('sprachlicheschwerpunkt_inhalt', 'block_desp');?></a>
             	  </div>
         	</div>
 

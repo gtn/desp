@@ -14,10 +14,10 @@ $PAGE->set_url($url);
 
 function block_desp_get_first_lernpartner_check_item($checkitemid) {
 	global $USER, $DB;
-
+$langcode=get_string("langcode","block_desp");
 	// read first item data
 	$sql = 
-		'SELECT lernplans.id, lernplans.title, u.id AS uid, u.firstname, u.lastname, skill.id AS skillid, lang.$langcode AS language, check_lang.id AS userlanguageid, skill.title AS skill'.
+		'SELECT lernplans.id, lernplans.title, u.id AS uid, u.firstname, u.lastname, skill.id AS skillid, lang.'.$langcode.' AS language, check_lang.id AS userlanguageid, skill.title AS skill'.
 		' FROM {block_desp_learnplans} AS lernplans'.
 		' JOIN {block_desp_skills} AS skill ON lernplans.skillid=skill.id'.
 		' JOIN {user} AS u ON u.id=lernplans.userid'.
@@ -87,7 +87,7 @@ if ($checkitemid = optional_param('checkitemid', null, PARAM_INT))
 
 	?>
 		<form method="post">
-			<input type="hidden" name="do" value="save" />
+			<div><input type="hidden" name="do" value="save" /></div>
 		<?php
 		
 		$levelCnt1 = 0;
@@ -119,13 +119,13 @@ if ($checkitemid = optional_param('checkitemid', null, PARAM_INT))
                     	<input type="checkbox" value="on" name="check_item[<?php echo $check_item->id; ?>][lernpartner_einschaetzung]" <?php echo $tchecked; ?> />
                     	</td>
                     <td class="listselect">  
-					<textarea name="check_item[<?php echo $check_item->id; ?>][lernpartner_kommentar]"><?php echo @$check_item->lernpartner_kommentar; ?></textarea>
+					<textarea name="check_item[<?php echo $check_item->id; ?>][lernpartner_kommentar]" cols="50" rows="3"><?php echo @$check_item->lernpartner_kommentar; ?></textarea>
                     </td>
                 </tr>
 		
 		<?php } ?>
 			</table>
-			<input type="submit" value="<?php echo get_string('save', 'block_desp');?>" />
+			<div><input type="submit" value="<?php echo get_string('save', 'block_desp');?>" /></div>
 		</form>
 	<?php
 

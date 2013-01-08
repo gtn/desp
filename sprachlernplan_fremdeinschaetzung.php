@@ -145,8 +145,8 @@ echo '<div id="desp">';
 echo '<h2>'.get_string('einschaetzunglernpartners', 'block_desp').'</h2>';
 if (empty($items)) {
 	echo '<div id="messageboxslp3" style="background: url(images/message_lp.gif) no-repeat left top;">
-            <div id="messagetxtslp3">
-               '.get_string('nochkeineeinschaetzung', 'block_desp').'</span></a>
+            <div id="messagetxtslp3"><span>
+               '.get_string('nochkeineeinschaetzung', 'block_desp').'</span>
             </div>
         </div>';
 } else {
@@ -178,7 +178,7 @@ if (empty($items)) {
 		$DB->update_record('block_desp_learnplans',$item);
 	}
 	echo '<form method="post" action="'.$CFG->wwwroot.'/blocks/desp/sprachenbiografie.php?courseid='.$courseid.'">';
-	echo '<input type="submit" value="'.get_string('zurkenntnis', 'block_desp').'">';
+	echo '<div><input type="submit" value="'.get_string('zurkenntnis', 'block_desp').'" /></div>';
 	echo '</form>';
 }
 echo '<br /><br /><br /></div>';

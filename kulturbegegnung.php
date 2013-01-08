@@ -119,9 +119,10 @@ echo $hdrtmp;
       <br /><br /><br />
        <h2><?php echo get_string('bisherige_begegnungen','block_desp'); ?></h2>
       <br />
-      <table class="tableform3">
+      
       	<?php
       	$begegnungen =  $DB->get_records('block_desp_begegnung', array('userid'=>$USER->id), 'title');
+      	if (!empty($begegnungen)) echo '<table class="tableform3">';
       	foreach ($begegnungen as $begegnung){
       		echo '<tr><td style="background: url(\'images/collapsed.png\') no-repeat left center;clear:left;padding-left:20px;"><span class="kgbdate ">'.$begegnung->datum.'  </span></td><td class=""><a href="'.$CFG->wwwroot.'/blocks/desp/kulturbegegnung.php?courseid='.$courseid.'&amp;recid='.$begegnung->id.'">'.$begegnung->title.'</a></td>';
       		echo '<td style="padding-left:15px;" class=""><a href="'.$CFG->wwwroot.'/blocks/desp/kulturbegegnung.php?courseid='.$courseid.'&amp;did='.$begegnung->id.'"><img src="'.$CFG->wwwroot.'/pix/t/delete.gif" alt="delete" /></a></td>';
@@ -129,8 +130,9 @@ echo $hdrtmp;
       		echo '</tr>';
 
       	}
+      	if (!empty($begegnungen)) echo '</table>';
       	?>
-      </table>
+     
       
       
       
@@ -207,7 +209,7 @@ echo $hdrtmp;
 
         <table class="tableform3">
             <tr>
-				<?php echo get_string('einigezeitspaeter','block_desp'); ?></th>
+				<th><?php echo get_string('einigezeitspaeter','block_desp'); ?></th>
             </tr>
             <tr>
                 <td class="kgb"><textarea cols="" rows="" name="later" class=""><?php echo $later; ?></textarea></td>
@@ -228,10 +230,11 @@ echo $hdrtmp;
 
     </div>
 </div>
-</div>
+
 <?php
 	include_once ("despfooter.php");
 ?>
+</div>
 <?php
 echo $OUTPUT->footer($course);
 ?>

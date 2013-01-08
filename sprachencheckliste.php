@@ -212,7 +212,7 @@ echo '<script type="text/javascript" src="lib/wz_tooltip.js"></script>';
 		foreach ($descriptors as $descriptor) {
 
 			if ($lastNiveau != $descriptor->niveau) {
-				if ($levelCnt1) echo '</table><input type="submit" value="'.get_string('save', 'block_desp').'" /><p>&nbsp;</p>';
+				if ($levelCnt1) echo '</table><p><input type="submit" value="'.get_string('save', 'block_desp').'" />&nbsp;</p>';
 				$levelCnt1++;
 				$lastNiveau = $descriptor->niveau;
 				
@@ -246,7 +246,7 @@ echo '<script type="text/javascript" src="lib/wz_tooltip.js"></script>';
                     	?>
                     	</td>
                     <td class="listselect">    
-                    	<input type="hidden" name="descriptor[<?php echo $descriptor->desid; ?>][arrid]" value="<?php echo $i ?>">
+                    	<input type="hidden" name="descriptor[<?php echo $descriptor->desid; ?>][arrid]" value="<?php echo $i ?>" />
                     	<select size="1" name="descriptor[<?php echo $descriptor->desid; ?>][einschaetzung_selbst]">
                             <option></option>
                             <option value="2" <?php if(@$descriptor->einschaetzung_selbst==2) echo 'selected="selected"'; ?>>&#10003;&#10003;</option>

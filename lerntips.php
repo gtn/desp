@@ -17,13 +17,16 @@ $url = $CFG->wwwroot . $url;
 $identifier = "teachertabassigncompetenceexamples";
 $langid = optional_param('langid', 0, PARAM_INT);
 
-block_desp_print_header("lerntips",false);
-echo '<script type="text/javascript" src="lib/wz_tooltip.js"></script>';
-echo '<script type="text/javascript" src="lib/simpletreemenu.js"></script>
-      <link rel="stylesheet" type="text/css" href="lib/simpletree.css" />';
-
+$hdrtmp=block_desp_print_header("lerntips",true,false);
+$hdrers='
+<link rel="stylesheet" type="text/css" href="lib/simpletree.css" />
+';
+$hdrtmp=str_replace("</head>",$hdrers.'</head>',$hdrtmp);
+echo $hdrtmp;
+echo '<script type="text/javascript" src="lib/wz_tooltip.js"></script>
+<script type="text/javascript" src="lib/simpletreemenu.js"></script>';
 ?>
-</head><body>
+
 	<div id="desp">
 <div id="content">
 
@@ -35,6 +38,7 @@ echo '<script type="text/javascript" src="lib/simpletreemenu.js"></script>
             		<?php echo get_string('aufgabenchecklisten','block_desp'); ?></div>
         		</div>
 <form method="post" action="<?php echo $_SERVER['PHP_SELF'].'?courseid='.$courseid; ?>">
+<div>
 <?php echo get_string("filter", "block_desp") ?>
 <?php
 $langcode=get_string("langcode","block_desp");
@@ -43,17 +47,17 @@ $myLanguagesSql = 'SELECT lang.'.$langcode.',lang.id
 	INNER JOIN {block_desp_lang} AS lang ON ex.lang=lang.id
 	GROUP BY lang.id, lang.'.$langcode.' ORDER BY lang.'.$langcode;
 $myLanguages = $DB->get_records_sql($myLanguagesSql);
-?>
-<select name="langid">
-			<?php
+
+			if (!empty($myLanguages)) echo '<select name="langid">';
 			foreach ($myLanguages as $language) {
 				echo '<option value="'.$language->id.'"';
 				if ($langid==$language->id) echo ' selected="selected"';
 				echo '>'.$language->$langcode.'</option>';
 			}
-			?>
-			<input type="submit" value="<?php echo get_string("filteranwenden", "block_desp") ?>" />
-		</select>
+		if (!empty($myLanguages)) echo '</select>';
+		?>
+		<input type="submit" value="<?php echo get_string("filteranwenden", "block_desp") ?>" />
+	</div>
 </form>
 <br />
 </div>

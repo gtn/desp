@@ -119,7 +119,7 @@ foreach ($myLanguages as $language){
 	if ($es==1){
 		$est.='<h2 class="despsp2" style=""><input type="checkbox" value="1" name="sprache['.$language->id.'][show]"';
 		if (!empty($USER->desp[$language->id]["show"]) && $USER->desp[$language->id]["show"]==1) $est.=' checked="checked"';
-		$est.='>'.$language->$langcode.'</h2>';
+		$est.=' />'.$language->$langcode.'</h2>';
 	}
 	$showlang=false;
 	if (!empty($USER->desp)){
@@ -256,7 +256,7 @@ foreach ($myLanguages as $language){
 					//<input type="checkbox" name="sprache['.$language->id.'][show]">
 					if ($es==1) {
 						$est.='<h3 class="desp_sp_esh3">'.get_string("sp_dossierviews","block_desp").':</h3>';
-						$est.='<select class="desp_sp_einstellungen_dossier_select" multiple="multiple" name="sprache['.$language->id.'][views][]">';
+						$est.='<div><select class="desp_sp_einstellungen_dossier_select" multiple="multiple" name="sprache['.$language->id.'][views][]">';
 						$est.='<option value="-1"></option>';
 					}
 					$itemlog=array();
@@ -336,7 +336,7 @@ foreach ($myLanguages as $language){
 					}
 					if ($inhaltviews!="") $inhalt.= '<div><h2 class="despsp2">'.get_string("dossier","block_desp").'</h2></div>'.$inhaltviews;
 					if ($es==1) {
-						$est.='</select>';
+						$est.='</select></div>';
 					}
 				}//not empty views
 				$items =  $DB->get_records('block_exaportitem', array('userid'=>$USER->id,'langid'=>$language->id), 'name');
@@ -390,7 +390,7 @@ foreach ($myLanguages as $language){
 					$est.='<div class="desp_sp_einst_gers">'.get_string("sp_filelinks","block_desp").': <input type="checkbox" value="1" name="sprache['.$language->id.'][9998]"';
 					if (!empty($USER->desp[$language->id]["9998"]) && $USER->desp[$language->id]["9998"]==1) $est.=' checked="checked"';
 					if (empty($USER->desp)) $est.=' checked="checked"';
-					$est.='></div>';
+					$est.=' /></div>';
 					//$est.='<select class="desp_sp_einstellungen_dossier2_select" name="sprache['.$language->id.'][views][]">';
 				}
 					
@@ -526,8 +526,8 @@ if ($es==1){
 	$est.='<div class="desp_sp_einst_gers">'.get_string('gerstabelle', 'block_desp').'<input type="checkbox" value="1" name="sprache[9999]"';
 	if (!empty($USER->desp["9999"]) && $USER->desp["9999"]==1) $est.=' checked="checked"';
 	if (empty($USER->desp)) $est.=' checked="checked"';
-	$est.='></div>';
-	$est.='<input type="submit" name="sveeinstellung" value="'.get_string('einstellungenmerken', 'block_desp').'">';
+	$est.=' /></div>';
+	$est.='<div><input type="submit" name="sveeinstellung" value="'.get_string('einstellungenmerken', 'block_desp').'" /></div>';
 	$est.='</form>';
 }
 

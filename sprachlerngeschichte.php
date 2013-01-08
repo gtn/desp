@@ -101,7 +101,6 @@ $exaportitem=block_desp_pd_eportitems(0,$exaport);
 					<?php echo get_string('beispiel_liste','block_desp'); ?>
 				</tr>
 				<tr>
-				<tr>
 					<td class="handwriting">Hrvatski <sup>1</sup></td>
 					<td class="handwriting">s mamom/tatom</td>
 					<td class="handwriting">kad sam s njom</td>

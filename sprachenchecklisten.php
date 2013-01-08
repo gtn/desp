@@ -122,7 +122,7 @@ block_desp_print_header("sprachenchecklisten");
 </script>
 <div id="desp">
 <div id="page_margins">
-    <div id="content">
+   
  <div id="content">
 
         <h1><?php echo get_string('meinesprachencheckliste','block_desp'); ?></h1>
@@ -220,10 +220,11 @@ block_desp_print_header("sprachenchecklisten");
 
     </div>
 </div>
-</div>
+
 <?php
 	include_once ("despfooter.php");
 ?>
+</div>
 <?php
 echo $OUTPUT->footer($course);
 ?>

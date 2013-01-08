@@ -48,7 +48,7 @@ echo $hdrtmp;
 			foreach($categories as $category){
 				echo "<tr><td style='background: #ffefd3'>";
 				echo "<a class='overview ov_skill1' style='background: #ffefd3' href='".$url.$category->id."'>".get_string(strtolower(str_replace("ö", "oe", str_replace(" ", "", $category->title))), 'block_desp')."</a>";
-				echo "</td></tt>";
+				echo "</td></tr>";
 			}
 		?>
 		</tbody>

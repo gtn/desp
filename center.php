@@ -12,6 +12,7 @@ $url = '/blocks/desp/center.php';
 $PAGE->set_url($url);
 block_desp_print_header("center");
 ?>
+<div id="desp">
 <div id="page_margins">
     <div id="content">
 
@@ -33,7 +34,7 @@ echo '<table class="tableform3 sprachlernplantab"><tr><th colspan="4">'.get_stri
 		
 		echo '<td><a href="'.$CFG->wwwroot.'/blocks/desp/sprachlernplan_lernpartner_einschaetzung.php?courseid='.$COURSE->id.'&amp;checkitemid='.$item->id.'&amp;bl=center" class="link_center" style="color: #F25F2C !important;">'.get_string('feedbackansehen', 'block_desp').'</a></td></tr>';
 	}
-	echo '<tr><th colspan="4">'.get_string('checklisten', 'block_desp').'</th>';
+	echo '<tr><th colspan="4">'.get_string('checklisten', 'block_desp').'</th></tr>';
 	$items =get_lernpartner_check($USER->id);
 	foreach ($items as $item) {
 		echo '<tr><td>'.fullname($item).'</td><td>'.$item->language.'</td>';
@@ -108,6 +109,7 @@ echo $inhalt;
 <?php
 	include_once ("despfooter.php");
 ?>
+</div>
 <?php
 echo $OUTPUT->footer($course);
 ?>

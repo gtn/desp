@@ -176,10 +176,11 @@ $exaportitem=block_desp_pd_eportitems(0,$exaport);
 
     </div>
 </div>
-</div>
+
 <?php
 	include_once ("despfooter.php");
 ?>
+</div>
 <?php
 echo $OUTPUT->footer($course);
 ?>

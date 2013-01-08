@@ -107,7 +107,7 @@ function block_desp_slg_getEmptyRowTemplate($writetr=true,$scope,$felder="partne
 		if ($exaport==true && $feld=="dossier"){
 			$inhalt.= '<td>'.block_desp_pd_eportitems($dossier,$exaport).'</td>';
 		}else{
-			$inhalt.= '<td><textarea name="'.$feld.'[] cols="50" rows="1">###'.$feld.'###</textarea></td>';
+			$inhalt.= '<td><textarea name="'.$feld.'[]" cols="50" rows="1">###'.$feld.'###</textarea></td>';
 		}
 	}
 	$dateiname="sprachlerngeschichte";

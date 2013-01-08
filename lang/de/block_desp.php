@@ -290,7 +290,7 @@ $string['sprachendieichgelernthabe_tabelle'] = '<th class="tb121">Welche Sprache
 $string['sprachendieichgelernthabe_tabelle2'] = '<td class="handwriting">Italienisch</td>
                 <td class="handwriting">Im Kindergarten</td>
                 <td class="handwriting">Ein Jahr lang</td>
-                <td class="handwriting">Einmal in der Woche hat die Kinderg&auml;rtnerin nur Italienisch mit uns gesprochen. Wir haben Lieder und Spiele gelernt.';
+                <td class="handwriting">Einmal in der Woche hat die Kinderg&auml;rtnerin nur Italienisch mit uns gesprochen. Wir haben Lieder und Spiele gelernt.</td>';
 $string['sprachendieichgelernthabe_tabelle3'] = '<th class="tb121">Welche Sprachen?</th>
                     <th class="tb121">Wo?</th>
                     <th class="tb121">Wie lange?</th>
@@ -442,6 +442,7 @@ $string['lernplaene'] = 'Lernpl&auml;e';
 $string['name'] = 'Name';
 $string['sprachebewertung'] = 'Sprache';
 $string['bereichbewertung'] = 'Bereich';
+$string['bereich'] = 'Bereich';
 $string['einschaetzung'] = 'Einsch&auml;tzung';
 $string['feedbackansehen'] = 'Feedback ansehen';
 $string['checklisten'] = 'Checklisten';

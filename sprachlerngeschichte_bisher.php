@@ -111,7 +111,7 @@ $exaportitem=block_desp_pd_eportitems(0,$exaport);
                 <?php echo get_string('sprachendieichgelernthabe_tabelle','block_desp'); ?>
             </tr>
             <tr>
-                </td><?php echo get_string('sprachendieichgelernthabe_tabelle2','block_desp'); ?>
+                <?php echo get_string('sprachendieichgelernthabe_tabelle2','block_desp'); ?>
                 <td class="handwriting"><select class="selbox_exaportitems" name="dossier[]">
 <option value="837">Canzone.doc</option>
 <option value="876">Concerto.jpg</option>

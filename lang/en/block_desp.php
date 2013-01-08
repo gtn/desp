@@ -241,7 +241,7 @@ $string['sprachendieichgelernthabe_tabelle'] = '<th class="tb121">Which language
 $string['sprachendieichgelernthabe_tabelle2'] = '<td class="handwriting">Italian</td>
                 <td class="handwriting">In kindergarten</td>
                 <td class="handwriting">One year</td>
-                <td class="handwriting">Once in a week, our kindergarten teacher only spoke in Italian with us. We learned songs and games.';
+                <td class="handwriting">Once in a week, our kindergarten teacher only spoke in Italian with us. We learned songs and games.</td>';
 $string['sprachendieichgelernthabe_tabelle3'] = '<th class="tb121">Which languages?</th>
                     <th class="tb121">Where?</th>
                     <th class="tb121">How long?</th>

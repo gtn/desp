@@ -72,20 +72,20 @@ if ($checkitemid = optional_param('checkitemid', null, PARAM_INT)) {
 			$dbDescriptor->id = $id;
 			$DB->update_record('block_desp_check_item', $dbDescriptor);
 		}
-		if ($bl="center")redirect($CFG->wwwroot.'/blocks/desp/center.php?courseid='.$courseid);
+		if ($bl=="center")redirect($CFG->wwwroot.'/blocks/desp/center.php?courseid='.$courseid);
 		else redirect($_SERVER['REQUEST_URI']);
 		exit;
 	}
 	
 	
 	block_desp_print_header("lernpartner_einschaetzung");
-echo '<div id="desp">';
+  echo '<div id="desp">';
 	echo "<h2>".get_string('bewertungfuer', 'block_desp').fullname($checkitem).' / '.$checkitem->language.' / '.$checkitem->skill.' '.$checkitem->niveau.'</h2>';
 
-	?>
-		<form method="post">
-			<input type="hidden" name="do" value="save" />
-		<?php
+	//action="'.$CFG->wwwroot.'/blocks/desp/lernpartner_einschaetzung.php?courseid='.$courseid.'&bl='.$bl.'&checkitemid='.optional_param('checkitemid', null, PARAM_INT).'"
+		echo '<form method="post">';
+		echo '<div><input type="hidden" name="do" value="save" /></div>';
+		
 		
 		$levelCnt1 = 0;
 		$lastNiveau = 'keines';
@@ -119,12 +119,13 @@ echo '<div id="desp">';
 		
 		<?php } ?>
 			</table>
-			<input type="submit" value="<?php echo get_string('save','block_desp'); ?>" />
+			<div><input type="submit" value="<?php echo get_string('save','block_desp'); ?>" /></div>
 		</form>
 	<?php
-
+echo '<div><br /><br /><br /></div>';
+ include_once ("despfooter.php");
+echo '</div>';
 	echo $OUTPUT->footer($course);
-	
 	exit;
 }
 
@@ -134,11 +135,11 @@ $items =get_lernpartner_check($USER->id);
 
 
 block_desp_print_header("lernpartner_einschaetzung");
-
+echo '<div id="desp">';
 echo '<h2>'.get_string('lernpartnereinschaetzen', 'block_desp').'</h2>';
 if (!$items) {
 	echo '<div id="messageboxslp3" style="background: url(images/message_lp.gif) no-repeat left top;">
-            <div id="messagetxtslp3">'.get_string('keinelernpartner', 'block_desp').'</span></a>
+            <div id="messagetxtslp3"><span>'.get_string('keinelernpartner', 'block_desp').'</span>
             </div>
         </div>';
 } else {
@@ -154,8 +155,8 @@ if (!$items) {
 		echo '<br />';
 	}
 }
-echo '<br /><br /><br /></div>';
+echo '<div><br /><br /><br /></div>';
  include_once ("despfooter.php");
-
+echo '</div>';
 echo $OUTPUT->footer($course);
 
