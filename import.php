@@ -87,4 +87,4 @@ if(isset($import)) {
 }
 echo $content;
 echo "</div></div>";
-$OUTPUT->footer();
+echo $OUTPUT->footer();
