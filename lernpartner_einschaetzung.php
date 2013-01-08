@@ -79,7 +79,7 @@ if ($checkitemid = optional_param('checkitemid', null, PARAM_INT)) {
 	
 	
 	block_desp_print_header("lernpartner_einschaetzung");
-
+echo '<div id="desp">';
 	echo "<h2>".get_string('bewertungfuer', 'block_desp').fullname($checkitem).' / '.$checkitem->language.' / '.$checkitem->skill.' '.$checkitem->niveau.'</h2>';
 
 	?>
@@ -154,7 +154,7 @@ if (!$items) {
 		echo '<br />';
 	}
 }
-echo '<br /><br /><br />';
+echo '<br /><br /><br /></div>';
  include_once ("despfooter.php");
 
 echo $OUTPUT->footer($course);

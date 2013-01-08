@@ -45,7 +45,7 @@ $PAGE->set_url($url);
 $url = $CFG->wwwroot.$url;
 
 block_desp_print_header("admintabimport");
-
+echo '<div id="desp">';
 echo "<div class='block_excomp_center'>";
 
 if($action == "xml") {
@@ -86,5 +86,5 @@ if(isset($import)) {
 
 }
 echo $content;
-echo "</div>";
+echo "</div></div>";
 $OUTPUT->footer();

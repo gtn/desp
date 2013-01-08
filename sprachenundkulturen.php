@@ -44,7 +44,7 @@ $hdrtmp=str_replace("</head>",$hdrers."</head>",$hdrtmp);
 echo $hdrtmp;
 ?>
 
-
+<div id="desp">
 <div id="page_margins">
     <div id="content">
 
@@ -105,6 +105,7 @@ echo $hdrtmp;
 		</table>-->
 	
     </div>
+</div>
 </div>
 <?php
 	include_once ("despfooter.php");

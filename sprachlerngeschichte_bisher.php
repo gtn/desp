@@ -79,6 +79,7 @@ $exaportitem=block_desp_pd_eportitems(0,$exaport);
 		}
 		// ]]>
 </script>
+<div id="desp">
 <div id="page_margins">
     <div id="content">
 
@@ -162,6 +163,7 @@ $exaportitem=block_desp_pd_eportitems(0,$exaport);
 
 
     </div>
+</div>
 </div>
 <?php
 	 include_once ("despfooter.php");

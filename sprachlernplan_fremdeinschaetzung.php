@@ -141,7 +141,7 @@ $sql="SELECT * FROM {block_desp_learnplans} WHERE userid=? AND (lernpartner_komm
 $items = $DB->get_records_sql($sql,array("userid"=>$USER->id));
 
 block_desp_print_header("lernpartner_fremdeinschaetzung");
-
+echo '<div id="desp">';
 echo '<h2>'.get_string('einschaetzunglernpartners', 'block_desp').'</h2>';
 if (empty($items)) {
 	echo '<div id="messageboxslp3" style="background: url(images/message_lp.gif) no-repeat left top;">
@@ -181,7 +181,7 @@ if (empty($items)) {
 	echo '<input type="submit" value="'.get_string('zurkenntnis', 'block_desp').'">';
 	echo '</form>';
 }
-echo '<br /><br /><br />';
+echo '<br /><br /><br /></div>';
 include_once ("despfooter.php");
 echo $OUTPUT->footer($course);
 

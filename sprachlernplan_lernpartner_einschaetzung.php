@@ -142,7 +142,7 @@ if ($checkitemid = optional_param('checkitemid', null, PARAM_INT))
 $items=get_lernpartner($USER->id);
 block_desp_print_header("lernpartner_einschaetzung");
 
-echo '<h2>'.get_string('lerpartnerunterstuetzen', 'block_desp').'</h2>';
+echo '<div id="desp"><h2>'.get_string('lerpartnerunterstuetzen', 'block_desp').'</h2>';
 if (!$items) {
 	echo '<div id="messageboxslp3" style="background: url(images/message_lp.gif) no-repeat left top;">
             <div id="messagetxtslp3">
@@ -162,7 +162,7 @@ if (!$items) {
 		echo '<br />';
 	}
 }
-echo '<br /><br /><br />';
+echo '<br /><br /><br /></div>';
 include_once ("despfooter.php");
 echo $OUTPUT->footer($course);
 

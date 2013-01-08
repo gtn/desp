@@ -109,7 +109,7 @@ block_desp_print_header("sprachlernplaene");
 	}
     /*]]>*/
 </script>
-
+<div id="desp">
 <div id="page_margins">
     <div id="content">
 
@@ -200,7 +200,7 @@ endforeach; ?>
 
     </div>
 </div>
-
+</div>
 <?php
 	include_once ("despfooter.php");
 ?>

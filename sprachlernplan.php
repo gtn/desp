@@ -140,6 +140,7 @@ if ($data){
 		}
 		// ]]>
 </script>
+<div id="desp">
 <div id="page_margins">
     <div id="content">
 
@@ -204,6 +205,7 @@ if ($data){
 
 
     </div>
+</div>
 </div>
 <?php
 	include_once ("despfooter.php");

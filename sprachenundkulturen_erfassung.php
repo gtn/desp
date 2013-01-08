@@ -113,7 +113,7 @@ else{$tdossier='<textarea cols="" rows="5" name="text2n[]" class="sk3"></textare
 		}
 		// ]]>
 </script>
-
+<div id="desp">
 <div id="page_margins">
     <div id="content">
 
@@ -212,6 +212,7 @@ else{$tdossier='<textarea cols="" rows="5" name="text2n[]" class="sk3"></textare
 
 
     </div>
+</div>
 </div>
 <?php
 	include_once ("despfooter.php");

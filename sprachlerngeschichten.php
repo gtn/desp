@@ -12,7 +12,7 @@ $PAGE->set_url($url);
 block_desp_print_header("sprachlerngeschichten");
 ?>
 
-
+<div id="desp">
 <div id="page_margins">
     <div id="content">
 
@@ -53,6 +53,7 @@ block_desp_print_header("sprachlerngeschichten");
         	</div>
 
     </div>
+</div>
 </div>
 <?php
 	include_once ("despfooter.php");
