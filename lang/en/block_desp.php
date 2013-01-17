@@ -1,5 +1,6 @@
 <?php
 $string['pluginname'] = 'Digital European Language Portfolio';
+$string['desp:use'] = 'Use Desp';
 $string['desp'] = 'My language portfolio';
 $string['blocktitle'] = 'My language portfolio';
 

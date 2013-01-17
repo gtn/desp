@@ -57,7 +57,7 @@ $capabilities = array(
         )
     ),
     'block/desp:use' => array(
-
+    
         'captype' => 'write',
         'contextlevel' => CONTEXT_SYSTEM,
         'legacy' => array(

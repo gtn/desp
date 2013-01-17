@@ -1,5 +1,6 @@
 <?php
 $string['pluginname'] = 'Digitales ESP';
+$string['desp:use'] = 'Berechtigung';
 $string['desp'] = 'Mein Sprachenportfolio';
 $string['blocktitle'] = 'Mein Sprachenportfolio';
 
