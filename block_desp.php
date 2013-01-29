@@ -84,7 +84,7 @@ class block_desp extends block_base {
 		if (has_capability('block/desp:admin', $context)) {
 			$this->content = new stdClass;
 			$this->content->text.='<img src="' . $CFG->wwwroot . '/blocks/desp/images/config.gif" height="16" width="16" alt="' . get_string("import", "block_desp") . '" />';
-			$this->content->text.=' <a title="evaluate competences" href="' . $CFG->wwwroot . '/blocks/desp/import.php">' . get_string('import', 'block_desp') . '</a><br/>';
+			$this->content->text.=' <a title="evaluate competences" href="' . $CFG->wwwroot . '/blocks/desp/import.php?courseid=' . $courseid . '">' . get_string('import', 'block_desp') . '</a><br/>';
 		}
 
 		$this->content->text.='<img src="' . $CFG->wwwroot . '/blocks/desp/images/homedesp.gif" height="16" width="16" alt="' . get_string("index", "block_desp") . '" />';
@@ -126,7 +126,7 @@ class block_desp extends block_base {
 			$this->content->text.='<img src="' . $CFG->wwwroot . '/blocks/desp/images/dossier.gif" height="16" width="16" alt="' . get_string("dossier", "block_desp") . '" />';
 			$this->content->text.=' <a title="evaluate competences" href="' . $CFG->wwwroot . '/blocks/exaport/view_items.php?courseid=' . $courseid . '">' . get_string('dossier', 'block_desp') . '</a>';
 		}
-		if (file_exists("pix/message_ses1.gif")){
+		if (file_exists("images/message_ses1.gif")){
 			$this->content->text.='<br/><img class="lehrerbegleitheft" src="' . $CFG->wwwroot . '/blocks/desp/images/begleitheft.gif" height="16" width="16" alt="' . get_string("lehrerinnenbegleitheft", "block_desp") . '" />';
 			$this->content->text.=' <a class="lehrerbegleitheft" title="evaluate competences" href="' . $CFG->wwwroot . '/blocks/desp/LLL_ESP_M_2012_komplett.pdf">' . get_string('lehrerinnenbegleitheft', 'block_desp') . '</a>';
 		}
