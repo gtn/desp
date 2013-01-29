@@ -81,8 +81,9 @@ class block_desp extends block_base {
 		//        }
 		//        return $this->content;
 		$courseid = $COURSE->id;
+		$this->content = new stdClass;
 		if (has_capability('block/desp:admin', $context)) {
-			$this->content = new stdClass;
+			
 			$this->content->text.='<img src="' . $CFG->wwwroot . '/blocks/desp/images/config.gif" height="16" width="16" alt="' . get_string("import", "block_desp") . '" />';
 			$this->content->text.=' <a title="evaluate competences" href="' . $CFG->wwwroot . '/blocks/desp/import.php?courseid=' . $courseid . '">' . get_string('import', 'block_desp') . '</a><br/>';
 		}
