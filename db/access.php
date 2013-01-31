@@ -32,6 +32,13 @@
 // For the core capabilities, the variable is $moodle_capabilities.
 
 $capabilities = array(
+		'block/desp:use' => array(
+        'captype' => 'write',
+        'contextlevel' => CONTEXT_SYSTEM,
+        'legacy' => array(
+            'user' => CAP_ALLOW
+        )
+    ),
     'block/desp:admin' => array(
         'captype' => 'write',
         'contextlevel' => CONTEXT_COURSE,
@@ -54,13 +61,6 @@ $capabilities = array(
         'contextlevel' => CONTEXT_COURSE,
         'legacy' => array(
             'student' => CAP_ALLOW
-        )
-    ),
-    'block/desp:use' => array(
-        'captype' => 'write',
-        'contextlevel' => CONTEXT_SYSTEM,
-        'legacy' => array(
-            'user' => CAP_ALLOW
         )
     ),
 		'block/desp:myaddinstance' => array(
