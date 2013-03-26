@@ -395,7 +395,7 @@ $string['speichern'] = 'save';
 $string['vorgegebenesziel'] = 'You have exceeded your predefined goal in the language learning plans ';
 $string['lernplaeneueberpruefen'] = '.<br />Please check your language learning plans!';
 
-$string['a1hoeren'] = 'I can understand familiar words and very basic phrases concerning myself, my family and immediate concrete surroundings when people speak slowly and clearly.';
+$string['a1hoeren'] = 'I can understand familiar words and very basic phrases regarding myself, my family and immediate concrete surroundings when people speak slowly and clearly.';
 $string['a1lesen'] = 'I can understand familiar names, words and very simple sentences, for example on notices and posters or in catalogues.';
 $string['a1angespraechenteilnehmen'] = "I can interact in a simple way provided the other person is prepared to repeat or rephrase things at a slower rate of speech and help me formulate what I'm trying to say. I can ask and answer simple questions in areas of immediate need or on very familiar topics.";
 $string['a1zusammenhaengendsprechen'] = 'I can use simple phrases and sentences to describe where I live and people I know.';
@@ -434,7 +434,7 @@ $string['c2schreiben'] = 'I can write clear, smoothly-flowing text in an appropr
 $string['forskill'] = '';
 $string['giltaufniveau'] = ' means the following at level ';
 
-$string['a1hoerencheckliste'] = 'I can understand familiar words and very basic phrases concerning myself, ' .
+$string['a1hoerencheckliste'] = 'I can understand familiar words and very basic phrases regarding myself, ' .
 		'my family and immediate concrete surroundings when people speak slowly and clearly.'; 
 $string['a1lesencheckliste'] = "I can understand familiar names, words and very simple sentences, for example on notices and posters or in catalogues.";
 $string['a1sprechencheckliste'] = 'I can interact in a simple way provided the other person is prepared to repeat or rephrase things at a slower rate of speech and help me formulate what I am trying to say. ' .
