@@ -160,8 +160,8 @@ $string['checklist'] = '<li>to assess yourself in every language you speak - col
                     <li>to ask others for their assessments - column "assessments from others"</li>
                     <li>to mark, what you want to work on next - column "My learning goals"</li>';
 $string['verwendesymbole'] = '<b>For this purpose, use the following icons:</b><br />
-                &#10003;&#10003; I can speak this with confidence<br />
-                &#10003; I can usually speak this';
+                &#10003;&#10003; I can do this with confidence<br />
+                &#10003; I can usually do this';
 $string['loeschen'] = 'delete';
 $string['neuesprachehinzufuegen'] = 'add a new language to the language selection';
 $string['sprachehinzufuegen'] = 'add a new language to the language selection';
