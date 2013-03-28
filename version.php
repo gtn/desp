@@ -30,4 +30,4 @@ $plugin->version = 2013012900;
 $plugin->maturity  = MATURITY_BETA;
 $plugin->release  = "1.0";
 $plugin->requires = 2010112400;
-$plugin->dependencies = array('exaport' => ANY_VERSION); 
+$plugin->dependencies = array('block_exaport' => ANY_VERSION); 
