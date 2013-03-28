@@ -1,8 +1,3 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <desp_tables>
-        <table name="block_desp_cultures_items">
-            <id>1</id>
-            <title>lernculture 1</title>
-            <cat>1</cat>
-        </table>
 </desp_tables>
