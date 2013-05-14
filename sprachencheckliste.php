@@ -2,6 +2,7 @@
 global $DB, $COURSE,$CFG;
 require_once dirname(__FILE__) . '/inc.php';
 require_once dirname(__FILE__) . '/lib/div.php';
+require_once dirname(__FILE__) . '/lib/lib.php';
 $courseid = optional_param('courseid', $COURSE->id, PARAM_ALPHANUM);
 $do = optional_param('do', null, PARAM_ALPHANUMEXT);
 

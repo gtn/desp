@@ -2,6 +2,7 @@
 global $DB, $COURSE,$CFG;
 require_once dirname(__FILE__) . '/inc.php';
 require_once dirname(__FILE__) . '/lib/div_lernplan.php';
+require_once dirname(__FILE__) . '/lib/lib.php';
 
 $courseid = optional_param('courseid', $COURSE->id, PARAM_ALPHANUM);
 $do = optional_param('do', null, PARAM_ALPHANUMEXT);
@@ -166,7 +167,7 @@ if (empty($items)) {
 			$lastUid = $item->lernpartnerid;
 		}
 		echo '<b>'.get_string('sprachebewertung', 'block_desp').$language.'</b><br />';
-		echo get_string('bereichbewertung', 'block_desp').$skill->title.'<br />';
+		echo get_string('bereichbewertung', 'block_desp').get_skilltitle($skill->title).'<br />';
 		echo get_string('titelbewertung', 'block_desp').$item->title.'<br />';
 		echo get_string('kommentarbewertung', 'block_desp').$item->lernpartner_kommentar.'<br />';
 		if ($item->lernpartner_einschaetzung==1){

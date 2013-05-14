@@ -570,7 +570,7 @@ function block_desp_get_bottom_text_header($skid,$nid) {
 	
 	$skill = $DB->get_record('block_desp_skills',array("id"=>$skid));
 	$niveau = $DB->get_record('block_desp_niveaus',array("id"=>$nid));
-	return get_string('forskill','block_desp').get_string(strtolower(str_replace(' ', '', str_replace('ä', 'ae', str_replace('ö', 'oe', $skill->title)))), 'block_desp').get_string('giltaufniveau', 'block_desp').$niveau->title.":";
+	return get_string('forskill','block_desp').get_skilltitle($skill->title).get_string('giltaufniveau', 'block_desp').$niveau->title.":";
 }
 function block_desp_get_bottom_text($skid,$nid) {
 	global $DB;

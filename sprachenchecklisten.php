@@ -1,6 +1,7 @@
 <?php
 global $COURSE, $CFG, $OUTPUT;
 require_once dirname(__FILE__) . '/inc.php';
+require_once dirname(__FILE__) . '/lib/lib.php';
 
 $courseid = optional_param('courseid', $COURSE->id, PARAM_ALPHANUM);
 $do = optional_param('do', null, PARAM_ALPHANUMEXT);
@@ -183,7 +184,7 @@ block_desp_print_header("sprachenchecklisten");
 			<?php foreach ($DB->get_records('block_desp_skills', null, 'sorting') as $skill) { ?>
             <tr>
             	<?php
-            	if (!empty($skill->title)) echo '<td class="overview ov_skill'.$skill->id.'" style="background: #fff url(\'images/ov_skill'.$skill->id.'.gif\') no-repeat left top;padding-left:50px;">'.get_string(strtolower(str_replace(' ', '', str_replace('ä', 'ae', str_replace('ö', 'oe', $skill->title)))), 'block_desp').'</td>';
+            	if (!empty($skill->title)) echo '<td class="overview ov_skill'.$skill->id.'" style="background: #fff url(\'images/ov_skill'.$skill->id.'.gif\') no-repeat left top;padding-left:50px;">'.get_skilltitle($skill->title).'</td>';
 				
 					foreach ($niveaus as $niveau) {
 						$sql = 'SELECT sub.id FROM {block_desp_descriptors} AS des'.

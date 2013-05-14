@@ -2,6 +2,7 @@
 global $DB, $COURSE,$CFG;
 require_once dirname(__FILE__) . '/inc.php';
 require_once dirname(__FILE__) . '/lib/div.php';
+require_once dirname(__FILE__) . '/lib/lib.php';
 $langcode=get_string("langcode","block_desp");
 $courseid = optional_param('courseid', $COURSE->id, PARAM_ALPHANUM);
 $do = optional_param('do', null, PARAM_ALPHANUMEXT);
@@ -172,7 +173,7 @@ if (!empty($lernplansalarm)){
 							if (!empty($lernplansalarm[$language->id][$skill->id])) $warnung="color:red;";
 							else $warnung="";
             	echo '<tr>';
-              echo '<td><a href="'.$CFG->wwwroot.'/blocks/desp/sprachlernplan.php?skid='.$skill->id.'&amp;courseid='.$courseid.'&amp;langid='.$language->id.'" class="overview ov_skill'.$skill->id.'" style="background: #ffefd3 url(\'images/ov_skill'.$skill->id.'.gif\') no-repeat left top;'.$warnung.'">'.get_string(strtolower(str_replace(' ', '', str_replace('ä', 'ae', str_replace('ö', 'oe', $skill->title)))), 'block_desp').'</a></td>';
+              echo '<td><a href="'.$CFG->wwwroot.'/blocks/desp/sprachlernplan.php?skid='.$skill->id.'&amp;courseid='.$courseid.'&amp;langid='.$language->id.'" class="overview ov_skill'.$skill->id.'" style="background: #ffefd3 url(\'images/ov_skill'.$skill->id.'.gif\') no-repeat left top;'.$warnung.'">'.get_skilltitle($skill->title).'</a></td>';
             	echo '</tr>';
 							}
 			        echo '</table>';

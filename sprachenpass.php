@@ -3,6 +3,7 @@
 global $DB,$COURSE,$CFG;
 require_once dirname(__FILE__) . '/inc.php';
 require_once dirname(__FILE__) . '/lib/div.php';
+require_once dirname(__FILE__) . '/lib/lib.php';
 
 $courseid = optional_param('courseid', $COURSE->id, PARAM_SEQUENCE);
 $es = optional_param('es', 0, PARAM_INT);
@@ -150,7 +151,7 @@ foreach ($myLanguages as $language){
 			$inhalt.= '	</tr>';
 			foreach ($DB->get_records('block_desp_skills', null, 'sorting') as $skill) {
 				$inhalt.= '	<tr>';
-				$inhalt.= '	<td class="tableses1">'.get_string(strtolower(str_replace(' ', '', str_replace('ä', 'ae', str_replace('ö', 'oe', $skill->title)))), 'block_desp').'</td>';
+				$inhalt.= '	<td class="tableses1">'.get_skilltitle($skill->title).'</td>';
 				foreach ($niveaus as $niveau) {
 					$rs=get_score($skill->id,$niveau->id,$mychecklang->id,$USER->id);
 					if (is_null($rs->anz)) $rs->anz=0;
