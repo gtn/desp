@@ -14,11 +14,14 @@ $PAGE->set_url($url);
 $niveaus = array();
 $p_niveaus =  $DB->get_records('block_desp_niveaus', array('parent_niveau'=>0), 'sorting');
 foreach($p_niveaus as $niveau) {
-	$sql = "SELECT * FROM {block_desp_descriptors} d WHERE d.niveauid IN (SELECT n.id FROM {block_desp_niveaus} n WHERE parent_niveau = ".$niveau->id.")";
+	echo "<br>".$niveau->id;
+	$sql = "SELECT * FROM {block_desp_descriptors} d WHERE d.niveauid=".$niveau->id." OR d.niveauid IN (SELECT n.id FROM {block_desp_niveaus} n WHERE parent_niveau = ".$niveau->id.")";
+
 	$exist = $DB->get_records_sql($sql);
 	if($exist)
 		$niveaus[] = $niveau;
 }
+
 if ($do == 'add-language') {
 	$langid = required_param('langid', PARAM_INT);
 
@@ -179,8 +182,9 @@ block_desp_print_header("sprachenchecklisten");
             </tr>
 			<?php foreach ($DB->get_records('block_desp_skills', null, 'sorting') as $skill) { ?>
             <tr>
-                <td class="overview ov_skill<?php echo $skill->id; ?>" style="background: #fff url('images/ov_skill<?php echo $skill->id; ?>.gif') no-repeat left top;padding-left:50px;"><?php echo get_string(strtolower(str_replace(' ', '', str_replace('ä', 'ae', str_replace('ö', 'oe', $skill->title)))), 'block_desp'); ?></td>
-				<?php
+            	<?php
+            	if (!empty($skill->title)) echo '<td class="overview ov_skill'.$skill->id.'" style="background: #fff url(\'images/ov_skill'.$skill->id.'.gif\') no-repeat left top;padding-left:50px;">'.get_string(strtolower(str_replace(' ', '', str_replace('ä', 'ae', str_replace('ö', 'oe', $skill->title)))), 'block_desp').'</td>';
+				
 					foreach ($niveaus as $niveau) {
 						$sql = 'SELECT sub.id FROM {block_desp_descriptors} AS des'.
 						       ' JOIN {block_desp_niveaus} AS sub ON sub.id=des.niveauid'.

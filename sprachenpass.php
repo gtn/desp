@@ -31,7 +31,7 @@ if(!block_desp_checkimport())
 $niveaus = array();
 $p_niveaus =  $DB->get_records('block_desp_niveaus', array('parent_niveau'=>0), 'sorting');
 foreach($p_niveaus as $niveau) {
-	$sql = "SELECT * FROM {block_desp_descriptors} d WHERE d.niveauid IN (SELECT n.id FROM {block_desp_niveaus} n WHERE parent_niveau = ".$niveau->id.")";
+	$sql = "SELECT * FROM {block_desp_descriptors} d WHERE WHERE d.niveauid=".$niveau->id." OR d.niveauid IN (SELECT n.id FROM {block_desp_niveaus} n WHERE parent_niveau = ".$niveau->id.")";
 	$exist = $DB->get_records_sql($sql);
 	if($exist)
 		$niveaus[] = $niveau;
