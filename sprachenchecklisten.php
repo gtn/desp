@@ -15,7 +15,7 @@ $PAGE->set_url($url);
 $niveaus = array();
 $p_niveaus =  $DB->get_records('block_desp_niveaus', array('parent_niveau'=>0), 'sorting');
 foreach($p_niveaus as $niveau) {
-	echo "<br>".$niveau->id;
+	
 	$sql = "SELECT * FROM {block_desp_descriptors} d WHERE d.niveauid=".$niveau->id." OR d.niveauid IN (SELECT n.id FROM {block_desp_niveaus} n WHERE parent_niveau = ".$niveau->id.")";
 
 	$exist = $DB->get_records_sql($sql);
@@ -116,7 +116,7 @@ block_desp_print_header("sprachenchecklisten");
 	}
 
 	function deleteLanguage(id) {
-		if (confirm('Sprache wirklich löschen?')) {
+		if (confirm("<?php echo get_string('sprachewirklichloeschen', 'block_desp');?>")) {
 			if(confirm('Bist du dir sicher? Mit dem Löschen geht die ganze Checkliste verloren')) {
 			document.location.href = '<?php echo $_SERVER['PHP_SELF'].'?courseid='.$courseid.'&do=delete-language&id='; ?>' + encodeURIComponent(id);
 			}
@@ -184,7 +184,7 @@ block_desp_print_header("sprachenchecklisten");
 			<?php foreach ($DB->get_records('block_desp_skills', null, 'sorting') as $skill) { ?>
             <tr>
             	<?php
-            	if (!empty($skill->title)) echo '<td class="overview ov_skill'.$skill->id.'" style="background: #fff url(\'images/ov_skill'.$skill->id.'.gif\') no-repeat left top;padding-left:50px;">'.get_skilltitle($skill->title).'</td>';
+            	if (!empty($skill->title)) echo '<td class="overview ov_skill'.$skill->id.'" style="background: #fff url(\'images/ov_skill'.$skill->id.'.gif\') no-repeat left top;padding-left:50px;">'.block_desp_skilltitle($skill->title).'</td>';
 				
 					foreach ($niveaus as $niveau) {
 						$sql = 'SELECT sub.id FROM {block_desp_descriptors} AS des'.
