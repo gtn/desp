@@ -3,6 +3,7 @@ global $DB, $COURSE,$CFG,$OUTPUT;
 require_once dirname(__FILE__) . '/inc.php';
 require_once dirname(__FILE__) . '/lib/div_partner.php';
 require_once dirname(__FILE__) . '/lib/div.php';
+require_once dirname(__FILE__) . '/lib/lib.php';
 $courseid = optional_param('courseid', $COURSE->id, PARAM_ALPHANUM);
 //login required
 require_login($courseid);
@@ -30,11 +31,8 @@ if (!$items) {
 echo '<table class="tableform3 sprachlernplantab"><tr><th colspan="4">'.get_string('lernplaene','block_desp').'</th></tr><tr><th>'.get_string('name','block_desp').'</th><th>'.get_string('sprache','block_desp').'</th><th>'.get_string('bereich','block_desp').'</th><!--th>'.get_string('einschaetzung','block_desp').'</th--><th></th></tr>';
 	foreach ($items as $item) {
 		echo '<tr><td>'.fullname($item).'</td><td>'.$item->language.'</td>';
-		$skl=$item->skill;
-		$skl=str_replace('ö', 'oe', $skl);
-		$skl=str_replace('ä', 'ae',$skl);
-		$skl=strtolower($skl);
-		echo '<td>'.get_string($skl,'block_desp').'</td>';
+
+		echo '<td>'.block_desp_skilltitle($item->skill).'</td>';
 		echo '<!--td style="cursor:help;" title="'.$item->lernpartner_kommentar.'">'.full_bewertung($item->lernpartner_einschaetzung,"plan").'</td-->';
 		
 		echo '<td><a href="'.$CFG->wwwroot.'/blocks/desp/sprachlernplan_lernpartner_einschaetzung.php?courseid='.$COURSE->id.'&amp;checkitemid='.$item->id.'&amp;bl=center" class="link_center" style="color: #F25F2C !important;">'.get_string('feedbackansehen', 'block_desp').'</a></td></tr>';
@@ -42,12 +40,8 @@ echo '<table class="tableform3 sprachlernplantab"><tr><th colspan="4">'.get_stri
 	echo '<tr><th colspan="4">'.get_string('checklisten', 'block_desp').'</th></tr>';
 	$items =get_lernpartner_check($USER->id);
 	foreach ($items as $item) {
-		$skl=$item->skill;
-		$skl=str_replace('ö', 'oe', $skl);
-		$skl=str_replace('ä', 'ae',$skl);
-		$skl=strtolower($skl);
 		echo '<tr><td>'.fullname($item).'</td><td>'.$item->language.'</td>';
-		echo '<td>'.get_string($skl,'block_desp').' '.$item->niveau.'</td><!--td>'.full_bewertung($item->einschaetzung_fremd,"check").'</td-->';
+		echo '<td>'.block_desp_skilltitle($item->skill).' '.$item->niveau.'</td><!--td>'.full_bewertung($item->einschaetzung_fremd,"check").'</td-->';
 		
 		echo '<td><a  class="link_center" style="color: #F25F2C !important;" href="'.$CFG->wwwroot.'/blocks/desp/lernpartner_einschaetzung.php?courseid='.$COURSE->id.'&amp;checkitemid='.$item->id.'&amp;bl=center">'.get_string("feedbackansehen","block_desp").'</a></td></tr>';
 	}
