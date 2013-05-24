@@ -84,7 +84,7 @@ if ($checkitemid = optional_param('checkitemid', null, PARAM_INT))
 	
 	block_desp_print_header("lernpartner_einschaetzung");
 
-	echo "<h2>".get_string('bewertungfuer', 'block_desp').fullname($checkitem).' / '.$checkitem->language.' / '.get_skilltitle($checkitem->skill).'</h2>';
+	echo "<h2>".get_string('bewertungfuer', 'block_desp').fullname($checkitem).' / '.$checkitem->language.' / '.block_desp_skilltitle($checkitem->skill).'</h2>';
 
 	?>
 		<form method="post">
@@ -158,7 +158,7 @@ if (!$items) {
 			$lastUid = $item->uid;
 		}
 		echo get_string('sprachebewertung', 'block_desp').$item->language.'<br />';
-		echo get_string('bereichbewertung', 'block_desp').get_skilltitle($item->skill).'<br />';
+		echo get_string('bereichbewertung', 'block_desp').block_desp_skilltitle($item->skill).'<br />';
 		echo '<a href="'.$_SERVER['PHP_SELF'].'?courseid='.$COURSE->id.'&amp;checkitemid='.$item->id.'">'.get_string('einschaetzen', 'block_desp').'</a><br />';
 		echo '<br />';
 	}
