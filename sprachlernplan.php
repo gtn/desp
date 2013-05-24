@@ -180,7 +180,7 @@ if ($data){
                      <th class="slp"></th>
                 </tr>
                 <tr>
-        			<th colspan="7"><h1 class="h1back h1lesen" style="padding-left: 50px; height:33px; background: #fdd68e url('images/ov_skill<?php echo $skid ?>.gif') no-repeat left top;"><?php echo get_string(strtolower(str_replace(' ', '', str_replace('ä', 'ae', str_replace('ö', 'oe', block_desp_get_skill_title($skid))))), 'block_desp'); ?></h1></th>                	
+        			<th colspan="7"><h1 class="h1back h1lesen" style="padding-left: 50px; height:33px; background: #fdd68e url('images/ov_skill<?php echo $skid ?>.gif') no-repeat left top;"><?php echo block_desp_get_skill_title($skid); ?></h1></th>                	
                 </tr>
               </thead>
               <tbody>
