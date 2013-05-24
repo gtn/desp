@@ -225,6 +225,16 @@ function block_desp_check_new_learnplan_comments() {
 	else
 		return false;
 }
+function block_desp_get_niveautext($nivid,$skillid){
+	global $DB;
+	$sql="SELECT * FROM {block_desp_niveau_texte} WHERE skillid=".$skillid." and niveauid=".$nivid;
+	if ($text = $DB->get_record_sql($sql)){
+		return $text->title;
+	}else{
+		return "";
+	}
+	
+}
 function block_desp_get_examplelink($descrid,$lang){
 	global $DB,$CFG;
 	  $sql = "SELECT mm.* ";
@@ -570,7 +580,7 @@ function block_desp_get_bottom_text_header($skid,$nid) {
 	
 	$skill = $DB->get_record('block_desp_skills',array("id"=>$skid));
 	$niveau = $DB->get_record('block_desp_niveaus',array("id"=>$nid));
-	return get_string('forskill','block_desp').get_skilltitle($skill->title).get_string('giltaufniveau', 'block_desp').$niveau->title.":";
+	return get_string('forskill','block_desp').block_desp_skilltitle($skill->title).get_string('giltaufniveau', 'block_desp').$niveau->title.":";
 }
 function block_desp_get_bottom_text($skid,$nid) {
 	global $DB;
