@@ -167,7 +167,7 @@ if (empty($items)) {
 			$lastUid = $item->lernpartnerid;
 		}
 		echo '<b>'.get_string('sprachebewertung', 'block_desp').$language.'</b><br />';
-		echo get_string('bereichbewertung', 'block_desp').get_skilltitle($skill->title).'<br />';
+		echo get_string('bereichbewertung', 'block_desp').block_desp_skilltitle($skill->title).'<br />';
 		echo get_string('titelbewertung', 'block_desp').$item->title.'<br />';
 		echo get_string('kommentarbewertung', 'block_desp').$item->lernpartner_kommentar.'<br />';
 		if ($item->lernpartner_einschaetzung==1){
