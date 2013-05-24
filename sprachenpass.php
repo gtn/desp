@@ -151,7 +151,7 @@ foreach ($myLanguages as $language){
 			$inhalt.= '	</tr>';
 			foreach ($DB->get_records('block_desp_skills', null, 'sorting') as $skill) {
 				$inhalt.= '	<tr>';
-				$inhalt.= '	<td class="tableses1">'.get_skilltitle($skill->title).'</td>';
+				$inhalt.= '	<td class="tableses1">'.block_desp_skilltitle($skill->title).'</td>';
 				foreach ($niveaus as $niveau) {
 					$rs=get_score($skill->id,$niveau->id,$mychecklang->id,$USER->id);
 					if (is_null($rs->anz)) $rs->anz=0;
