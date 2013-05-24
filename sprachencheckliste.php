@@ -120,7 +120,6 @@ if ($do == 'save') {
 		//directly email rather than using the messaging system to ensure its not routed to a popup or jabber
 		@email_to_user($user, $USER, 'Lernpartner', $text);
 	}
-	
 	redirect($_SERVER['REQUEST_URI']);
 	exit;
 }
@@ -197,7 +196,7 @@ echo '<script type="text/javascript" src="lib/wz_tooltip.js"></script>';
 
             <table class="tableform2">
                 <tr>
-                    <th colspan="6" style="text-align:left;"><?php echo get_string(strtolower(str_replace(' ', '', str_replace('ä', 'ae', str_replace('ö', 'oe', $niveau->title.$skill->title)))), 'block_desp'); ?>
+                    <th colspan="6" style="text-align:left;"><?php echo block_desp_get_niveautext($niveau->id,$skill->id); ?>
                     </th>
                 </tr>
 			</table>
