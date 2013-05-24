@@ -173,7 +173,7 @@ if (!empty($lernplansalarm)){
 							if (!empty($lernplansalarm[$language->id][$skill->id])) $warnung="color:red;";
 							else $warnung="";
             	echo '<tr>';
-              echo '<td><a href="'.$CFG->wwwroot.'/blocks/desp/sprachlernplan.php?skid='.$skill->id.'&amp;courseid='.$courseid.'&amp;langid='.$language->id.'" class="overview ov_skill'.$skill->id.'" style="background: #ffefd3 url(\'images/ov_skill'.$skill->id.'.gif\') no-repeat left top;'.$warnung.'">'.get_skilltitle($skill->title).'</a></td>';
+              echo '<td><a href="'.$CFG->wwwroot.'/blocks/desp/sprachlernplan.php?skid='.$skill->id.'&amp;courseid='.$courseid.'&amp;langid='.$language->id.'" class="overview ov_skill'.$skill->id.'" style="background: #ffefd3 url(\'images/ov_skill'.$skill->id.'.gif\') no-repeat left top;'.$warnung.'">'.block_desp_skilltitle($skill->title).'</a></td>';
             	echo '</tr>';
 							}
 			        echo '</table>';
