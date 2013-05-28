@@ -394,7 +394,8 @@ $string['speichern'] = 'save';
 								
 $string['vorgegebenesziel'] = 'You have exceeded your predefined goal in the language learning plans ';
 $string['lernplaeneueberpruefen'] = '.<br />Please check your language learning plans!';
-
+/*
+niveau_texte, sind jetzt im desp_data.xml
 $string['a1hoeren'] = 'I can understand familiar words and very basic phrases regarding myself, my family and immediate concrete surroundings when people speak slowly and clearly.';
 $string['a1lesen'] = 'I can understand familiar names, words and very simple sentences, for example on notices and posters or in catalogues.';
 $string['a1angespraechenteilnehmen'] = "I can interact in a simple way provided the other person is prepared to repeat or rephrase things at a slower rate of speech and help me formulate what I'm trying to say. I can ask and answer simple questions in areas of immediate need or on very familiar topics.";
@@ -430,7 +431,7 @@ $string['c2lesen'] = 'I can read with ease virtually all forms of the written la
 $string['c2angespraechenteilnehmen'] = 'I can take part effortlessly in any conversation or discussion and have a good familiarity with idiomatic expressions and colloquialisms. I can express myself fluently and convey finer shades of meaning precisely. If I do have a problem I can backtrack and restructure around the difficulty so smoothly that other people are hardly aware of it.';
 $string['c2zusammenhaengendsprechen'] = 'I can present a clear, smoothly-flowing description or argument in a style appropriate to the context and with an effective logical structure which helps the recipient to notice and remember significant points.';
 $string['c2schreiben'] = 'I can write clear, smoothly-flowing text in an appropriate style. I can write complex letters, reports or articles which present a case with an effective logical structure which helps the recipient to notice and remember significant points. I can write summaries and reviews of professional or literary works.';
-	
+*/
 $string['forskill'] = '';
 $string['giltaufniveau'] = ' means the following at level ';
 

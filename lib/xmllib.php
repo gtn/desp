@@ -57,9 +57,11 @@ function block_desp_xml_insert_niveaus($value) {
 }
 function block_desp_xml_insert_niveau_texte($value) {
     global $DB;
-    $sql="INSERT INTO {block_desp_niveau_texte} (id,title,skillid,niveauid) VALUES(".$value->uid.",'".$value->title."',".$value->skillid.",".$value->niveauid.")";
-   	$DB->Execute($sql);
-    //$DB->insert_record('block_desp_niveau_texte', $value);
+    $data=new stdClass();
+    $data->title=(string)$value->title;$data->skillid=(int)$value->skillid;$data->niveauid=(int)$value->niveauid;
+    /*$sql="INSERT INTO {block_desp_niveau_texte} (id,title,skillid,niveauid) VALUES(".$value->uid.",'".(string)$value->title."',".$value->skillid.",".$value->niveauid.")";
+   	$DB->Execute($sql);*/
+    $DB->insert_record('block_desp_niveau_texte', $data);
 }
 
 function block_desp_xml_insert_taxonomie($value) {

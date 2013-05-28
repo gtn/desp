@@ -471,7 +471,8 @@ $string['speichern'] = 'Speichern';
 
 $string['vorgegebenesziel'] = 'Du hast dein vorgegebenes Ziel in den Sprachlern-Pl&auml;nen ';
 $string['lernplaeneueberpruefen'] = '&uuml;berschritten.<br />Bitte &uuml;berpr&uuml;fe deine Sprachlern-Pl&auml;ne f&uuml;r die Sprache(n)!';
-
+/*
+niveau_texte, sind jetzt im desp_data.xml
 $string['a1hoeren'] = 'Ich kann vertraute Wörter und ganz einfache Sätze verstehen, die sich auf mich selbst, meine Familie oder auf konkrete Dinge um mich herum beziehen, vorausgesetzt es wird langsam und deutlich gesprochen';
 $string['a1lesen'] = 'Ich kann einzelne vertraute Namen, Wörter und ganz einfache Sätze verstehen, z. B. auf Schildern, Plakaten oder in Katalogen.';
 $string['a1angespraechenteilnehmen'] = 'Ich kann mich auf einfache Art verständigen, wenn mein Gesprächspartner bereit ist, etwas langsamer zu wiederholen oder anders zu sagen, und mir dabei hilft zu formulieren, was ich zu sagen versuche. Ich kann einfache Fragen stellen und beantworten, sofern es sich um unmittelbar notwendige Dinge und um sehr vertraute Themen handelt.';
@@ -507,7 +508,7 @@ $string['c2lesen'] = 'Ich kann praktisch jede Art von geschriebenen Texten mühe
 $string['c2angespraechenteilnehmen'] = 'Ich kann mich mühelos an allen Gesprächen und Diskussionen beteiligen und bin auch mit Redewendungen und umgangssprachlichen Wendungen gut vertraut. Ich kann fließend sprechen und auch feinere Bedeutungsnuancen genau ausdrücken. Bei Ausdrucksschwierigkeiten kann ich so reibungslos wieder ansetzen und umformulieren, dass man es kaum merkt. ';
 $string['c2zusammenhaengendsprechen'] = 'Ich kann Sachverhalte klar, flüssig und im Stil der jeweiligen Situation angemessen darstellen und erörtern; ich kann meine Darstellung logisch aufbauen und es so den Zuhörern erleichtern, wichtige Punkte zu erkennen und sich diese zu merken.';
 $string['c2schreiben'] = 'Ich kann klar, flüssig und stilistisch dem jeweiligen Zweck angemessen schreiben. Ich kann anspruchsvolle Briefe und komplexe Berichte oder Artikel verfassen, die einen Sachverhalt gut strukturiert darstellen und so dem Leser helfen, wichtige Punkte zu erkennen und sich diese zu merken. Ich kann Fachtexte und literarische Werke schriftlich zusammenfassen und besprechen.';
-		
+*/
 $string['forskill'] = 'Für ';
 $string['giltaufniveau'] = ' gilt auf dem Niveau ';
 
