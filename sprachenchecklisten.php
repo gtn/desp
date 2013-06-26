@@ -1,7 +1,6 @@
 <?php
 global $COURSE, $CFG, $OUTPUT;
 require_once dirname(__FILE__) . '/inc.php';
-require_once dirname(__FILE__) . '/lib/lib.php';
 
 $courseid = optional_param('courseid', $COURSE->id, PARAM_ALPHANUM);
 $do = optional_param('do', null, PARAM_ALPHANUMEXT);
@@ -15,14 +14,11 @@ $PAGE->set_url($url);
 $niveaus = array();
 $p_niveaus =  $DB->get_records('block_desp_niveaus', array('parent_niveau'=>0), 'sorting');
 foreach($p_niveaus as $niveau) {
-	
-	$sql = "SELECT * FROM {block_desp_descriptors} d WHERE d.niveauid=".$niveau->id." OR d.niveauid IN (SELECT n.id FROM {block_desp_niveaus} n WHERE parent_niveau = ".$niveau->id.")";
-
+	$sql = "SELECT * FROM {block_desp_descriptors} d WHERE d.niveauid IN (SELECT n.id FROM {block_desp_niveaus} n WHERE parent_niveau = ".$niveau->id.")";
 	$exist = $DB->get_records_sql($sql);
 	if($exist)
 		$niveaus[] = $niveau;
 }
-
 if ($do == 'add-language') {
 	$langid = required_param('langid', PARAM_INT);
 
@@ -116,8 +112,8 @@ block_desp_print_header("sprachenchecklisten");
 	}
 
 	function deleteLanguage(id) {
-		if (confirm("<?php echo get_string('sprachewirklichloeschen', 'block_desp');?>")) {
-			if(confirm("<?php echo get_string('sprachewirklichloeschen2', 'block_desp');?>")) {
+		if (confirm('Sprache wirklich löschen?')) {
+			if(confirm('Bist du dir sicher? Mit dem Löschen geht die ganze Checkliste verloren')) {
 			document.location.href = '<?php echo $_SERVER['PHP_SELF'].'?courseid='.$courseid.'&do=delete-language&id='; ?>' + encodeURIComponent(id);
 			}
 		}
@@ -161,7 +157,7 @@ block_desp_print_header("sprachenchecklisten");
             </div>
         </div>
 
-        <?php if(current_language() == "de") { ?>
+        <?php if(current_language() == "de" && file_exists("images/ses_grafik_kl.gif")) { ?>
         <br /><br /> 
         		<p style="text-align:center;">
 					<a href="images/ses_grafik.gif"><img src="images/ses_grafik_kl.gif" alt="Sprachencheckliste Beispiel" /></a>
@@ -183,9 +179,8 @@ block_desp_print_header("sprachenchecklisten");
             </tr>
 			<?php foreach ($DB->get_records('block_desp_skills', null, 'sorting') as $skill) { ?>
             <tr>
-            	<?php
-            	if (!empty($skill->title)) echo '<td class="overview ov_skill'.$skill->id.'" style="background: #fff url(\'images/ov_skill'.$skill->id.'.gif\') no-repeat left top;padding-left:50px;">'.block_desp_skilltitle($skill->title).'</td>';
-				
+                <td class="overview ov_skill<?php echo $skill->id; ?>" style="background: #fff url('images/ov_skill<?php echo $skill->id; ?>.gif') no-repeat left top;padding-left:50px;"><?php echo get_string(strtolower(str_replace(' ', '', str_replace('ä', 'ae', str_replace('ö', 'oe', $skill->title)))), 'block_desp'); ?></td>
+				<?php
 					foreach ($niveaus as $niveau) {
 						$sql = 'SELECT sub.id FROM {block_desp_descriptors} AS des'.
 						       ' JOIN {block_desp_niveaus} AS sub ON sub.id=des.niveauid'.
