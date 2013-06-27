@@ -381,7 +381,7 @@ $string['neuernamesprache'] = 'Neuer Name der Sprache';
 $string['namenichtleer'] = 'Name darf nicht leer sein';
 $string['sprachewirklichloeschen'] = 'Sprache wirklich löschen?';
 $string['sprachewirklichloeschen2'] = 'Bist du dir sicher? Mit dem Löschen geht der ganze Sprachlernplan verloren';
-
+$string['sprachewirklichloeschen_checkliste'] = 'Bist du dir sicher? Mit dem Löschen geht die ganze Sprachencheckliste verloren';
 $string['typischearbeit'] = '<td>Schreiben<br/>Typische unkorrigierte Arbeit<br/>Korrigierte und verbesserte Arbeit</td>';
 
 $string['einzelarbeit'] = '<td>E</td>

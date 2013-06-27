@@ -310,6 +310,7 @@ $string['neuernamesprache'] = 'New language';
 $string['namenichtleer'] = "name can't be empty";
 $string['sprachewirklichloeschen'] = 'Do you really want to delete the language?';
 $string['sprachewirklichloeschen2'] = 'Are you sure? Your language learning plan will be lost';
+$string['sprachewirklichloeschen_checkliste'] = 'Are you sure? Your language checklist will be lost';
 
 $string['typischearbeit'] = '<td>writing<br/>typical uncorrected work<br/>corrected and revised work</td>';
 

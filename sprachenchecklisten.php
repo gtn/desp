@@ -117,7 +117,7 @@ block_desp_print_header("sprachenchecklisten");
 
 	function deleteLanguage(id) {
 		if (confirm("<?php echo get_string('sprachewirklichloeschen', 'block_desp');?>")) {
-			if(confirm("<?php echo get_string('sprachewirklichloeschen2', 'block_desp');?>")) {
+			if(confirm("<?php echo get_string('sprachewirklichloeschen_checkliste', 'block_desp');?>")) {
 			document.location.href = '<?php echo $_SERVER['PHP_SELF'].'?courseid='.$courseid.'&do=delete-language&id='; ?>' + encodeURIComponent(id);
 			}
 		}
