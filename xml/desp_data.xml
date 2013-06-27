@@ -1,246 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <exabis_competences_tables>
 	<table name="block_desp_descriptors">
-		<uid>5087</uid>
-		<title><![CDATA[I can understand familiar words and very basic phrases concerning myself, my family and immediate concrete surroundings when people speak slowly and clearly.]]></title>
-		<niveauid>1</niveauid>
-		<sorting>200195</sorting>
-		<skillid>1</skillid>
-		<parent_id>0</parent_id>
-	</table>
-	<table name="block_desp_descriptors">
-		<uid>5089</uid>
-		<title><![CDATA[I can understand phrases and the highest frequency vocabulary related to areas of most immediate personal relevance (e.g. very basic personal and family information, shopping, local area, employment). I can catch the main point in short, clear, simple messages and announcements.]]></title>
-		<niveauid>2</niveauid>
-		<sorting>200196</sorting>
-		<skillid>1</skillid>
-		<parent_id>0</parent_id>
-	</table>
-	<table name="block_desp_descriptors">
-		<uid>5090</uid>
-		<title><![CDATA[I can understand the main points of clear standard speech on familiar matters regularly encountered in work, school, leisure, etc. I can understand the main point of many radio or TV programmes on current affairs or topics of personal or professional interest when the delivery is relatively slow and clear.]]></title>
-		<niveauid>3</niveauid>
-		<sorting>200197</sorting>
-		<skillid>1</skillid>
-		<parent_id>0</parent_id>
-	</table>
-	<table name="block_desp_descriptors">
-		<uid>5091</uid>
-		<title><![CDATA[I can understand extended speech and lectures and follow even complex lines of argument provided the topic is reasonably familiar. I can understand most TV news and current affairs programmes. I can understand the majority of films in standard dialect.]]></title>
-		<niveauid>4</niveauid>
-		<sorting>200198</sorting>
-		<skillid>1</skillid>
-		<parent_id>0</parent_id>
-	</table>
-	<table name="block_desp_descriptors">
-		<uid>5092</uid>
-		<title><![CDATA[I can understand extended speech even when it is not clearly structured and when relationships are only implied and not signalled explicitly. I can understand television programmes and films without too much effort.]]></title>
-		<niveauid>13</niveauid>
-		<sorting>200199</sorting>
-		<skillid>1</skillid>
-		<parent_id>0</parent_id>
-	</table>
-	<table name="block_desp_descriptors">
-		<uid>5093</uid>
-		<title><![CDATA[I have no difficulty in understanding any kind of spoken language, whether live or broadcast, even when delivered at fast native speed, provided I have some time to get familiar with the accent.]]></title>
-		<niveauid>14</niveauid>
-		<sorting>200200</sorting>
-		<skillid>1</skillid>
-		<parent_id>0</parent_id>
-	</table>
-	<table name="block_desp_descriptors">
-		<uid>5094</uid>
-		<title><![CDATA[I can understand familiar names, words and very simple sentences, for example on notices and posters or in catalogues.]]></title>
-		<niveauid>1</niveauid>
-		<sorting>200201</sorting>
-		<skillid>3</skillid>
-		<parent_id>0</parent_id>
-	</table>
-	<table name="block_desp_descriptors">
-		<uid>5095</uid>
-		<title><![CDATA[I can read very short, simple texts. I can find specific, predictable information in simple everyday material such as advertisements, prospectuses, menus and timetables and I can understand short simple personal letters.]]></title>
-		<niveauid>2</niveauid>
-		<sorting>200202</sorting>
-		<skillid>3</skillid>
-		<parent_id>0</parent_id>
-	</table>
-	<table name="block_desp_descriptors">
-		<uid>5096</uid>
-		<title><![CDATA[I can understand texts that consist mainly of high frequency everyday or job-related language. I can understand the description of events, feelings and wishes in personal letters.]]></title>
-		<niveauid>3</niveauid>
-		<sorting>200203</sorting>
-		<skillid>3</skillid>
-		<parent_id>0</parent_id>
-	</table>
-	<table name="block_desp_descriptors">
-		<uid>5097</uid>
-		<title><![CDATA[I can read articles and reports concerned with contemporary problems in which the writers adopt particular attitudes or viewpoints. I can understand contemporary literary prose.]]></title>
-		<niveauid>4</niveauid>
-		<sorting>200204</sorting>
-		<skillid>3</skillid>
-		<parent_id>0</parent_id>
-	</table>
-	<table name="block_desp_descriptors">
-		<uid>5098</uid>
-		<title><![CDATA[I can understand long and complex factual and literary texts, appreciating distinctions of style. I can understand specialised articles and longer technical instructions, even when they do not relate to my field.]]></title>
-		<niveauid>13</niveauid>
-		<sorting>200205</sorting>
-		<skillid>3</skillid>
-		<parent_id>0</parent_id>
-	</table>
-	<table name="block_desp_descriptors">
-		<uid>5099</uid>
-		<title><![CDATA[I can read with ease virtually all forms of the written language, including abstract, structurally or linguistically complex texts such as manuals, specialised articles and literary works.]]></title>
-		<niveauid>14</niveauid>
-		<sorting>200206</sorting>
-		<skillid>3</skillid>
-		<parent_id>0</parent_id>
-	</table>
-	<table name="block_desp_descriptors">
-		<uid>5100</uid>
-		<title><![CDATA[I can interact in a simple way provided the other person is prepared to repeat or rephrase things at a slower rate of speech and help me formulate what I'm trying to say. I can ask and answer simple questions in areas of immediate need or on very familiar topics.]]></title>
-		<niveauid>1</niveauid>
-		<sorting>200207</sorting>
-		<skillid>1</skillid>
-		<parent_id>0</parent_id>
-	</table>
-	<table name="block_desp_descriptors">
-		<uid>5101</uid>
-		<title><![CDATA[I can communicate in simple and routine tasks requiring a simple and direct exchange of information on familiar topics and activities. I can handle very short social exchanges, even though I can't usually understand enough to keep the conversation going myself.]]></title>
-		<niveauid>2</niveauid>
-		<sorting>200208</sorting>
-		<skillid>1</skillid>
-		<parent_id>0</parent_id>
-	</table>
-	<table name="block_desp_descriptors">
-		<uid>5102</uid>
-		<title><![CDATA[I can deal with most situations likely to arise whilst travelling in an area where the language is spoken. I can enter unprepared into conversation on topics that are familiar, of personal interest or pertinent to everyday life (e.g. family, hobbies, work, travel and current events).]]></title>
-		<niveauid>3</niveauid>
-		<sorting>200209</sorting>
-		<skillid>1</skillid>
-		<parent_id>0</parent_id>
-	</table>
-	<table name="block_desp_descriptors">
-		<uid>5103</uid>
-		<title><![CDATA[I can interact with a degree of fluency and spontaneity that makes regular interaction with native speakers quite possible. I can take an active part in discussion in familiar contexts, accounting for and sustaining my views.]]></title>
-		<niveauid>4</niveauid>
-		<sorting>200210</sorting>
-		<skillid>1</skillid>
-		<parent_id>0</parent_id>
-	</table>
-	<table name="block_desp_descriptors">
-		<uid>5104</uid>
-		<title><![CDATA[I can express myself fluently and spontaneously without much obvious searching for expressions. I can use language flexibly and effectively for social and professional purposes. I can formulate ideas and opinions with precision and relate my contribution skilfully to those of other speakers. ]]></title>
-		<niveauid>13</niveauid>
-		<sorting>200211</sorting>
-		<skillid>1</skillid>
-		<parent_id>0</parent_id>
-	</table>
-	<table name="block_desp_descriptors">
-		<uid>5105</uid>
-		<title><![CDATA[I can take part effortlessly in any conversation or discussion and have a good familiarity with idiomatic expressions and colloquialisms. I can express myself fluently and convey finer shades of meaning precisely. If I do have a problem I can backtrack and restructure around the difficulty so smoothly that other people are hardly aware of it.]]></title>
-		<niveauid>14</niveauid>
-		<sorting>200212</sorting>
-		<skillid>1</skillid>
-		<parent_id>0</parent_id>
-	</table>
-	<table name="block_desp_descriptors">
-		<uid>5106</uid>
-		<title><![CDATA[I can use simple phrases and sentences to describe where I live and people I know.]]></title>
-		<niveauid>1</niveauid>
-		<sorting>200213</sorting>
-		<skillid>1</skillid>
-		<parent_id>0</parent_id>
-	</table>
-	<table name="block_desp_descriptors">
-		<uid>5107</uid>
-		<title><![CDATA[I can use a series of phrases and sentences to describe in simple terms my family and other people, living conditions, my educational background and my present or most recent job.]]></title>
-		<niveauid>2</niveauid>
-		<sorting>200214</sorting>
-		<skillid>1</skillid>
-		<parent_id>0</parent_id>
-	</table>
-	<table name="block_desp_descriptors">
-		<uid>5108</uid>
-		<title><![CDATA[I can connect phrases in a simple way in order to describe experiences and events, my dreams, hopes and ambitions. I can briefly give reasons and explanations for opinions and plans. I can narrate a story or relate the plot of a book or film and describe my reactions.]]></title>
-		<niveauid>3</niveauid>
-		<sorting>200215</sorting>
-		<skillid>1</skillid>
-		<parent_id>0</parent_id>
-	</table>
-	<table name="block_desp_descriptors">
-		<uid>5109</uid>
-		<title><![CDATA[I can present clear, detailed descriptions on a wide range of subjects related to my field of interest. I can explain a viewpoint on a topical issue giving the advantages and disadvantages of various options.]]></title>
-		<niveauid>4</niveauid>
-		<sorting>200216</sorting>
-		<skillid>1</skillid>
-		<parent_id>0</parent_id>
-	</table>
-	<table name="block_desp_descriptors">
-		<uid>5110</uid>
-		<title><![CDATA[I can present clear, detailed descriptions of complex subjects integrating sub-themes, developing particular points and rounding off with an appropriate conclusion.]]></title>
-		<niveauid>13</niveauid>
-		<sorting>200217</sorting>
-		<skillid>1</skillid>
-		<parent_id>0</parent_id>
-	</table>
-	<table name="block_desp_descriptors">
-		<uid>5111</uid>
-		<title><![CDATA[I can present a clear, smoothly-flowing description or argument in a style appropriate to the context and with an effective logical structure which helps the recipient to notice and remember significant points.]]></title>
-		<niveauid>14</niveauid>
-		<sorting>200218</sorting>
-		<skillid>1</skillid>
-		<parent_id>0</parent_id>
-	</table>
-	<table name="block_desp_descriptors">
-		<uid>5112</uid>
-		<title><![CDATA[I can write a short, simple postcard, for example sending holiday greetings. I can fill in forms with personal details, for example entering my name, nationality and address on a hotel registration form.]]></title>
-		<niveauid>1</niveauid>
-		<sorting>200219</sorting>
-		<skillid>2</skillid>
-		<parent_id>0</parent_id>
-	</table>
-	<table name="block_desp_descriptors">
-		<uid>5113</uid>
-		<title><![CDATA[I can write short, simple notes and messages. I can write a very simple personal letter, for example thanking someone for something.]]></title>
-		<niveauid>2</niveauid>
-		<sorting>200220</sorting>
-		<skillid>2</skillid>
-		<parent_id>0</parent_id>
-	</table>
-	<table name="block_desp_descriptors">
-		<uid>5114</uid>
-		<title><![CDATA[I can write simple connected text on topics which are familiar or of personal interest. I can write personal letters describing experiences and impressions.]]></title>
-		<niveauid>3</niveauid>
-		<sorting>200221</sorting>
-		<skillid>2</skillid>
-		<parent_id>0</parent_id>
-	</table>
-	<table name="block_desp_descriptors">
-		<uid>5115</uid>
-		<title><![CDATA[I can write clear, detailed text on a wide range of subjects related to my interests. I can write an essay or report, passing on information or giving reasons in support of or against a particular point of view. I can write letters highlighting the personal significance of events and experiences.]]></title>
-		<niveauid>4</niveauid>
-		<sorting>200222</sorting>
-		<skillid>2</skillid>
-		<parent_id>0</parent_id>
-	</table>
-	<table name="block_desp_descriptors">
-		<uid>5116</uid>
-		<title><![CDATA[I can express myself in clear, well-structured text, expressing points of view at some length. I can write about complex subjects in a letter, an essay or a report, underlining what I consider to be the salient issues. I can select a style appropriate to the reader in mind.]]></title>
-		<niveauid>13</niveauid>
-		<sorting>200223</sorting>
-		<skillid>2</skillid>
-		<parent_id>0</parent_id>
-	</table>
-	<table name="block_desp_descriptors">
-		<uid>5117</uid>
-		<title><![CDATA[I can write clear, smoothly-flowing text in an appropriate style. I can write complex letters, reports or articles which present a case with an effective logical structure which helps the recipient to notice and remember significant points. I can write summaries and reviews of professional or literary works.]]></title>
-		<niveauid>14</niveauid>
-		<sorting>200224</sorting>
-		<skillid>2</skillid>
-		<parent_id>0</parent_id>
-	</table>
-	<table name="block_desp_descriptors">
 		<uid>5563</uid>
 		<title><![CDATA[I can describe myself, my family and my circle of friends and acquaintances, in very simple single phrases.]]></title>
 		<niveauid>1</niveauid>
@@ -433,14 +193,6 @@
 		<parent_id>0</parent_id>
 	</table>
 	<table name="block_desp_descriptors">
-		<uid>5587</uid>
-		<title><![CDATA[----------------------------------]]></title>
-		<niveauid>0</niveauid>
-		<sorting>199711</sorting>
-		<skillid>0</skillid>
-		<parent_id>0</parent_id>
-	</table>
-	<table name="block_desp_descriptors">
 		<uid>5588</uid>
 		<title><![CDATA[Using several simple phrases and sentences, I can talk about and report on habitual and planned activities (e. g. my interests, schedule of work, daily schedule of activities, my weekends).]]></title>
 		<niveauid>2</niveauid>
@@ -454,14 +206,6 @@
 		<niveauid>2</niveauid>
 		<sorting>199713</sorting>
 		<skillid>5</skillid>
-		<parent_id>0</parent_id>
-	</table>
-	<table name="block_desp_descriptors">
-		<uid>5590</uid>
-		<title><![CDATA[--------------------------]]></title>
-		<niveauid>0</niveauid>
-		<sorting>199721</sorting>
-		<skillid>0</skillid>
 		<parent_id>0</parent_id>
 	</table>
 	<table name="block_desp_descriptors">
@@ -529,14 +273,6 @@
 		<parent_id>0</parent_id>
 	</table>
 	<table name="block_desp_descriptors">
-		<uid>5599</uid>
-		<title><![CDATA[b2------------------------------]]></title>
-		<niveauid>0</niveauid>
-		<sorting>199731</sorting>
-		<skillid>0</skillid>
-		<parent_id>0</parent_id>
-	</table>
-	<table name="block_desp_descriptors">
 		<uid>5600</uid>
 		<title><![CDATA[I can give factual descriptions (e. g. concerning the weather, accommodation, school, work) and outline sequences of events in situations familiar to me (e. g. events in the course of a day; celebrations; job-related activities).]]></title>
 		<niveauid>3</niveauid>
@@ -593,68 +329,1484 @@
 		<parent_id>0</parent_id>
 	</table>
 	<table name="block_desp_descriptors">
-		<uid>5607</uid>
-		<title><![CDATA[c1------------------------]]></title>
-		<niveauid>0</niveauid>
-		<sorting>200182</sorting>
-		<skillid>0</skillid>
+		<uid>5610</uid>
+		<title><![CDATA[I can say hello and good-bye, and introduce myself or someone else.]]></title>
+		<niveauid>1</niveauid>
+		<sorting>200225</sorting>
+		<skillid>4</skillid>
 		<parent_id>0</parent_id>
 	</table>
 	<table name="block_desp_descriptors">
-		<uid>5608</uid>
-		<title><![CDATA[c2----------------------------------------]]></title>
-		<niveauid>0</niveauid>
-		<sorting>200189</sorting>
-		<skillid>0</skillid>
+		<uid>5611</uid>
+		<title><![CDATA[I can ask for people’s names, ask simple questions about where they live, about objects and about spare-time activities, or answer such questions.]]></title>
+		<niveauid>1</niveauid>
+		<sorting>200226</sorting>
+		<skillid>4</skillid>
 		<parent_id>0</parent_id>
 	</table>
 	<table name="block_desp_descriptors">
-		<uid>5609</uid>
-		<title><![CDATA[nix---------------------------------------]]></title>
-		<niveauid>0</niveauid>
-		<sorting>200194</sorting>
-		<skillid>0</skillid>
+		<uid>5612</uid>
+		<title><![CDATA[I can ask other how they are; I can say how I am.]]></title>
+		<niveauid>1</niveauid>
+		<sorting>200227</sorting>
+		<skillid>4</skillid>
 		<parent_id>0</parent_id>
 	</table>
-	<table name="block_desp_examples">
-		<uid>1789</uid>
-		<title><![CDATA[Ordering a meal]]></title>
-		<titleshort><![CDATA[Ordering a meal]]></titleshort>
-		<task/>
-		<sorting>9569</sorting>
-		<solution/>
-		<attachement/>
-		<completefile/>
-		<description/>
-		<taxid>0</taxid>
-		<timeframe/>
-		<ressources/>
-		<tips/>
-		<externalurl>http://www.oesz.at/download/esp_plattform/orderingameal.htm</externalurl>
-		<externalsolution/>
-		<externaltask/>
-		<lang>10</lang>
-		<iseditable>0</iseditable>
+	<table name="block_desp_descriptors">
+		<uid>5613</uid>
+		<title><![CDATA[I can ask very simple questions that are part of shopping, if I can confirm what I want by pointing to things or with the help of other gestures.]]></title>
+		<niveauid>1</niveauid>
+		<sorting>200228</sorting>
+		<skillid>4</skillid>
+		<parent_id>0</parent_id>
 	</table>
-	<table name="block_desp_examples">
-		<uid>1790</uid>
-		<title><![CDATA[At the restaurant]]></title>
-		<titleshort/>
-		<task/>
-		<sorting>9570</sorting>
-		<solution/>
-		<attachement/>
-		<completefile/>
-		<description/>
-		<taxid>0</taxid>
-		<timeframe/>
-		<ressources/>
-		<tips/>
-		<externalurl>http://www.oesz.at/download/esp_plattform/attherestaurant.htm</externalurl>
-		<externalsolution/>
-		<externaltask/>
-		<lang>10</lang>
-		<iseditable>0</iseditable>
+	<table name="block_desp_descriptors">
+		<uid>5614</uid>
+		<title><![CDATA[When I‘ve been unable to understand I can say so, ask what was said, and request a repetition or explanation.]]></title>
+		<niveauid>1</niveauid>
+		<sorting>200229</sorting>
+		<skillid>4</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5615</uid>
+		<title><![CDATA[I can ask for something; say thanks; and apologize.]]></title>
+		<niveauid>1</niveauid>
+		<sorting>200230</sorting>
+		<skillid>4</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5616</uid>
+		<title><![CDATA[I can spell aloud names and addresses that I am familiar with.]]></title>
+		<niveauid>1</niveauid>
+		<sorting>200231</sorting>
+		<skillid>4</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5617</uid>
+		<title><![CDATA[I can deal with numbers, e. g. ask for a telephone number/the time of day/the price of goods; I can also reply to such questions.]]></title>
+		<niveauid>1</niveauid>
+		<sorting>200232</sorting>
+		<skillid>4</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5618</uid>
+		<title><![CDATA[In everyday situations and in role play, I can name simple objects, give simple instructions, and take simple roles.]]></title>
+		<niveauid>1</niveauid>
+		<sorting>200233</sorting>
+		<skillid>4</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5619</uid>
+		<title><![CDATA[I can participate in simple exchanges (e. g. on matters concerning family, friends, training, work and spare time activities). I can also show interest in what someone else says to me.]]></title>
+		<niveauid>2</niveauid>
+		<sorting>200234</sorting>
+		<skillid>4</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5620</uid>
+		<title><![CDATA[I can state what I like and dislike, and ask others about their likes and dislikes.]]></title>
+		<niveauid>2</niveauid>
+		<sorting>200235</sorting>
+		<skillid>4</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5621</uid>
+		<title><![CDATA[I can go shopping; in post offices and banks I can ask for things (e. g. for stamps; when changing currencies), while sometimes making things easier for myself by pointing to things, or other gestures.]]></title>
+		<niveauid>2</niveauid>
+		<sorting>200236</sorting>
+		<skillid>4</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5622</uid>
+		<title><![CDATA[I can state my opinion on a given topic, in simple words.]]></title>
+		<niveauid>2</niveauid>
+		<sorting>200237</sorting>
+		<skillid>4</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5623</uid>
+		<title><![CDATA[I can say if I am agreeable about something: if necessary, I can make a different suggestion.]]></title>
+		<niveauid>2</niveauid>
+		<sorting>200238</sorting>
+		<skillid>4</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5624</uid>
+		<title><![CDATA[I can ask for directions; I can explain how to get somewhere, with the help of a map or a plan.]]></title>
+		<niveauid>2</niveauid>
+		<sorting>200239</sorting>
+		<skillid>4</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5625</uid>
+		<title><![CDATA[I can fluently spell aloud names and addresses.]]></title>
+		<niveauid>2</niveauid>
+		<sorting>200240</sorting>
+		<skillid>4</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5626</uid>
+		<title><![CDATA[In direct communication or on the telephone I can talk about intentions, and arrange appointments or meetings.]]></title>
+		<niveauid>2</niveauid>
+		<sorting>200241</sorting>
+		<skillid>4</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5627</uid>
+		<title><![CDATA[I can take a role in a dialogue or a simulation exercise (e. g. in situations of everyday or working life).]]></title>
+		<niveauid>2</niveauid>
+		<sorting>200242</sorting>
+		<skillid>4</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5628</uid>
+		<title><![CDATA[In simple exchanges between two persons, I can take the role of language mediator and ‘hand on‘ simple information regarding family, friends, training, job and spare-time activities.]]></title>
+		<niveauid>2</niveauid>
+		<sorting>200243</sorting>
+		<skillid>4</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5629</uid>
+		<title><![CDATA[I can start a conversation on topics familiar to me, keep it going, and end it.]]></title>
+		<niveauid>3</niveauid>
+		<sorting>200244</sorting>
+		<skillid>4</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5630</uid>
+		<title><![CDATA[I can express feelings such as surprise, joy, sadness, interest or indifference; I can react to feelings expressed by the other person(s).]]></title>
+		<niveauid>3</niveauid>
+		<sorting>200245</sorting>
+		<skillid>4</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5631</uid>
+		<title><![CDATA[I can linguistically manage everyday situations (e. g. in shops, banks or firms), though I may have to ask people to repeat or explain a word now and then. ]]></title>
+		<niveauid>3</niveauid>
+		<sorting>200246</sorting>
+		<skillid>4</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5632</uid>
+		<title><![CDATA[I can manage most situations that arise in connection with travelling (e. g. bookings, orders, complaints).]]></title>
+		<niveauid>3</niveauid>
+		<sorting>200247</sorting>
+		<skillid>4</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5633</uid>
+		<title><![CDATA[I can ask, or answer, questions about familiar topics, without preparation.]]></title>
+		<niveauid>3</niveauid>
+		<sorting>200248</sorting>
+		<skillid>4</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5634</uid>
+		<title><![CDATA[I can voice my opinion on familiar topics in exchanges, discussions and meetings, and give reasons. I can also agree or politely disagree, and make other suggestions.]]></title>
+		<niveauid>3</niveauid>
+		<sorting>200249</sorting>
+		<skillid>4</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5635</uid>
+		<title><![CDATA[In a self-presentation or interview, I can give information about myself, my personal and my working environment.]]></title>
+		<niveauid>3</niveauid>
+		<sorting>200250</sorting>
+		<skillid>4</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5636</uid>
+		<title><![CDATA[I can make phone calls in standard work-related situations, if the other person speaks slowly and clearly. Occasionally I need to ask them to repeat or to rephrase.]]></title>
+		<niveauid>3</niveauid>
+		<sorting>200251</sorting>
+		<skillid>4</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5637</uid>
+		<title><![CDATA[I can take a role in a simulated everyday situation or a work-related one, and I can even manage to improvise.]]></title>
+		<niveauid>3</niveauid>
+		<sorting>200252</sorting>
+		<skillid>4</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5638</uid>
+		<title><![CDATA[In simple everyday situations or situations related to training or work, I can fill the role of language mediator between two persons, and ‘hand on‘ essential information.]]></title>
+		<niveauid>3</niveauid>
+		<sorting>200253</sorting>
+		<skillid>4</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5639</uid>
+		<title><![CDATA[I can participate in exchanges on many topics of everyday life, on my work or my areas of interest, in a fairly fluent and spontaneous way. I can also clearly express my viewpoint, my feelings, intentions and wishes.]]></title>
+		<niveauid>4</niveauid>
+		<sorting>200254</sorting>
+		<skillid>4</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5640</uid>
+		<title><![CDATA[In discussions on topics with which I am familiar, I can state and explain my viewpoint clearly and defend it; look critically at various other suggestions; and go into details when arguing against some such suggestions.]]></title>
+		<niveauid>4</niveauid>
+		<sorting>200255</sorting>
+		<skillid>4</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5641</uid>
+		<title><![CDATA[I can communicate with native speakers with such a degree of spontaneity and fluency that neither long pauses nor misunderstandings will arise.]]></title>
+		<niveauid>4</niveauid>
+		<sorting>200256</sorting>
+		<skillid>4</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5642</uid>
+		<title><![CDATA[In an exchange (e. g. in an interview) I can take the initiative, develop and argue lines of thought. ]]></title>
+		<niveauid>4</niveauid>
+		<sorting>200257</sorting>
+		<skillid>4</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5643</uid>
+		<title><![CDATA[I can influence teamwork and how it progresses, by means of questions and other oral contributions.]]></title>
+		<niveauid>4</niveauid>
+		<sorting>200258</sorting>
+		<skillid>4</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5644</uid>
+		<title><![CDATA[I can manage linguistic situations where the main goal is to negotiate a solution to a conflict (e. g. a quarrel, a complaint).]]></title>
+		<niveauid>4</niveauid>
+		<sorting>200259</sorting>
+		<skillid>4</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5645</uid>
+		<title><![CDATA[I can reliably communicate detailed information taken from a variety of sources, both in direct speech and on the telephone.]]></title>
+		<niveauid>4</niveauid>
+		<sorting>200260</sorting>
+		<skillid>4</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5646</uid>
+		<title><![CDATA[In role play or simulated scenes, I can take a longer role to design and enact, including improvisation.]]></title>
+		<niveauid>4</niveauid>
+		<sorting>200261</sorting>
+		<skillid>4</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5647</uid>
+		<title><![CDATA[In exchanges on topics familiar to me, I can take the role of language mediator and communicate, sum up and explain information for the benefit of the two interlocutors.]]></title>
+		<niveauid>4</niveauid>
+		<sorting>200262</sorting>
+		<skillid>4</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5648</uid>
+		<title><![CDATA[I can express myself spontaneously and fluently in longer exchanges, about almost any topic (training, work, personal life, social and scientific subjects); only very rarely do I need to search for words.]]></title>
+		<niveauid>13</niveauid>
+		<sorting>200263</sorting>
+		<skillid>4</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5649</uid>
+		<title><![CDATA[In discussions and meetings I can state and explain my ideas and suggestions convincingly, give clear reasons, and sum up and illustrate results, even when topics are abstract, complex and not really familiar.]]></title>
+		<niveauid>13</niveauid>
+		<sorting>200264</sorting>
+		<skillid>4</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5650</uid>
+		<title><![CDATA[In discussions, debates and meetings I can reply to questions, and react effectively and spontaneously to other persons’ comments and arguments.]]></title>
+		<niveauid>13</niveauid>
+		<sorting>200265</sorting>
+		<skillid>4</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5651</uid>
+		<title><![CDATA[I can begin an exchange, keep it going, and end it, taking the roles of speaker and listener in turn. I usually understand jokes and allusions and can react accordingly.]]></title>
+		<niveauid>13</niveauid>
+		<sorting>200266</sorting>
+		<skillid>4</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5652</uid>
+		<title><![CDATA[In interactions I can express my feelings in ways that are differentiated and appropriate to the situation in hand; I can perceive the other person’s feelings and react accordingly.]]></title>
+		<niveauid>13</niveauid>
+		<sorting>200267</sorting>
+		<skillid>4</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5653</uid>
+		<title><![CDATA[I can freely participate in interviews, both in the role of interviewer and in that of interviewee. I can develop issues under discussion fluently and without help from outside and enlarge on them; I can deal well with interjections or unexpected comments.]]></title>
+		<niveauid>13</niveauid>
+		<sorting>200268</sorting>
+		<skillid>4</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5654</uid>
+		<title><![CDATA[I can reliably communicate all kinds of complex and detailed information for others to use, both in direct exchanges and on the telephone.]]></title>
+		<niveauid>13</niveauid>
+		<sorting>200269</sorting>
+		<skillid>4</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5655</uid>
+		<title><![CDATA[In role play or simulated scenes, I can take a longer role to design and enact, including improvisation.]]></title>
+		<niveauid>13</niveauid>
+		<sorting>200270</sorting>
+		<skillid>4</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5656</uid>
+		<title><![CDATA[In discussions and meetings, I can take the role of language mediator and communicate, sum up and explain information for the benefit of interlocutors; I can also explain arguments and viewpoints with precision.]]></title>
+		<niveauid>13</niveauid>
+		<sorting>200271</sorting>
+		<skillid>4</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5657</uid>
+		<title><![CDATA[I can take part effortlessly in any conversations or discussions in the most varied situations, including with native speakers of various different origins.]]></title>
+		<niveauid>14</niveauid>
+		<sorting>200272</sorting>
+		<skillid>4</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5658</uid>
+		<title><![CDATA[In formal discussions, meetings and negotiations on complex topics, I can assert myself by arguing clearly and convincingly, being almost on a par with native speakers.]]></title>
+		<niveauid>14</niveauid>
+		<sorting>200273</sorting>
+		<skillid>4</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5659</uid>
+		<title><![CDATA[I am familiar with idiomatic expressions and colloquialisms, and I am aware of their connotations. When occasionally I have difficulty expressing myself, I can reformulate in ways that are hardly noticeable to other people.]]></title>
+		<niveauid>14</niveauid>
+		<sorting>200274</sorting>
+		<skillid>4</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5660</uid>
+		<title><![CDATA[I can recognise finer shades of meaning, and can react to them in a differentiated and effective manner.]]></title>
+		<niveauid>14</niveauid>
+		<sorting>200275</sorting>
+		<skillid>4</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5661</uid>
+		<title><![CDATA[In interviews, I can take the role of interviewer or of interviewee, and can interact convincingly and very fluently. I can structure speech, with next to no drawbacks relative to native speakers.]]></title>
+		<niveauid>14</niveauid>
+		<sorting>200276</sorting>
+		<skillid>4</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5662</uid>
+		<title><![CDATA[In discussions, meetings and negotiations, I can take the role of language mediator. I can communicate with precision complex information and arguments between interlocutors; explain viewpoints; and express finer shades of meaning.]]></title>
+		<niveauid>14</niveauid>
+		<sorting>200277</sorting>
+		<skillid>4</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5663</uid>
+		<title><![CDATA[I can recognise words and very basic phrases known to me, in very simple spoken exchanges concerning familiar topics (e. g. about my family, circle of friends, meals, leisure activities).]]></title>
+		<niveauid>1</niveauid>
+		<sorting>200278</sorting>
+		<skillid>1</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5664</uid>
+		<title><![CDATA[I can follow very simple stories, accounts and songs, with the help of pictures or facial expression and gestures.]]></title>
+		<niveauid>1</niveauid>
+		<sorting>200279</sorting>
+		<skillid>1</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5665</uid>
+		<title><![CDATA[When I listen to very simple texts on topics familiar to me, on the radio, a CD or other audio media, I can recognise some words and phrases.]]></title>
+		<niveauid>1</niveauid>
+		<sorting>200280</sorting>
+		<skillid>1</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5666</uid>
+		<title><![CDATA[In audiovisual presentations, I can recognise what very simple texts are about that concern topics familiar to me.]]></title>
+		<niveauid>1</niveauid>
+		<sorting>200281</sorting>
+		<skillid>1</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5667</uid>
+		<title><![CDATA[I can understand very simple short questions (e. g. someone asking for my name, my address, about my spare-time interests).]]></title>
+		<niveauid>1</niveauid>
+		<sorting>200282</sorting>
+		<skillid>1</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5668</uid>
+		<title><![CDATA[I can understand and follow very simple short instructions and explanations (e. g. instructions for work, safety instructions, directions).]]></title>
+		<niveauid>1</niveauid>
+		<sorting>200283</sorting>
+		<skillid>1</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5669</uid>
+		<title><![CDATA[I can understand very simple news and messages (e. g. on an answering machine).]]></title>
+		<niveauid>1</niveauid>
+		<sorting>200284</sorting>
+		<skillid>1</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5670</uid>
+		<title><![CDATA[I can understand numbers, price tags, and simple expressions of time.]]></title>
+		<niveauid>1</niveauid>
+		<sorting>200285</sorting>
+		<skillid>1</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5671</uid>
+		<title><![CDATA[I can recognise what simple conversations are about, if the topic is familiar to me and people speak clearly.]]></title>
+		<niveauid>2</niveauid>
+		<sorting>200286</sorting>
+		<skillid>1</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5672</uid>
+		<title><![CDATA[I can recognise the gist of a simple story, of a simple song text, or of a short scenic performance.]]></title>
+		<niveauid>2</niveauid>
+		<sorting>200287</sorting>
+		<skillid>1</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5673</uid>
+		<title><![CDATA[I can skim short and clearly spoken texts on audio equipment for essential information, provided that these relate to foreseeable everyday things (e. g. the weather forecast) or to familiar (e. g. job-related) subject areas.]]></title>
+		<niveauid>2</niveauid>
+		<sorting>200288</sorting>
+		<skillid>1</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5674</uid>
+		<title><![CDATA[I can follow the main information content of TV broadcasts about events, persons, places and sequences of events, with the help of the pictures.]]></title>
+		<niveauid>2</niveauid>
+		<sorting>200289</sorting>
+		<skillid>1</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5675</uid>
+		<title><![CDATA[I can understand the most important points of instructions, questions, and information (or requests for information) related to everyday situations, training and vocational situations.]]></title>
+		<niveauid>2</niveauid>
+		<sorting>200290</sorting>
+		<skillid>1</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5676</uid>
+		<title><![CDATA[I can understand simple explanations (e. g. how to get from A to B on foot, or with public means of transport).]]></title>
+		<niveauid>2</niveauid>
+		<sorting>200291</sorting>
+		<skillid>1</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5677</uid>
+		<title><![CDATA[I can follow the main lines of simple descriptions of processes and work schedules (e. g. safety instructions, instructions for use, preparing dishes).]]></title>
+		<niveauid>2</niveauid>
+		<sorting>200292</sorting>
+		<skillid>1</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5678</uid>
+		<title><![CDATA[I can grasp the main point of short, clear, simple announcements (e. g. at the railway station, at an airport, on the shop floor) and of communications.]]></title>
+		<niveauid>2</niveauid>
+		<sorting>200293</sorting>
+		<skillid>1</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5679</uid>
+		<title><![CDATA[I understand what is said to me in everyday spoken exchanges. Sometimes I need to ask the other person to repeat what they have said; or ask them if I have understood correctly.]]></title>
+		<niveauid>3</niveauid>
+		<sorting>200294</sorting>
+		<skillid>1</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5680</uid>
+		<title><![CDATA[I can follow the main points in interviews, reports and talks.]]></title>
+		<niveauid>3</niveauid>
+		<sorting>200295</sorting>
+		<skillid>1</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5681</uid>
+		<title><![CDATA[I can understand the gist of stories, narratives, acted scenes, and songs.]]></title>
+		<niveauid>3</niveauid>
+		<sorting>200296</sorting>
+		<skillid>1</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5682</uid>
+		<title><![CDATA[I can follow the gist of what native speakers say when they use standard dialect and speak clearly about things familiar to me.]]></title>
+		<niveauid>3</niveauid>
+		<sorting>200297</sorting>
+		<skillid>1</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5683</uid>
+		<title><![CDATA[I can follow the gist of radio broadcasts and audio recordings if they concern current affairs or one of my interests.]]></title>
+		<niveauid>3</niveauid>
+		<sorting>200298</sorting>
+		<skillid>1</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5684</uid>
+		<title><![CDATA[I can follow films and TV programmes if pictures give strong support to content, and if the language used is clear and uncomplicated.]]></title>
+		<niveauid>3</niveauid>
+		<sorting>200299</sorting>
+		<skillid>1</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5685</uid>
+		<title><![CDATA[I can follow more detailed instructions, questions and information in everyday situations, or in training or professional contexts, and when travelling.]]></title>
+		<niveauid>3</niveauid>
+		<sorting>200300</sorting>
+		<skillid>1</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5686</uid>
+		<title><![CDATA[I can understand technical information, e. g. instructions for use regarding technical devices and tools used in everyday life.]]></title>
+		<niveauid>3</niveauid>
+		<sorting>200301</sorting>
+		<skillid>1</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5687</uid>
+		<title><![CDATA[I can understand well the main points of statements that are more complex linguistically and content-wise (e. g. reports and presentations) if standard dialect is spoken and if the topic is one that interests me.]]></title>
+		<niveauid>4</niveauid>
+		<sorting>200302</sorting>
+		<skillid>1</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5688</uid>
+		<title><![CDATA[Within my special area of knowledge or my professional situation I can follow a lecture or a talk, as long as the contribution is clearly delivered.]]></title>
+		<niveauid>4</niveauid>
+		<sorting>200303</sorting>
+		<skillid>1</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5689</uid>
+		<title><![CDATA[I can follow spoken interaction between native speakers well, provided they are using standard dialect and I am reasonably familiar with the topic.]]></title>
+		<niveauid>4</niveauid>
+		<sorting>200304</sorting>
+		<skillid>1</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5690</uid>
+		<title><![CDATA[I can follow radio and TV programmes regarding current events or familiar topics. While listening I can pick up not only information, but also speakers’ viewpoints and positions.]]></title>
+		<niveauid>4</niveauid>
+		<sorting>200305</sorting>
+		<skillid>1</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5691</uid>
+		<title><![CDATA[I can follow the plot of commercial films and of plays well, provided standard dialect is spoken for the most part.]]></title>
+		<niveauid>4</niveauid>
+		<sorting>200306</sorting>
+		<skillid>1</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5692</uid>
+		<title><![CDATA[I can understand messages, announcements and communications spoken in standard dialect and at normal speed.]]></title>
+		<niveauid>4</niveauid>
+		<sorting>200307</sorting>
+		<skillid>1</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5693</uid>
+		<title><![CDATA[I can follow interlocutors on the telephone provided the content is familiar.]]></title>
+		<niveauid>4</niveauid>
+		<sorting>200308</sorting>
+		<skillid>1</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5694</uid>
+		<title><![CDATA[I can follow technical information, e. g. more detailed descriptions of familiar products, functions, and services.]]></title>
+		<niveauid>4</niveauid>
+		<sorting>200309</sorting>
+		<skillid>1</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5695</uid>
+		<title><![CDATA[I can follow complex speech on the most varied topics (e. g. reports and presentations, including those given by native speakers), provided standard dialect is used, in the main.]]></title>
+		<niveauid>13</niveauid>
+		<sorting>200310</sorting>
+		<skillid>1</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5696</uid>
+		<title><![CDATA[I can follow a complex talk or a conversation relatively easily, in my own field of specialisation or my professional or working life.]]></title>
+		<niveauid>13</niveauid>
+		<sorting>200311</sorting>
+		<skillid>1</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5697</uid>
+		<title><![CDATA[I can follow lively everyday talk, spoken interaction, discussions and debates between native speakers well, even when the topics dealt with are not very familiar to me.]]></title>
+		<niveauid>13</niveauid>
+		<sorting>200312</sorting>
+		<skillid>1</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5698</uid>
+		<title><![CDATA[I can follow radio broadcasts and various audio recordings well, while picking up more complex information and relationships at the same time, as well as recognising attitudes and opinions that are implied (not openly stated).]]></title>
+		<niveauid>13</niveauid>
+		<sorting>200313</sorting>
+		<skillid>1</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5699</uid>
+		<title><![CDATA[I can easily follow artistic performances (e. g. in TV programmes, in films, the theatre, on video or DVDs) that have a high percentage of colloquial speech and idiomatic expressions.]]></title>
+		<niveauid>13</niveauid>
+		<sorting>200314</sorting>
+		<skillid>1</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5700</uid>
+		<title><![CDATA[I understand any unexpected questions, objections or information posed or given by my interlocutors even on a poor quality telephone line.]]></title>
+		<niveauid>13</niveauid>
+		<sorting>200315</sorting>
+		<skillid>1</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5701</uid>
+		<title><![CDATA[I can follow lectures, talks and presentations on the most varied topics (both general and specialised topics), including those that make use of idiomatic phrases and unfamiliar terminology.]]></title>
+		<niveauid>14</niveauid>
+		<sorting>200316</sorting>
+		<skillid>1</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5702</uid>
+		<title><![CDATA[I can follow lively discussions and debates with a high percentage of idiomatic phrases, with no particular effort.]]></title>
+		<niveauid>14</niveauid>
+		<sorting>200317</sorting>
+		<skillid>1</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5703</uid>
+		<title><![CDATA[I can follow everyday exchanges between native speakers without any difficulty at all, even if they speak very quickly, use many colloquial expressions or phrases, and / or with regional features of speech.]]></title>
+		<niveauid>14</niveauid>
+		<sorting>200318</sorting>
+		<skillid>1</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5704</uid>
+		<title><![CDATA[I can follow media offerings that are of interest to me (on the radio, on TV, in the cinema, theatre, on video, DVDs…) with ease, while recognising some finer points about language or content at the same time. ]]></title>
+		<niveauid>14</niveauid>
+		<sorting>200319</sorting>
+		<skillid>1</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5705</uid>
+		<title><![CDATA[I can understand complex technical information, e. g. specifications concerning products, the functioning of technical apparatus, and services.]]></title>
+		<niveauid>14</niveauid>
+		<sorting>200320</sorting>
+		<skillid>1</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5706</uid>
+		<title><![CDATA[I can recognise names, single words, groups of words and very simple phrases or sentences in prospectuses, on posters and notices, and in newspaper reports.]]></title>
+		<niveauid>1</niveauid>
+		<sorting>200321</sorting>
+		<skillid>3</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5707</uid>
+		<title><![CDATA[I can understand really simple stories with pictures.]]></title>
+		<niveauid>1</niveauid>
+		<sorting>200322</sorting>
+		<skillid>3</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5708</uid>
+		<title><![CDATA[I can understand very simple short notes and written messages in or about everyday situations (e. g. explanations about directions; postcards, emails, notes of telephone conversations).]]></title>
+		<niveauid>1</niveauid>
+		<sorting>200323</sorting>
+		<skillid>3</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5709</uid>
+		<title><![CDATA[I can understand really simple printed forms (e. g. such as can be found at immigration or when registering at an hotel) to the point of being able to give details of myself (e. g. my name, place and date of birth).]]></title>
+		<niveauid>1</niveauid>
+		<sorting>200324</sorting>
+		<skillid>3</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5710</uid>
+		<title><![CDATA[I can understand really simple instructions given by a computer programme or computer game.]]></title>
+		<niveauid>1</niveauid>
+		<sorting>200325</sorting>
+		<skillid>3</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5711</uid>
+		<title><![CDATA[I can understand really simple working instructions regarding my training or my field of work.]]></title>
+		<niveauid>1</niveauid>
+		<sorting>200326</sorting>
+		<skillid>3</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5712</uid>
+		<title><![CDATA[I can find and understand essential information contained in simple everyday texts that refer to familiar situations (e. g. prospectuses, brochures, menus, posters, timetables, advertisements).]]></title>
+		<niveauid>2</niveauid>
+		<sorting>200327</sorting>
+		<skillid>3</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5713</uid>
+		<title><![CDATA[If I am familiar with a given topic, I can understand simple stories, poems and dialogues in the main, even if I do not know all the words.]]></title>
+		<niveauid>2</niveauid>
+		<sorting>200328</sorting>
+		<skillid>3</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5714</uid>
+		<title><![CDATA[I can understand simple non-fictional texts (e. g. descriptions, instructions for use, safety regulations) if there are pictures or graphics that support the content.]]></title>
+		<niveauid>2</niveauid>
+		<sorting>200329</sorting>
+		<skillid>3</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5715</uid>
+		<title><![CDATA[I can understand short or simplified texts from literary sources, such as can be found in periodicals or magazines for language learners.]]></title>
+		<niveauid>2</niveauid>
+		<sorting>200330</sorting>
+		<skillid>3</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5716</uid>
+		<title><![CDATA[I can understand simple messages and texts in the internet, in computer programmes and computer games.]]></title>
+		<niveauid>2</niveauid>
+		<sorting>200331</sorting>
+		<skillid>3</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5717</uid>
+		<title><![CDATA[I can understand short simple personal letters, postcards, emails and SMS’s.]]></title>
+		<niveauid>2</niveauid>
+		<sorting>200332</sorting>
+		<skillid>3</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5718</uid>
+		<title><![CDATA[I can understand the main points in simple job-related standard correspondence that follows a frequently used schedule and refers to familiar situations (e. g. enquiries, orders, confirmation of orders).]]></title>
+		<niveauid>2</niveauid>
+		<sorting>200333</sorting>
+		<skillid>3</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5719</uid>
+		<title><![CDATA[I understand working instructions in my training and on the shop floor/my place of work, and written notes about other kinds of work that I do.]]></title>
+		<niveauid>2</niveauid>
+		<sorting>200334</sorting>
+		<skillid>3</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5720</uid>
+		<title><![CDATA[I can gather essential information from simple newspaper or magazine articles that are clearly structured.]]></title>
+		<niveauid>3</niveauid>
+		<sorting>200335</sorting>
+		<skillid>3</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5721</uid>
+		<title><![CDATA[I can understand non-fictional texts that are simple, were written for a wide readership, and are about topics related to my interests or my field of specialisation.]]></title>
+		<niveauid>3</niveauid>
+		<sorting>200336</sorting>
+		<skillid>3</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5722</uid>
+		<title><![CDATA[I can understand longer, relatively simple literary texts with no great difficulty, if I am familiar with the subject (e. g. simplified texts, modern light fiction).]]></title>
+		<niveauid>3</niveauid>
+		<sorting>200337</sorting>
+		<skillid>3</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5723</uid>
+		<title><![CDATA[In clearly structured argumentative texts I can recognise the main conclusions to be drawn from them.]]></title>
+		<niveauid>3</niveauid>
+		<sorting>200338</sorting>
+		<skillid>3</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5724</uid>
+		<title><![CDATA[I can understand personal letters, postcards and emails in which feelings, wishes and experiences are being described.]]></title>
+		<niveauid>3</niveauid>
+		<sorting>200339</sorting>
+		<skillid>3</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5725</uid>
+		<title><![CDATA[I can understand clearly structured job-related standard correspondence that refers to familiar situations (e. g. complaints, demands for payment) to a degree that enables me to react adequately.]]></title>
+		<niveauid>3</niveauid>
+		<sorting>200340</sorting>
+		<skillid>3</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5726</uid>
+		<title><![CDATA[I can understand well written and well structured instructions for use.]]></title>
+		<niveauid>3</niveauid>
+		<sorting>200341</sorting>
+		<skillid>3</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5727</uid>
+		<title><![CDATA[I can locate information in various longer texts or parts of texts that I need to discharge a particular task.]]></title>
+		<niveauid>3</niveauid>
+		<sorting>200342</sorting>
+		<skillid>3</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5728</uid>
+		<title><![CDATA[I understand articles (e. g.in magazines and in specialised professional periodicals) on topical issues that I am familiar with: I can also recognise what points of view are taken by the writers of such articles.]]></title>
+		<niveauid>4</niveauid>
+		<sorting>200343</sorting>
+		<skillid>3</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5729</uid>
+		<title><![CDATA[When scanning long, fairly demanding non-fiction texts, I can extract essential information to decide whether more detailed reading is worth my while, for my own purposes.]]></title>
+		<niveauid>4</niveauid>
+		<sorting>200344</sorting>
+		<skillid>3</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5730</uid>
+		<title><![CDATA[Though I may not understand every word, I can read many literary texts in the original, as long as they are written in modern standard register.]]></title>
+		<niveauid>4</niveauid>
+		<sorting>200345</sorting>
+		<skillid>3</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5731</uid>
+		<title><![CDATA[I can recognise stylistic devices in literary texts (e. g. images).]]></title>
+		<niveauid>4</niveauid>
+		<sorting>200346</sorting>
+		<skillid>3</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5732</uid>
+		<title><![CDATA[I can understand personal correspondence with no effort.]]></title>
+		<niveauid>4</niveauid>
+		<sorting>200347</sorting>
+		<skillid>3</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5733</uid>
+		<title><![CDATA[I can understand job-related correspondence that refers to a field of work familiar to me, with no effort (e. g. letters, notes, emails).]]></title>
+		<niveauid>4</niveauid>
+		<sorting>200348</sorting>
+		<skillid>3</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5734</uid>
+		<title><![CDATA[I can skim a non-fiction text for relevant information (e. g. a handbook that may accompany a technical device, or a computer programme), and find (and understand) a suitable explanation for a problem. ]]></title>
+		<niveauid>4</niveauid>
+		<sorting>200349</sorting>
+		<skillid>3</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5735</uid>
+		<title><![CDATA[I can understand long, complex instructions as well as detailed recommendations or regulations, as long as they refer to a field of knowledge or activity that I am familiar with.]]></title>
+		<niveauid>4</niveauid>
+		<sorting>200350</sorting>
+		<skillid>3</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5736</uid>
+		<title><![CDATA[If I can look up a few words now and then in a dictionary, I can understand texts which are more demanding (content-wise and linguistically) - though I may not really be familiar with the topics of such texts.]]></title>
+		<niveauid>4</niveauid>
+		<sorting>200351</sorting>
+		<skillid>3</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5737</uid>
+		<title><![CDATA[I can understand the most varied long, complex texts (e. g. newspaper articles, specialised texts, brochures, web sites), including attitudes and opinions only indirectly expressed or alluded to, provided I can read difficult passages more than once.]]></title>
+		<niveauid>13</niveauid>
+		<sorting>200352</sorting>
+		<skillid>3</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5738</uid>
+		<title><![CDATA[When reading literary texts I can understand content easily; over and above content, I can recognise implicit messages and positions.]]></title>
+		<niveauid>13</niveauid>
+		<sorting>200353</sorting>
+		<skillid>3</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5739</uid>
+		<title><![CDATA[I can identify and understand the meaning of stylistic devices that occur in literary texts (e. g. symbols, parables, alliteration).]]></title>
+		<niveauid>13</niveauid>
+		<sorting>200354</sorting>
+		<skillid>3</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5740</uid>
+		<title><![CDATA[I can understand any kind of personal or job-related correspondence.]]></title>
+		<niveauid>13</niveauid>
+		<sorting>200355</sorting>
+		<skillid>3</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5741</uid>
+		<title><![CDATA[I can understand in detail long, complex instructions relating to new technical apparatus or procedures, even outside my field of specialisation, provided I can read difficult passages more than once.]]></title>
+		<niveauid>13</niveauid>
+		<sorting>200356</sorting>
+		<skillid>3</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5742</uid>
+		<title><![CDATA[I can recognise how various types of text differ from each other in intention,  register, form and structure, as well as in the linguistic means employed (e. g. a personal letter compared to a formal letter; a report compared to a piece of commentary; a poem as opposed to the text of an advertisement).]]></title>
+		<niveauid>13</niveauid>
+		<sorting>200357</sorting>
+		<skillid>3</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5743</uid>
+		<title><![CDATA[I can understand linguistically demanding long texts in detail (e. g. articles in newspapers and in the internet, specialised texts, brochures). At the same time, I can grasp and critically interpret fine stylistic differences and implicit meanings.]]></title>
+		<niveauid>14</niveauid>
+		<sorting>200358</sorting>
+		<skillid>3</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5744</uid>
+		<title><![CDATA[I can read manuals and specialised periodicals with ease.]]></title>
+		<niveauid>14</niveauid>
+		<sorting>200359</sorting>
+		<skillid>3</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5745</uid>
+		<title><![CDATA[I can read literary texts of any genre in their original version, with no effort.]]></title>
+		<niveauid>14</niveauid>
+		<sorting>200360</sorting>
+		<skillid>3</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5746</uid>
+		<title><![CDATA[I can recognise and understand dialect features in texts, as well as historically or socially conditioned forms of language.]]></title>
+		<niveauid>14</niveauid>
+		<sorting>200361</sorting>
+		<skillid>3</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5747</uid>
+		<title><![CDATA[I can easily understand idiomatic phrases as well as stylistic devices such as metaphors, irony, satire, ambiguity and puns, and relate these to the text’s effect.]]></title>
+		<niveauid>14</niveauid>
+		<sorting>200362</sorting>
+		<skillid>3</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5748</uid>
+		<title><![CDATA[I can understand in detail contracts, regulations and minutes (e. g. minutes of a meeting; of technical tests).]]></title>
+		<niveauid>14</niveauid>
+		<sorting>200363</sorting>
+		<skillid>3</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5749</uid>
+		<title><![CDATA[I can write very short single phrases or sentences about myself, my family and my circle of friends and acquaintances.]]></title>
+		<niveauid>1</niveauid>
+		<sorting>200364</sorting>
+		<skillid>2</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5750</uid>
+		<title><![CDATA[I can write simple phrases about what I do (for a job), and where I live.]]></title>
+		<niveauid>1</niveauid>
+		<sorting>200365</sorting>
+		<skillid>2</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5751</uid>
+		<title><![CDATA[I can complete a “wanted” poster, with short items (such as the colour of my eyes, height, my age).]]></title>
+		<niveauid>1</niveauid>
+		<sorting>200366</sorting>
+		<skillid>2</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5752</uid>
+		<title><![CDATA[I can write simple messages (e. g. text messages/SMS’s, emails, picture postcards, birthday cards).]]></title>
+		<niveauid>1</niveauid>
+		<sorting>200367</sorting>
+		<skillid>2</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5753</uid>
+		<title><![CDATA[I can write lists (e. g. shopping lists, lists of products), and fill in simple forms (e. g. registration forms, order forms).]]></title>
+		<niveauid>1</niveauid>
+		<sorting>200368</sorting>
+		<skillid>2</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5754</uid>
+		<title><![CDATA[I can copy words and sentences correctly.]]></title>
+		<niveauid>1</niveauid>
+		<sorting>200369</sorting>
+		<skillid>2</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5755</uid>
+		<title><![CDATA[Given a word list, I can form simple sentences and write them down.]]></title>
+		<niveauid>1</niveauid>
+		<sorting>200370</sorting>
+		<skillid>2</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5756</uid>
+		<title><![CDATA[When searching the internet, I can formulate simple keywords to look for information.]]></title>
+		<niveauid>1</niveauid>
+		<sorting>200371</sorting>
+		<skillid>2</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5757</uid>
+		<title><![CDATA[I can write about my family, my environment, my training and my present activity.]]></title>
+		<niveauid>2</niveauid>
+		<sorting>200372</sorting>
+		<skillid>2</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5758</uid>
+		<title><![CDATA[I can describe where and how I live, in simple phrases.]]></title>
+		<niveauid>2</niveauid>
+		<sorting>200373</sorting>
+		<skillid>2</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5759</uid>
+		<title><![CDATA[I can write a short, simple text about a personal experience (e. g. in my training or my job).]]></title>
+		<niveauid>2</niveauid>
+		<sorting>200374</sorting>
+		<skillid>2</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5760</uid>
+		<title><![CDATA[In simple phrases, I can report on an event and write about what happened when and where (e. g. an accident, a meeting).]]></title>
+		<niveauid>2</niveauid>
+		<sorting>200375</sorting>
+		<skillid>2</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5761</uid>
+		<title><![CDATA[I can write picture postcards, short letters and emails to communicate messages, to thank people, to apologize or to answer questions.]]></title>
+		<niveauid>2</niveauid>
+		<sorting>200376</sorting>
+		<skillid>2</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5762</uid>
+		<title><![CDATA[I can write a short note (e. g. where I am going, with whom I’ll be staying, what I need, when I’ll be back).]]></title>
+		<niveauid>2</niveauid>
+		<sorting>200377</sorting>
+		<skillid>2</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5763</uid>
+		<title><![CDATA[With the help of words, illustrations or film material provided, I can write a short, simple story; I can describe what happens, and sequences of events.]]></title>
+		<niveauid>2</niveauid>
+		<sorting>200378</sorting>
+		<skillid>2</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5764</uid>
+		<title><![CDATA[I can write reports and simple articles about events and experiences of a general and job-related nature. Those texts may be intended for various print media, home pages, or for other personal or vocational uses.]]></title>
+		<niveauid>3</niveauid>
+		<sorting>200379</sorting>
+		<skillid>2</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5765</uid>
+		<title><![CDATA[I can write simple stories, essays and creative texts.]]></title>
+		<niveauid>3</niveauid>
+		<sorting>200380</sorting>
+		<skillid>2</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5766</uid>
+		<title><![CDATA[I can describe personal impressions that narrative texts or books, films or plays have made on me.]]></title>
+		<niveauid>3</niveauid>
+		<sorting>200381</sorting>
+		<skillid>2</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5767</uid>
+		<title><![CDATA[I can write simple descriptive texts about basic facts or tasks relating to my field of specialisation (e. g. technology, science, business studies, language, literature).]]></title>
+		<niveauid>3</niveauid>
+		<sorting>200382</sorting>
+		<skillid>2</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5768</uid>
+		<title><![CDATA[I can write simple personal correspondence as well as job-related standard texts such as letters, emails, telephone notes, memos.]]></title>
+		<niveauid>3</niveauid>
+		<sorting>200383</sorting>
+		<skillid>2</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5769</uid>
+		<title><![CDATA[I can write a simple CV, and a simple letter of application.]]></title>
+		<niveauid>3</niveauid>
+		<sorting>200384</sorting>
+		<skillid>2</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5770</uid>
+		<title><![CDATA[I can introduce myself, e. g. by writing a letter to a family who will be my hosts, and to a future employer.]]></title>
+		<niveauid>3</niveauid>
+		<sorting>200385</sorting>
+		<skillid>2</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5771</uid>
+		<title><![CDATA[I can react to advertisements and enquiries, and can give or request additional information. ]]></title>
+		<niveauid>3</niveauid>
+		<sorting>200386</sorting>
+		<skillid>2</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5772</uid>
+		<title><![CDATA[I can use the new media for personal communication (e. g. participating in chats), and as a basis for written texts (e. g. enquiries via the internet/by email; writing short versions of texts in web sites that are factual and job-related).]]></title>
+		<niveauid>3</niveauid>
+		<sorting>200387</sorting>
+		<skillid>2</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5773</uid>
+		<title><![CDATA[I can sum up the gist of a text if it contains information relating to a topic that I am familiar with, and if the starting text is clearly structured and not too complex. The source text may be in my mother tongue (2), or in the target language.]]></title>
+		<niveauid>3</niveauid>
+		<sorting>200388</sorting>
+		<skillid>2</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5774</uid>
+		<title><![CDATA[I can write various types of texts (e. g. articles and reports) on familiar subjects which are related to my interests or work, and state my personal opinion. ]]></title>
+		<niveauid>4</niveauid>
+		<sorting>200389</sorting>
+		<skillid>2</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5775</uid>
+		<title><![CDATA[I can write in a well-structured way about events, experiences and about my own ideas.]]></title>
+		<niveauid>4</niveauid>
+		<sorting>200390</sorting>
+		<skillid>2</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5776</uid>
+		<title><![CDATA[I can write personal letters and emails about topics of everyday life or which belong to my area of interests. At the same time, I can respond to stories, accounts, feelings or viewpoints of the other person or persons.]]></title>
+		<niveauid>4</niveauid>
+		<sorting>200391</sorting>
+		<skillid>2</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5777</uid>
+		<title><![CDATA[I can clearly formulate job-related correspondence and minutes that refer to areas of work or tasks which are familiar to me; I am aware of the rules governing the various types of text.]]></title>
+		<niveauid>4</niveauid>
+		<sorting>200392</sorting>
+		<skillid>2</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5778</uid>
+		<title><![CDATA[I can discuss viewpoints in a text (e. g. in essays, readers’ letters, or reports), highlighting the essential points, supporting an argument with the help of facts, and take account of other lines of argument.]]></title>
+		<niveauid>4</niveauid>
+		<sorting>200393</sorting>
+		<skillid>2</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5779</uid>
+		<title><![CDATA[I can write clear, easy to follow summaries of notes; minutes (e. g. of talks or meetings); or accounts of technical tests.]]></title>
+		<niveauid>4</niveauid>
+		<sorting>200394</sorting>
+		<skillid>2</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5780</uid>
+		<title><![CDATA[I can write fact-based reviews and commentaries, e. g. of films, written texts, on technical innovations.]]></title>
+		<niveauid>4</niveauid>
+		<sorting>200395</sorting>
+		<skillid>2</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5781</uid>
+		<title><![CDATA[I can sum up texts that refer to a topical issue or a subject that is one of my interests, in a way that is clearly structured. Source texts may be in my mother tongue (1) or in the target language.]]></title>
+		<niveauid>4</niveauid>
+		<sorting>200396</sorting>
+		<skillid>2</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5782</uid>
+		<title><![CDATA[After spending some time and effort on a subject, I can write about a complex topic in a clear and well-structured way, underlining the salient points.]]></title>
+		<niveauid>13</niveauid>
+		<sorting>200397</sorting>
+		<skillid>2</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5783</uid>
+		<title><![CDATA[I can write about experiences in a clear and easy to follow manner; I can present these to my readers and raise their interest by way of exact description and graphic detail.]]></title>
+		<niveauid>13</niveauid>
+		<sorting>200398</sorting>
+		<skillid>2</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5784</uid>
+		<title><![CDATA[On my own or in a team, I can write creative texts, e. g. poems, narrative texts, parts of a play, texts for the advertising industry.]]></title>
+		<niveauid>13</niveauid>
+		<sorting>200399</sorting>
+		<skillid>2</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5785</uid>
+		<title><![CDATA[I can adapt to a particular group of addressees by choosing a particular type of text (e. g. emails, formal letters, narration, report, detailed and full discussion, a specialised article). For my texts I can choose a register (or style) appropriate for the readers in question.]]></title>
+		<niveauid>13</niveauid>
+		<sorting>200400</sorting>
+		<skillid>2</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5786</uid>
+		<title><![CDATA[I can sum up in writing information from various different sources (newspaper articles, special subject texts or periodicals, the internet) in a meaningful and clearly structured way. I can follow basic rules and conventions of quoting sources.]]></title>
+		<niveauid>13</niveauid>
+		<sorting>200401</sorting>
+		<skillid>2</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5787</uid>
+		<title><![CDATA[I can write my own interpretations of literary texts and other works of fiction or art, supporting my viewpoints (e. g. with the help of quotations from the original text).]]></title>
+		<niveauid>13</niveauid>
+		<sorting>200402</sorting>
+		<skillid>2</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5788</uid>
+		<title><![CDATA[I can sum up complex technical or otherwise specialised texts in a way that these can be followed and understood by non-specialised readers. The relevant source texts may be in my mother tongue (1) or in the target language.]]></title>
+		<niveauid>13</niveauid>
+		<sorting>200403</sorting>
+		<skillid>2</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5789</uid>
+		<title><![CDATA[I can write with ease and linguistic effectiveness on topical issues, in the shape of readers’ letters, articles or essays.]]></title>
+		<niveauid>14</niveauid>
+		<sorting>200404</sorting>
+		<skillid>2</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5790</uid>
+		<title><![CDATA[I can write original linguistically effective fictional texts, e. g. short stories, dramatic scenes, lyrical texts.]]></title>
+		<niveauid>14</niveauid>
+		<sorting>200405</sorting>
+		<skillid>2</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5791</uid>
+		<title><![CDATA[I can write personal and formal letters with ease. I can also express criticism in a polite way.]]></title>
+		<niveauid>14</niveauid>
+		<sorting>200406</sorting>
+		<skillid>2</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5792</uid>
+		<title><![CDATA[In job-related correspondence I can describe complex facts of a case with ease, being mindful of the conventions of a given type of text.]]></title>
+		<niveauid>14</niveauid>
+		<sorting>200407</sorting>
+		<skillid>2</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5793</uid>
+		<title><![CDATA[I can write with ease well structured, very readable reports, statements and scholarly texts, on complex subjects which are part of my professional field or related to my course of study. For this purpose I can put together information from various different sources (periodical articles, specialised literature, the internet), which I can connect in meaningful ways; I can cite sources according to the recognised conventions.]]></title>
+		<niveauid>14</niveauid>
+		<sorting>200408</sorting>
+		<skillid>2</skillid>
+		<parent_id>0</parent_id>
+	</table>
+	<table name="block_desp_descriptors">
+		<uid>5794</uid>
+		<title><![CDATA[I can sum up non-fiction texts, literary texts, films and TV reports in a clear, well-structured way, and comment on these from my own point of view. Source texts, films or reports may be in my mother tongue, or in the target language.]]></title>
+		<niveauid>14</niveauid>
+		<sorting>200409</sorting>
+		<skillid>2</skillid>
+		<parent_id>0</parent_id>
 	</table>
 	<table name="block_desp_taxonomies">
 		<uid>82</uid>
@@ -706,6 +1858,11 @@
 		<uid>3</uid>
 		<title><![CDATA[reading]]></title>
 		<sorting>6912</sorting>
+	</table>
+	<table name="block_desp_skills">
+		<uid>4</uid>
+		<title><![CDATA[spoken interaction]]></title>
+		<sorting>7168</sorting>
 	</table>
 	<table name="block_desp_skills">
 		<uid>5</uid>
@@ -798,7 +1955,7 @@
 	</table>
 	<table name="block_desp_niveau_texte">
 		<uid>74</uid>
-		<title><![CDATA[Reading on this Level means being able to understand single words, groups of words or very short simple phrases that are encountered in everyday life. ]]></title>
+		<title><![CDATA[Reading on this level means being able to understand single words, groups of words or very short simple phrases that are encountered in everyday life. ]]></title>
 		<niveauid>1</niveauid>
 		<skillid>3</skillid>
 	</table>
@@ -851,83 +2008,10 @@
 		<skillid>1</skillid>
 	</table>
 	<table name="block_desp_niveau_texte">
-		<uid>83</uid>
-		<title><![CDATA[Can understand the main points of clear standard input on familiar matters regularly encountered in work, school, leisure, etc.
-Can deal with most situations likely to arise while travelling in an area where the language is spoken.
-Can produce simple connected text on topics that are familiar or of personal interest.
-Can describe experiences and events, dreams, hopes and ambitions and briefly give reasons and explanations for opinions and plans.
-]]></title>
-		<niveauid>3</niveauid>
-		<skillid>5</skillid>
-	</table>
-	<table name="block_desp_niveau_texte">
-		<uid>84</uid>
-		<title><![CDATA[Can understand sentences and frequently used expressions related to areas of most immediate relevance (e.g. very basic personal and family information, shopping, local geography, employment).
-Can communicate in simple and routine tasks requiring a simple and direct exchange of information on familiar and routine matters.
-Can describe in simple terms aspects of his/her background, immediate environment and matters in areas of immediate need.
-]]></title>
-		<niveauid>2</niveauid>
-		<skillid>5</skillid>
-	</table>
-	<table name="block_desp_niveau_texte">
-		<uid>85</uid>
-		<title><![CDATA[Can understand and use familiar everyday expressions and very basic phrases aimed at the satisfaction of needs of a concrete type.
-Can introduce him/herself and others and can ask and answer questions about personal details such as where he/she lives, people he/she knows and things he/she has.
-Can interact in a simple way provided the other person talks slowly and clearly and is prepared to help.]]></title>
-		<niveauid>1</niveauid>
-		<skillid>5</skillid>
-	</table>
-	<table name="block_desp_niveau_texte">
-		<uid>86</uid>
-		<title><![CDATA[Can understand the main points of clear standard input on familiar matters regularly encountered in work, school, leisure, etc.
-Can deal with most situations likely to arise while travelling in an area where the language is spoken.
-Can produce simple connected text on topics that are familiar or of personal interest.
-Can describe experiences and events, dreams, hopes and ambitions and briefly give reasons and explanations for opinions and plans.
-]]></title>
-		<niveauid>3</niveauid>
-		<skillid>4</skillid>
-	</table>
-	<table name="block_desp_niveau_texte">
-		<uid>87</uid>
-		<title><![CDATA[Can understand sentences and frequently used expressions related to areas of most immediate relevance (e.g. very basic personal and family information, shopping, local geography, employment).
-Can communicate in simple and routine tasks requiring a simple and direct exchange of information on familiar and routine matters.
-Can describe in simple terms aspects of his/her background, immediate environment and matters in areas of immediate need.
-]]></title>
-		<niveauid>2</niveauid>
-		<skillid>4</skillid>
-	</table>
-	<table name="block_desp_niveau_texte">
-		<uid>88</uid>
-		<title><![CDATA[Can understand and use familiar everyday expressions and very basic phrases aimed at the satisfaction of needs of a concrete type.
-Can introduce him/herself and others and can ask and answer questions about personal details such as where he/she lives, people he/she knows and things he/she has.
-Can interact in a simple way provided the other person talks slowly and clearly and is prepared to help.
-]]></title>
-		<niveauid>1</niveauid>
-		<skillid>4</skillid>
-	</table>
-	<table name="block_desp_niveau_texte">
 		<uid>104</uid>
 		<title><![CDATA[To be able to understand longer texts that present greater difficulty content-wise, sufficient prior knowledge is required in a given subject. Standard dialect is used, and there is no very disturbing background noise. As opposed to Level B1, these are linguistically more demanding contributions on a variety of topics which may go beyond the learner’s immediate range of interests. On this Level, another challenge is to be able to pick up details when texts are spoken at greater speed.]]></title>
 		<niveauid>4</niveauid>
 		<skillid>1</skillid>
-	</table>
-	<table name="block_desp_niveau_texte">
-		<uid>105</uid>
-		<title><![CDATA[I can read articles and reports concerned with contemporary problems in which the writers adopt particular attitudes or viewpoints. I can understand contemporary literary prose.]]></title>
-		<niveauid>4</niveauid>
-		<skillid>3</skillid>
-	</table>
-	<table name="block_desp_niveau_texte">
-		<uid>106</uid>
-		<title><![CDATA[I can interact with a degree of fluency and spontaneity that makes regular interaction with native speakers quite possible. I can take an active part in discussion in familiar contexts, accounting for and sustaining my views.]]></title>
-		<niveauid>4</niveauid>
-		<skillid>4</skillid>
-	</table>
-	<table name="block_desp_niveau_texte">
-		<uid>107</uid>
-		<title><![CDATA[I can present clear, detailed descriptions on a wide range of subjects related to my field of interest. I can explain a viewpoint on a topical issue giving the advantages and disadvantages of various options.]]></title>
-		<niveauid>4</niveauid>
-		<skillid>5</skillid>
 	</table>
 	<table name="block_desp_niveau_texte">
 		<uid>108</uid>
@@ -942,24 +2026,6 @@ Can interact in a simple way provided the other person talks slowly and clearly 
 		<skillid>1</skillid>
 	</table>
 	<table name="block_desp_niveau_texte">
-		<uid>110</uid>
-		<title><![CDATA[I can understand long and complex factual and literary texts, appreciating distinctions of style. I can understand specialised articles and longer technical instructions, even when they do not relate to my field.]]></title>
-		<niveauid>13</niveauid>
-		<skillid>3</skillid>
-	</table>
-	<table name="block_desp_niveau_texte">
-		<uid>111</uid>
-		<title><![CDATA[I can express myself fluently and spontaneously without much obvious searching for expressions. I can use language flexibly and effectively for social and professional purposes. I can formulate ideas and opinions with precision and relate my contribution skilfully to those of other speakers.]]></title>
-		<niveauid>13</niveauid>
-		<skillid>4</skillid>
-	</table>
-	<table name="block_desp_niveau_texte">
-		<uid>112</uid>
-		<title><![CDATA[I can present clear, detailed descriptions of complex subjects integrating sub-themes, developing particular points and rounding off with an appropriate conclusion.]]></title>
-		<niveauid>13</niveauid>
-		<skillid>5</skillid>
-	</table>
-	<table name="block_desp_niveau_texte">
 		<uid>113</uid>
 		<title><![CDATA[Subjects from the most varied areas of knowledge and experience can be dealt with in writing, in a detailed, precise and appropriate way. As opposed to Level B2, learners on this Level can linguistically adapt their writing to a given target group. Vocabulary and linguistic structures are extensive enough for difficult aspects of facts or circumstances to be expressed clearly, for easy communication.]]></title>
 		<niveauid>13</niveauid>
@@ -970,24 +2036,6 @@ Can interact in a simple way provided the other person talks slowly and clearly 
 		<title><![CDATA[Understanding any kind of spoken text presents no difficulty any more. As opposed to C1, speech is understood even when it contains more pronounced regional features. Listening comprehension on this Level corresponds to that of educated native speakers.]]></title>
 		<niveauid>14</niveauid>
 		<skillid>1</skillid>
-	</table>
-	<table name="block_desp_niveau_texte">
-		<uid>115</uid>
-		<title><![CDATA[I can read with ease virtually all forms of the written language, including abstract, structurally or linguistically complex texts such as manuals, specialised articles and literary works.]]></title>
-		<niveauid>14</niveauid>
-		<skillid>3</skillid>
-	</table>
-	<table name="block_desp_niveau_texte">
-		<uid>116</uid>
-		<title><![CDATA[I can take part effortlessly in any conversation or discussion and have a good familiarity with idiomatic expressions and colloquialisms. I can express myself fluently and convey finer shades of meaning precisely. If I do have a problem I can backtrack and restructure around the difficulty so smoothly that other people are hardly aware of it.]]></title>
-		<niveauid>14</niveauid>
-		<skillid>4</skillid>
-	</table>
-	<table name="block_desp_niveau_texte">
-		<uid>117</uid>
-		<title><![CDATA[I can present a clear, smoothly-flowing description or argument in a style appropriate to the context and with an effective logical structure which helps the recipient to notice and remember significant points.]]></title>
-		<niveauid>14</niveauid>
-		<skillid>5</skillid>
 	</table>
 	<table name="block_desp_niveau_texte">
 		<uid>118</uid>
@@ -1084,15 +2132,5 @@ Can interact in a simple way provided the other person talks slowly and clearly 
 		<title><![CDATA[Oral contributions of all kinds are developed and presented in so interesting a way that recipients find it easy to follow even difficult lines of thought and to remember details. As opposed to Level C1, learners have reached a linguistic and intellectual level that is usually attained by educated native speakers only.]]></title>
 		<niveauid>14</niveauid>
 		<skillid>5</skillid>
-	</table>
-	<table name="block_desp_descrexamp_mm">
-		<exampid>1789</exampid>
-		<descrid>5087</descrid>
-		<source>1</source>
-	</table>
-	<table name="block_desp_descrexamp_mm">
-		<exampid>1790</exampid>
-		<descrid>5090</descrid>
-		<source>1</source>
 	</table>
 </exabis_competences_tables>
