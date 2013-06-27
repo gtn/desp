@@ -184,7 +184,7 @@ echo '<script type="text/javascript" src="lib/wz_tooltip.js"></script>';
 <div id="page_margins">
     <div id="content">
 
-        <h1 class="h1back h1lesen" style="background: #fdd68e url('images/ov_skill<?php echo $skill->id ?>.gif') no-repeat left top; height: 33px; padding-left: 50px;padding-top:15px;"><?php echo $language->$langcode.' '.$skill->title.' '.$niveau->title; ?></h1>
+        <h1 class="h1back h1lesen" style="background: #fdd68e url('images/ov_skill<?php echo $skill->id ?>.gif') no-repeat left top; height: 33px; padding-left: 50px;padding-top:15px;"><?php echo $language->$langcode.' '.block_desp_skilltitle($skill->title).' '.$niveau->title; ?></h1>
 
         <br />
 
