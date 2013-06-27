@@ -26,7 +26,7 @@
 *  This copyright notice MUST APPEAR in all copies of the script!
 ***************************************************************/
 
-$plugin->version = 2013012902;
+$plugin->version = 2013062701;
 $plugin->maturity  = MATURITY_BETA;
 $plugin->release  = "1.0";
 $plugin->requires = 2010112400;
