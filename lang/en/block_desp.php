@@ -67,7 +67,7 @@ $string['esp1'] = 'The European Language Portfolio (DELP) is available in digita
 $string['esp2'] = 'Your language portfolio consists of three parts: the passport, the language biography and the portfolio. These separate parts will be explained to you in detail if you hover over the item.';
 
 $string['sprachenpass_inhalt'] = 'The <b>language passport</b> is a summary (of checklists) of your language biography. For each language you speak, an individual profile can be filled out. The passport is generated automatically.';
-$string['sprachenbiografie_inhalt'] = 'The <b>language biography</b> of the DELP describes your life as a language learner: which language/s do you speak at home? Which language/s do you speak with your friends? Which language/s do you speak at school? Where did you learn this/these language/s? Why would you like to learn a new language? The language biography also contains checklists, which will help you assess the knowledge you already have in a language and which learning goals you should aim at next.';
+$string['sprachenbiografie_inhalt'] = 'The <b>language biography</b> of the DELP describes your life as a language learner: which language/s do you speak at home? Which language/s do you speak with your friends? Which language/s do you speak at school? Where did you learn this/these language/s? Why would you like to learn a new language? The language biography also contains checklists, which will help you assess the knowledge you already have in a language and which goals you should aim at next.';
 $string['dossier_inhalt'] = 'The <b>portfolio</b> has the function of a folder. Here you should - just like in a file folder - document especially successful work which you are proud of: Written tasks of any type, but also audio- and videoclips. Also you can archive certificates and acknowledgments that you have received for learning languages outside of school.';
 $string['dossier_fehlt'] = 'To use the portfolio function the site administrator has to install the exabis ePortfolio block';
 $string['texte'] = 'Texts: Angela Horak, Margarete Nezbeda, Rose Oehler, Gunther Abuja';
@@ -143,25 +143,25 @@ $string['zurkenntnis'] = 'continue';
 $string['lieber'] = 'Dear ';
 $string['alslernpartnerausgewaehlt'] = ' has chosen you as a learning partner.\nCan you support him/her with the following learning plan?\n\n';
 
-$string['daskannichsicher'] = '&#10003;&#10003; I can speak this with confidence<br />
-            &#10003; I can usually speak this<br />';
+$string['daskannichsicher'] = '&#10003;&#10003; I can do this with certainty and well<br />
+            &#10003; I can usually manage to do this<br />';
 $string['daskannich'] = 'My assessment';
 $string['einschaetzungvonanderen'] = 'assessment from others';
-$string['meinelernziele'] = 'my learning targets';
+$string['meinelernziele'] = 'my aims';
 $string['lernpartnerin'] = 'learning partner';
 $string['keinlernpartner'] = 'no learning partner';
 
 $string['meinesprachencheckliste'] = '3. my language checklists';
 $string['einfuehrungsprachencheckliste'] = '3.1 introduction to language checklists';
-$string['wasichalleskann'] = 'This is the place to think about what you already know. You have to think about what you can already understand reading and listening and what you are already able to say or write.';
-$string['hiereinschaetzen'] = "Here you should think about what you already know and check your learning goals. It's important that you know your strengths and weaknesses so you can think about learning more efficiently. You can also ask your teacher or learning partner for help.";
+$string['wasichalleskann'] = 'This is where you can think about what you already know: how developed are your skills in reading, listening, speaking and writing?';
+$string['hiereinschaetzen'] = "It's important that you know your strengths and weaknesses so you can think about learning more efficiently. You can also ask your teacher or learning partner for help.";
 $string['duverwendestdiechecklisten'] = "You're using the checklists, ... ";
-$string['checklist'] = '<li>to assess yourself in every language you speak - column "I can speak"</li>
+$string['checklist'] = '<li>to assess yourself in every language you speak - column "I can do this with certainty and well"</li>
                     <li>to ask others for their assessments - column "assessments from others"</li>
-                    <li>to mark, what you want to work on next - column "My learning goals"</li>';
+                    <li>to mark, what you want to work on next - column "My aims"</li>';
 $string['verwendesymbole'] = '<b>For this purpose, use the following icons:</b><br />
-                &#10003;&#10003; I can do this with confidence<br />
-                &#10003; I can usually do this';
+                &#10003;&#10003; I can do this with certainty and well<br />
+                &#10003; I can usually manage to do this';
 $string['loeschen'] = 'delete';
 $string['neuesprachehinzufuegen'] = 'add a new language to the language selection';
 $string['sprachehinzufuegen'] = 'add a new language to the language selection';
@@ -395,88 +395,51 @@ $string['speichern'] = 'save';
 								
 $string['vorgegebenesziel'] = 'You have exceeded your predefined goal in the language learning plans ';
 $string['lernplaeneueberpruefen'] = '.<br />Please check your language learning plans!';
-/*
-niveau_texte, sind jetzt im desp_data.xml
-$string['a1hoeren'] = 'I can understand familiar words and very basic phrases regarding myself, my family and immediate concrete surroundings when people speak slowly and clearly.';
-$string['a1lesen'] = 'I can understand familiar names, words and very simple sentences, for example on notices and posters or in catalogues.';
-$string['a1angespraechenteilnehmen'] = "I can interact in a simple way provided the other person is prepared to repeat or rephrase things at a slower rate of speech and help me formulate what I'm trying to say. I can ask and answer simple questions in areas of immediate need or on very familiar topics.";
-$string['a1zusammenhaengendsprechen'] = 'I can use simple phrases and sentences to describe where I live and people I know.';
-$string['a1schreiben'] = 'I can write a short, simple postcard, for example sending holiday greetings. I can fill in forms with personal details, for example entering my name, nationality and address on a hotel registration form.';
 
-$string['a2hoeren'] = 'I can understand phrases and the highest frequency vocabulary related to areas of most immediate personal relevance (e.g. very basic personal and family information, shopping, local area, employment). I can catch the main point in short, clear, simple messages and announcements.';
-$string['a2lesen'] = 'I can read very short, simple texts. I can find specific, predictable information in simple everyday material such as advertisements, prospectuses, menus and timetables and I can understand short simple personal letters.';
-$string['a2angespraechenteilnehmen'] = "I can communicate in simple and routine tasks requiring a simple and direct exchange of information on familiar topics and activities. I can handle very short social exchanges, even though I can't usually understand enough to keep the conversation going myself.";
-$string['a2zusammenhaengendsprechen'] = 'I can use a series of phrases and sentences to describe in simple terms my family and other people, living conditions, my educational background and my present or most recent job.';
-$string['a2schreiben'] = 'I can write short, simple notes and messages. I can write a very simple personal letter, for example thanking someone for something.';
-
-$string['b1hoeren'] = 'I can understand the main points of clear standard speech on familiar matters regularly encountered in work, school, leisure, etc. I can understand the main point of many radio or TV programmes on current affairs or topics of personal or professional interest when the delivery is relatively slow and clear.';
-$string['b1lesen'] = 'I can understand texts that consist mainly of high frequency everyday or job-related language. I can understand the description of events, feelings and wishes in personal letters.';
-$string['b1angespraechenteilnehmen'] = 'I can deal with most situations likely to arise whilst travelling in an area where the language is spoken. I can enter unprepared into conversation on topics that are familiar, of personal interest or pertinent to everyday life (e.g. family, hobbies, work, travel and current events).';
-$string['b1zusammenhaengendsprechen'] = 'I can connect phrases in a simple way in order to describe experiences and events, my dreams, hopes and ambitions. I can briefly give reasons and explanations for opinions and plans. I can narrate a story or relate the plot of a book or film and describe my reactions.';
-$string['b1schreiben'] = 'I can write simple connected text on topics which are familiar or of personal interest. I can write personal letters describing experiences and impressions.';
-
-$string['b2hoeren'] = 'I can understand extended speech and lectures and follow even complex lines of argument provided the topic is reasonably familiar. I can understand most TV news and current affairs programmes. I can understand the majority of films in standard dialect.';
-$string['b2lesen'] = 'I can read articles and reports concerned with contemporary problems in which the writers adopt particular attitudes or viewpoints. I can understand contemporary literary prose.';
-$string['b2angespraechenteilnehmen'] = 'I can interact with a degree of fluency and spontaneity that makes regular interaction with native speakers quite possible. I can take an active part in discussion in familiar contexts, accounting for and sustaining my views.';
-$string['b2zusammenhaengendsprechen'] = 'I can present clear, detailed descriptions on a wide range of subjects related to my field of interest. I can explain a viewpoint on a topical issue giving the advantages and disadvantages of various options.';
-$string['b2schreiben'] = 'I can write clear, detailed text on a wide range of subjects related to my interests. I can write an essay or report, passing on information or giving reasons in support of or against a particular point of view. I can write letters highlighting the personal significance of events and experiences.';
-
-$string['c1hoeren'] = 'I can understand extended speech even when it is not clearly structured and when relationships are only implied and not signalled explicitly. I can understand television programmes and films without too much effort.';
-$string['c1lesen'] = 'I can understand long and complex factual and literary texts, appreciating distinctions of style. I can understand specialised articles and longer technical instructions, even when they do not relate to my field.';
-$string['c1angespraechenteilnehmen'] = 'I can express myself fluently and spontaneously without much obvious searching for expressions. I can use language flexibly and effectively for social and professional purposes. I can formulate ideas and opinions with precision and relate my contribution skilfully to those of other speakers.';
-$string['c1zusammenhaengendsprechen'] = 'I can present clear, detailed descriptions of complex subjects integrating sub-themes, developing particular points and rounding off with an appropriate conclusion.';
-$string['c1schreiben'] = 'I can express myself in clear, well-structured text, expressing points of view at some length. I can write about complex subjects in a letter, an essay or a report, underlining what I consider to be the salient issues. I can select a style appropriate to the reader in mind.';
-
-$string['c2hoeren'] = 'I have no difficulty in understanding any kind of spoken language, whether live or broadcast, even when delivered at fast native speed, provided I have some time to get familiar with the accent.';
-$string['c2lesen'] = 'I can read with ease virtually all forms of the written language, including abstract, structurally or linguistically complex texts such as manuals, specialised articles and literary works.';
-$string['c2angespraechenteilnehmen'] = 'I can take part effortlessly in any conversation or discussion and have a good familiarity with idiomatic expressions and colloquialisms. I can express myself fluently and convey finer shades of meaning precisely. If I do have a problem I can backtrack and restructure around the difficulty so smoothly that other people are hardly aware of it.';
-$string['c2zusammenhaengendsprechen'] = 'I can present a clear, smoothly-flowing description or argument in a style appropriate to the context and with an effective logical structure which helps the recipient to notice and remember significant points.';
-$string['c2schreiben'] = 'I can write clear, smoothly-flowing text in an appropriate style. I can write complex letters, reports or articles which present a case with an effective logical structure which helps the recipient to notice and remember significant points. I can write summaries and reviews of professional or literary works.';
-*/
 $string['forskill'] = '';
-$string['giltaufniveau'] = ' means the following at level ';
+$string['giltaufniveau'] = ' ';
 
-$string['a1hoerencheckliste'] = 'I can understand familiar words and very basic phrases regarding myself, ' .
-		'my family and immediate concrete surroundings when people speak slowly and clearly.'; 
-$string['a1lesencheckliste'] = "I can understand familiar names, words and very simple sentences, for example on notices and posters or in catalogues.";
-$string['a1sprechencheckliste'] = 'I can interact in a simple way provided the other person is prepared to repeat or rephrase things at a slower rate of speech and help me formulate what I am trying to say. ' .
-		'I can ask and answer simple questions in areas of immediate need or on very familiar topics.';
-$string['a1zusammencheckliste'] = 'I can use simple phrases and sentences to describe where I live and people I know.' .
+$string['a1hoerencheckliste'] = '' .
+		''; 
+$string['a1lesencheckliste'] = "";
+$string['a1sprechencheckliste'] = '' .
 		'';
-$string['a1schreibencheckliste'] = 'I can write a short, simple postcard, for example sending holiday greetings. I can fill in forms with personal details, for example entering my name, nationality and address on a hotel registration form.';
+$string['a1zusammencheckliste'] = '' .
+		'';
+$string['a1schreibencheckliste'] = '';
 
-$string['a2hoerencheckliste'] = 'I can understand phrases and the highest frequency vocabulary related to areas of most immediate personal relevance (e.g. very basic personal and family information, shopping, local area, employment). ' .
-		'I can catch the main point in short, clear, simple messages and announcements.' .
+$string['a2hoerencheckliste'] = '' .
+		'' .
 		'';
-$string['a2lesencheckliste'] = "I can read very short, simple texts. I can find specific, predictable information in simple everyday material such as advertisements, prospectuses, menus and timetables and I can understand short simple personal letters." .
+$string['a2lesencheckliste'] = "" .
 		"";
-$string['a2sprechencheckliste'] = 'I can communicate in simple and routine tasks requiring a simple and direct exchange of information on familiar topics and activities. ' .
-		'I can handle very short social exchanges, even though I ca not usually understand enough to keep the conversation going myself. ' .
+$string['a2sprechencheckliste'] = '' .
+		'' .
 		'' .
 		'';
-$string['a2zusammencheckliste'] = 'I can use a series of phrases and sentences to describe in simple terms my family and other people, living conditions, my educational background and my present or most recent job.' .
+$string['a2zusammencheckliste'] = '' .
 		'' .
 		'';
-$string['a2schreibencheckliste'] = 'I can write short, simple notes and messages. I can write a very simple personal letter, for example thanking someone for something.' .
+$string['a2schreibencheckliste'] = '' .
 		'' .
 		'';
 
-$string['b1hoerencheckliste'] = "I can understand the main points of clear standard speech on familiar matters regularly encountered in work, school, leisure, etc. " .
-		"I can understand the main point of many radio or TV programmes on current affairs or topics of personal or professional interest when the delivery is relatively slow and clear. " .
+$string['b1hoerencheckliste'] = "" .
+		"" .
 		"";
-$string['b1lesencheckliste'] = "I can understand texts that consist mainly of high frequency everyday or job-related language. " .
-		"I can understand the description of events, feelings and wishes in personal letters." .
+$string['b1lesencheckliste'] = "" .
+		"" .
 		"";
-$string['b1sprechencheckliste'] = 'I can deal with most situations likely to arise whilst travelling in an area where the language is spoken.' .
-		' I can enter unprepared into conversation on topics that are familiar, of personal interest or pertinent to everyday life (e.g. family, hobbies, work, travel and current events).' .
+$string['b1sprechencheckliste'] = '' .
+		'' .
 		'' .
 		'' .
 		'';
-$string['b1zusammencheckliste'] = 'I can connect phrases in a simple way in order to describe experiences and events, my dreams, hopes and ambitions. ' .
-		'I can briefly give reasons and explanations for opinions and plans. ' .
-		'I can narrate a story or relate the plot of a book or film and describe my reactions.' .
+$string['b1zusammencheckliste'] = '' .
+		'' .
+		'' .
 		'';
-$string['b1schreibencheckliste'] = 'I can write simple connected text on topics which are familiar or of personal interest. I can write personal letters describing experiences and impressions.' .
+$string['b1schreibencheckliste'] = '' .
 		'' .
 		'' .
 		'';
