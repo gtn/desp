@@ -32,7 +32,7 @@ if(!block_desp_checkimport())
 $niveaus = array();
 $p_niveaus =  $DB->get_records('block_desp_niveaus', array('parent_niveau'=>0), 'sorting');
 foreach($p_niveaus as $niveau) {
-	$sql = "SELECT * FROM {block_desp_descriptors} d WHERE WHERE d.niveauid=".$niveau->id." OR d.niveauid IN (SELECT n.id FROM {block_desp_niveaus} n WHERE parent_niveau = ".$niveau->id.")";
+	$sql = "SELECT * FROM {block_desp_descriptors} d WHERE d.niveauid=".$niveau->id." OR d.niveauid IN (SELECT n.id FROM {block_desp_niveaus} n WHERE parent_niveau = ".$niveau->id.")";
 	$exist = $DB->get_records_sql($sql);
 	if($exist)
 		$niveaus[] = $niveau;
@@ -431,40 +431,42 @@ if ($showgers==true){
 
 		<tr>
 		<td class="spgers_s1" rowspan="2"><img src="images/gersverstehen_'.$langcode.'.jpg" alt="Gers verstehen" /></td>
-		<td class="spgers_s2"><img src="images/gershoeren_'.$langcode.'.jpg" alt="'.get_string("hoehren","block_desp").'" /></td>
-		<td class="spgers_s3">'.get_string('a1hoeren', 'block_desp').'</td>
-		<td class="spgers_s4">'.get_string('a2hoeren', 'block_desp').'</td>
-		<td class="spgers_s5">'.get_string('b1hoeren', 'block_desp').'</td>
+		<td class="spgers_s2"><img src="images/gershoeren_'.$langcode.'.jpg" alt="'.get_string("hoehren","block_desp").'" /></td>';
+		
+		$texte=block_desp_get_allniveautext();
+		$inhalt.='<td class="spgers_s3">'.$texte[1][1].'</td>';
+		$inhalt.='<td class="spgers_s4">'.$texte[2][1].'</td>
+		<td class="spgers_s5">'.$texte[3][1].'</td>
 		</tr>
 		<tr>
 		<td class="spgers_s2"><img src="images/gerslesen_'.$langcode.'.jpg" alt="'.get_string("lesen","block_desp").'" /></td>
-		<td class="spgers_s3">'.get_string('a1lesen', 'block_desp').'</td>
-		<td class="spgers_s4">'.get_string('a2lesen', 'block_desp').'</td>
-		<td class="spgers_s5">'.get_string('b1lesen', 'block_desp').'</td>
+		<td class="spgers_s3">'.$texte[1][3].'</td>
+		<td class="spgers_s4">'.$texte[2][3].'</td>
+		<td class="spgers_s5">'.$texte[3][3].'</td>
 		</tr>
 		<tr>
 		<td class="spgers_s1" rowspan="2"><img src="images/gerssprechen_'.$langcode.'.jpg" alt="'.get_string("sprechen","block_desp").'" /></td>
 		<td class="spgers_s2"><img src="images/gersgespr_'.$langcode.'.jpg" alt="Gers sprechen" /></td>
-		<td class="spgers_s3">'.get_string('a1angespraechenteilnehmen', 'block_desp').'</td>
-		<td class="spgers_s4">'.get_string('a2angespraechenteilnehmen', 'block_desp').'</td>
-		<td class="spgers_s5">'.get_string('b1angespraechenteilnehmen', 'block_desp').'</td>
+		<td class="spgers_s3">'.$texte[1][4].'</td>
+		<td class="spgers_s4">'.$texte[2][4].'</td>
+		<td class="spgers_s5">'.$texte[3][4].'</td>
 		</tr>
 		<tr>
 		<td class="spgers_s2"><img src="images/zusammenhspr_'.$langcode.'.jpg" alt="'.get_string("zusammenhaengendsprechen","block_desp").'" /></td>
-		<td class="spgers_s3">'.get_string('a1zusammenhaengendsprechen', 'block_desp').'</td>
-		<td class="spgers_s4">'.get_string('a2zusammenhaengendsprechen', 'block_desp').'</td>
-		<td class="spgers_s5">'.get_string('b1zusammenhaengendsprechen', 'block_desp').'</td>
+		<td class="spgers_s3">'.$texte[1][5].'</td>
+		<td class="spgers_s4">'.$texte[2][5].'</td>
+		<td class="spgers_s5">'.$texte[3][5].'</td>
 		</tr>
 		<tr>
 		<td class="spgers_s1"><img src="images/gersschreiben1_'.$langcode.'.jpg" alt="'.get_string("schreiben","block_desp").'" /></td>
 		<td class="spgers_s2"><img src="images/gersschreiben2_'.$langcode.'.jpg" alt="'.get_string("schreiben","block_desp").'" /></td>
-		<td class="spgers_s3">'.get_string('a1schreiben', 'block_desp').'</td>
-		<td class="spgers_s4">'.get_string('a2schreiben', 'block_desp').'</td>
-		<td class="spgers_s5">'.get_string('b1schreiben', 'block_desp').'</td>
+		<td class="spgers_s3">'.$texte[1][2].'</td>
+		<td class="spgers_s4">'.$texte[2][2].'</td>
+		<td class="spgers_s5">'.$texte[3][2].'</td>
 		</tr>
-		</table>
+		</table>';
 
-		<table class="spgerstbl">
+		$inhalt.='<table class="spgerstbl">
 		<tr>
 		<td class="spgers_h1"></td>
 		<td class="spgers_h2"></td>
@@ -475,35 +477,35 @@ if ($showgers==true){
 		<tr>
 		<td class="spgers_s1" rowspan="2"><img src="images/gersverstehen_'.$langcode.'.jpg" alt="'.get_string("verstehen","block_desp").'" /></td>
 		<td class="spgers_s2"><img src="images/gershoeren_'.$langcode.'.jpg" alt="'.get_string("hoehren","block_desp").'" /></td>
-		<td class="spgers_s3">'.get_string('b2hoeren', 'block_desp').'</td>
-		<td class="spgers_s4">'.get_string('c1hoeren', 'block_desp').'</td>
-		<td class="spgers_s5">'.get_string('c2hoeren', 'block_desp').'</td>
+		<td class="spgers_s3">'.$texte[4][1].'</td>
+		<td class="spgers_s4">'.$texte[13][1].'</td>
+		<td class="spgers_s5">'.$texte[14][1].'</td>
 		</tr>
 		<tr>
 		<td class="spgers_s2"><img src="images/gerslesen_'.$langcode.'.jpg" alt="'.get_string("lesen","block_desp").'" /></td>
-		<td class="spgers_s3">'.get_string('b2lesen', 'block_desp').'</td>
-		<td class="spgers_s4">'.get_string('c1lesen', 'block_desp').'</td>
-		<td class="spgers_s5">'.get_string('c2lesen', 'block_desp').'</td>
+		<td class="spgers_s3">'.$texte[4][3].'</td>
+		<td class="spgers_s4">'.$texte[13][3].'</td>
+		<td class="spgers_s5">'.$texte[14][3].'</td>
 		</tr>
 		<tr>
 		<td class="spgers_s1" rowspan="2"><img src="images/gerssprechen_'.$langcode.'.jpg" alt="'.get_string("sprechen","block_desp").'" /></td>
 		<td class="spgers_s2"><img src="images/gersgespr_'.$langcode.'.jpg" alt="'.get_string("angespraechenteilnehmen","block_desp").'" /></td>
-		<td class="spgers_s3">'.get_string('b2angespraechenteilnehmen', 'block_desp').'</td>
-		<td class="spgers_s4">'.get_string('c1angespraechenteilnehmen', 'block_desp').'</td>
-		<td class="spgers_s5">'.get_string('c2angespraechenteilnehmen', 'block_desp').'</td>
+		<td class="spgers_s3">'.$texte[4][4].'</td>
+		<td class="spgers_s4">'.$texte[13][4].'</td>
+		<td class="spgers_s5">'.$texte[14][4].'</td>
 		</tr>
 		<tr>
 		<td class="spgers_s2"><img src="images/zusammenhspr_'.$langcode.'.jpg" alt="'.get_string("zusammenhaengendsprechen","block_desp").'" /></td>
-		<td class="spgers_s3">'.get_string('b2zusammenhaengendsprechen', 'block_desp').'</td>
-		<td class="spgers_s4">'.get_string('c1zusammenhaengendsprechen', 'block_desp').'</td>
-		<td class="spgers_s5">'.get_string('c2zusammenhaengendsprechen', 'block_desp').'</td>
+		<td class="spgers_s3">'.$texte[4][5].'</td>
+		<td class="spgers_s4">'.$texte[13][5].'</td>
+		<td class="spgers_s5">'.$texte[14][5].'</td>
 		</tr>
 		<tr>
 		<td class="spgers_s1"><img src="images/gersschreiben1_'.$langcode.'.jpg" alt="'.get_string("schreiben","block_desp").'" /></td>
 		<td class="spgers_s2"><img src="images/gersschreiben2_'.$langcode.'.jpg" alt="'.get_string("schreiben","block_desp").'" /></td>
-		<td class="spgers_s3">'.get_string('b2schreiben', 'block_desp').'</td>
-		<td class="spgers_s4">'.get_string('c1schreiben', 'block_desp').'</td>
-		<td class="spgers_s5">'.get_string('c2schreiben', 'block_desp').'</td>
+		<td class="spgers_s3">'.$texte[4][2].'</td>
+		<td class="spgers_s4">'.$texte[13][2].'</td>
+		<td class="spgers_s5">'.$texte[14][2].'</td>
 		</tr>
 		</table></div>
 		';
