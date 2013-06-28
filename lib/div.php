@@ -235,6 +235,16 @@ function block_desp_get_niveautext($nivid,$skillid){
 	}
 	
 }
+function block_desp_get_allniveautext(){
+	global $DB;
+	$sql="SELECT * FROM {block_desp_niveau_texte} ORDER BY skillid,niveauid";
+	$texte = $DB->get_records_sql($sql);
+	foreach($texte as $text){
+		$texta[$text->niveauid][$text->skillid]=$text->title;
+	}
+	return $texta;
+	
+}
 function block_desp_get_examplelink($descrid,$lang){
 	global $DB,$CFG;
 	  $sql = "SELECT mm.* ";
