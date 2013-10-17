@@ -46,8 +46,8 @@ echo $hdrtmp;
 			$url = $CFG->wwwroot."/blocks/desp/sprachenundkulturen_erfassung.php?courseid=".$courseid."&amp;catid=";
 			$categories = $DB->get_records('block_desp_cultures_item_cat');
 			foreach($categories as $category){
-				echo "<tr><td style='background: #ffefd3'>";
-				echo "<a class='overview ov_skill1' style='background: #ffefd3' href='".$url.$category->id."'>".get_string(strtolower(str_replace("ö", "oe", str_replace(" ", "", $category->title))), 'block_desp')."</a>";
+				echo "<tr><td>";
+				echo "<a class='overview ov_skill1' href='".$url.$category->id."'>".get_string(strtolower(str_replace("ö", "oe", str_replace(" ", "", $category->title))), 'block_desp')."</a>";
 				echo "</td></tr>";
 			}
 		?>

@@ -397,52 +397,22 @@ $string['vorgegebenesziel'] = 'You have exceeded your predefined goal in the lan
 $string['lernplaeneueberpruefen'] = '.<br />Please check your language learning plans!';
 
 $string['forskill'] = '';
-$string['giltaufniveau'] = ' ';
-
-$string['a1hoerencheckliste'] = '' .
-		''; 
-$string['a1lesencheckliste'] = "";
-$string['a1sprechencheckliste'] = '' .
-		'';
-$string['a1zusammencheckliste'] = '' .
-		'';
+$string['giltaufniveau'] = '';
+$string['a1hoerencheckliste'] = '';
+$string['a1lesencheckliste'] = '';
+$string['a1sprechencheckliste'] = '';
+$string['a1zusammencheckliste'] = '';
 $string['a1schreibencheckliste'] = '';
-
-$string['a2hoerencheckliste'] = '' .
-		'' .
-		'';
-$string['a2lesencheckliste'] = "" .
-		"";
-$string['a2sprechencheckliste'] = '' .
-		'' .
-		'' .
-		'';
-$string['a2zusammencheckliste'] = '' .
-		'' .
-		'';
-$string['a2schreibencheckliste'] = '' .
-		'' .
-		'';
-
-$string['b1hoerencheckliste'] = "" .
-		"" .
-		"";
-$string['b1lesencheckliste'] = "" .
-		"" .
-		"";
-$string['b1sprechencheckliste'] = '' .
-		'' .
-		'' .
-		'' .
-		'';
-$string['b1zusammencheckliste'] = '' .
-		'' .
-		'' .
-		'';
-$string['b1schreibencheckliste'] = '' .
-		'' .
-		'' .
-		'';
+$string['a2hoerencheckliste'] = '';
+$string['a2lesencheckliste'] = '';
+$string['a2sprechencheckliste'] = '';
+$string['a2zusammencheckliste'] = '';
+$string['a2schreibencheckliste'] = '';
+$string['b1hoerencheckliste'] = '';
+$string['b1lesencheckliste'] = '';
+$string['b1sprechencheckliste'] = '';
+$string['b1zusammencheckliste'] = '';
+$string['b1schreibencheckliste'] = '';
 		
 $string['desp:admin'] = 'Administrator access';
 $string['desp:teacher'] = 'Teacher access';
