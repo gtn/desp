@@ -814,3 +814,11 @@ padding-left: 10px !important;
 #desp .startsymbhide h4 {
 	margin-bottom: 0 !important;
 }
+
+/* background-transparent Link in Tabelle Sprachen und Kulturen */
+#desp #page_margins .overview_sesyell a.overview {
+	background-color: transparent;
+}
+
+
+
