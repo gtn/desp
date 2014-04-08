@@ -301,7 +301,7 @@ function block_desp_get_examplelink($descrid,$lang){
 
 function block_desp_print_header($item_identifier,$closehead=true,$printit=true) {
 
-        global $COURSE;
+        global $COURSE, $PAGE, $OUTPUT;
         
         $strbookmarks = get_string($item_identifier, "block_desp");
         $adminbookmarks = get_string('blocktitle', "block_desp");
@@ -339,8 +339,18 @@ function block_desp_print_header($item_identifier,$closehead=true,$printit=true)
 		}
         $navlinks[] = array('name' => $item_name, 'link' => null, 'type' => 'misc');
 
-        $navigation = build_navigation($navlinks);
-        $headertmp=print_header_simple($item_name, '', $navigation, "", "", true,'&nbsp;','',false,'',true);
+       // $navigation = build_navigation($navlinks);
+        foreach($navlinks as $navlink){
+        	$PAGE->navbar->add($navlink["name"], $navlink["link"]);
+        }
+        /*breadcrumbs und tabs schreiben*/
+        $PAGE->set_title($item_name);
+        $PAGE->set_heading($COURSE->fullname);
+        $PAGE->set_cacheable(true);
+        $PAGE->set_button('&nbsp;');
+        
+        $headertmp = $OUTPUT->header();
+        //$headertmp=print_header_simple($item_name, '', $navigation, "", "", true,'&nbsp;','',false,'',true);
         if ($closehead==false){
 	        $headertmp=str_replace("</head>","",$headertmp);
 	        $headertmp=str_replace("<body>","",$headertmp);

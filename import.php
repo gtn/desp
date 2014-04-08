@@ -34,7 +34,8 @@ global $COURSE, $CFG, $OUTPUT;
 $content = "";
 
 require_login($COURSE->id);
-$context = get_context_instance(CONTEXT_SYSTEM);
+//$context = get_context_instance(CONTEXT_SYSTEM);
+$context = context_system::instance();
 $action = optional_param('action', "", PARAM_ALPHA);
 
 //require_capability('block/desp:admin', $context);

@@ -24,7 +24,8 @@ class block_desp extends block_base {
 		//        //CHECK CAPABILITYS
 		//$context = get_context_instance(CONTEXT_SYSTEM)
 		//$context = get_context_instance(CONTEXT_COURSE, $COURSE->id);
-		$context = get_context_instance(CONTEXT_SYSTEM);
+		//$context = get_context_instance(CONTEXT_SYSTEM);
+		$context = context_system::instance();
 		if (!has_capability('block/desp:use', $context)) {
 			$this->content = '';
 			return $this->content;
@@ -82,6 +83,7 @@ class block_desp extends block_base {
 		//        return $this->content;
 		$courseid = $COURSE->id;
 		$this->content = new stdClass;
+		$this->content->text = "";
 		if (has_capability('block/desp:admin', $context)) {
 			
 			$this->content->text.='<img src="' . $CFG->wwwroot . '/blocks/desp/images/config.gif" height="16" width="16" alt="' . get_string("import", "block_desp") . '" />';
