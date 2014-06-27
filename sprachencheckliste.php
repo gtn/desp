@@ -62,7 +62,7 @@ foreach($descriptors as $descriptor) {
 
 $descriptors = $sorted_descriptors;
 
-$possibleLernpartner = get_enrolled_users(get_context_instance(CONTEXT_COURSE, $COURSE->id));
+$possibleLernpartner = get_enrolled_users(context_course::instance($COURSE->id));
 // no sharing to myself
 unset($possibleLernpartner[$USER->id]);
 

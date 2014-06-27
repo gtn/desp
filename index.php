@@ -62,9 +62,9 @@ if(!block_desp_checkimport()) {
 	?>
 	<br />
 	<div class="top"><p><a href="http://www.bmukk.gv.at/"><img src="images/bmukk.png" alt="bm:ukk" /></a>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.virtuelle-ph.at/"><img src="images/ph.jpg" alt="Online Campus - virtuelle PH" /></a>
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.oesz.at/"><img src="images/oesz.png" alt="Das Fachinstitut für Innovationen im Sprachenlernen und -lehren." /></a>
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.gtn-solutions.com"><img src="images/gtn.png" alt="gtn" /></a>
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"><img src="images/vph.png" alt="vph" /></a>
 	</p></div>
 	<br />
 	<?php echo get_string('texte','block_desp'); ?><br />
@@ -179,12 +179,12 @@ echo block_desp_lernplanalarm();
 	include_once ("despfooter.php");
 ?> 
 <br />
-<div class="top"><p><a href="http://www.bmukk.gv.at/"><img src="images/bmukk.png" alt="bm:ukk" /></a>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.oesz.at/"><img src="images/oesz.png" alt="Das Fachinstitut für Innovationen im Sprachenlernen und -lehren." /></a>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.gtn-solutions.com"><img src="images/gtn.png" alt="gtn" /></a>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"><img src="images/vph.png" alt="vph" /></a>
-</p></div>
-<br />
+	<div class="top"><p><a href="http://www.bmukk.gv.at/"><img src="images/bmukk.png" alt="bm:ukk" /></a>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.virtuelle-ph.at/"><img src="images/ph.jpg" alt="Online Campus - virtuelle PH" /></a>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.oesz.at/"><img src="images/oesz.png" alt="Das Fachinstitut für Innovationen im Sprachenlernen und -lehren." /></a>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.gtn-solutions.com"><img src="images/gtn.png" alt="gtn" /></a>
+	</p></div>
+	<br />
 <?php echo get_string('texte','block_desp'); ?><br />
 <?php echo get_string('koordination','block_desp'); ?><br />
 <?php echo get_string('programmierung','block_desp'); ?><a href="http://www.gtn-solutions.com">gtn GmbH</a></div>
