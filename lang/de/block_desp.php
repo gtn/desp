@@ -439,10 +439,10 @@ $string['beispiel_tabelle6'] = '<th class="vzar1">Nr.</th>
                 <th class="vzar4">Aussortiert am</th>';
 				
 $string['keinelernpartnerschaft'] = 'Keine Lernpartnerschaften mit anderen Schülern vorhanden!';
-$string['lernplaene'] = 'Lernpl&auml;e';
+$string['lernplaene'] = 'Lernpl&auml;ne';
 $string['name'] = 'Name';
-$string['sprachebewertung'] = 'Sprache';
-$string['bereichbewertung'] = 'Bereich';
+//$string['sprachebewertung'] = 'Sprache';
+//$string['bereichbewertung'] = 'Bereich';
 $string['bereich'] = 'Bereich';
 $string['einschaetzung'] = 'Einsch&auml;tzung';
 $string['feedbackansehen'] = 'Feedback ansehen';

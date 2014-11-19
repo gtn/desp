@@ -537,7 +537,6 @@ if ($es==1){
 if ($printversion==true){
 	$template = str_replace ( '###inhalt###',$inhalt,$template);
 
-	 
 	// convert in PDF
 	require_once($CFG->dirroot.'/lib/tcpdf/tcpdf.php');
 	try
@@ -546,10 +545,11 @@ if ($printversion==true){
 		$pdf->SetTitle('sprachenpass');
 		$pdf->AddPage();
 		if($file) $pdf->Image($newfile,510,122, 40, 40);
-		//if($file) $pdf->Image('@'.base64_encode($file->get_content()), $imginfo['width'], $imginfo['height']);
+		if($file) $pdf->Image('@'.base64_encode($file->get_content()), $imginfo['width'], $imginfo['height']);
 		$pdf->writeHTML($template1, true, false, true, false, '');
 		$pdf->AddPage();
 		$pdf->writeHTML($template, true, false, true, false, '');
+		ob_end_clean();
 		$pdf->Output('sprachenpass.pdf', 'I');
 		unlink($newfile);
 	}
@@ -567,7 +567,9 @@ if ($printversion==true){
 	$template = str_replace ( '###outputfooter###',$OUTPUT->footer($course),$template);
 	$template = str_replace ( '###inhalt###',$inhalt,$template);
 }
-echo $template;
+
+if($printversion==false)
+	echo $template;
 
 function get_score($skillid,$niveauid,$langid,$userid){
 	global $DB;

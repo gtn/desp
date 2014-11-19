@@ -170,7 +170,6 @@
 #desp table.tableform1 td.tdlang {
 	width:160px;
 }
-
 #desp table.tableform1 td.tddelete {
 	width:11px;
 }
@@ -207,7 +206,6 @@
 
 #desp table.tableform1 textarea {
 	border: 0;
-	width: 100%;
 }
 
 #desp .txtsmall {

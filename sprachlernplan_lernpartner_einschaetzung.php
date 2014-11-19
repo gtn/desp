@@ -75,7 +75,7 @@ if ($checkitemid = optional_param('checkitemid', null, PARAM_INT))
 			$dbDescriptor->kommentar_gelesen = 0;
 			$DB->update_record('block_desp_learnplans', $dbDescriptor);
 		}
-		http://gtn02.gtn-solutions.com/moodle20/blocks/desp/sprachlernplan_lernpartner_einschaetzung.php?courseid=1
+		//http://gtn02.gtn-solutions.com/moodle20/blocks/desp/sprachlernplan_lernpartner_einschaetzung.php?courseid=1
 		if ($bl="center") redirect($CFG->wwwroot.'/blocks/desp/center.php?courseid='.$courseid);
 		else redirect($CFG->wwwroot.'/blocks/desp/sprachlernplan_lernpartner_einschaetzung.php?courseid='.$courseid);
 		exit;
