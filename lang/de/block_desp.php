@@ -335,7 +335,8 @@ $string['wasbenutzenzumsprachenlernen_tabelle5'] = '<th class="tb131">Sprache(n)
                     <th class="tb131">Beschreibung / Thema</th>
                     <th class="tb131">Gegenst&auml;nde / Partner/innen</th>
                     <th class="tb131">Zeitraum / Jahr</th>
-                    <th class="tb132">Dossiereintrag<input type="hidden" name="data" value="gesendet" /></th>';
+                    <th class="tb132">Dossiereintrag<input type="hidden" name="data" value="gesendet" /></th>
+                    <th class="tb121"></th>';
 					
 $string['meinesprachlernplaene'] = '2. Meine Sprachlern-Pl&auml;ne';
 $string['meinesprachlernplaene2'] = 'Was tust du immer wieder? Was nimmst du dir f&uuml;r die n&auml;chste Zeit vor?';

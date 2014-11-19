@@ -206,6 +206,7 @@
 
 #desp table.tableform1 textarea {
 	border: 0;
+	width:90%;
 }
 
 #desp .txtsmall {
@@ -393,6 +394,7 @@
 
 #desp table.tableform3 textarea {
 	border: 0;
+	width:90%;
 }
 
 #desp .tddate {

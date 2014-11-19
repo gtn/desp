@@ -125,7 +125,7 @@ echo $hdrtmp;
       	if (!empty($begegnungen)) echo '<table class="tableform3">';
       	foreach ($begegnungen as $begegnung){
       		echo '<tr><td style="background: url(\'images/collapsed.png\') no-repeat left center;clear:left;padding-left:20px;"><span class="kgbdate ">'.$begegnung->datum.'  </span></td><td class=""><a href="'.$CFG->wwwroot.'/blocks/desp/kulturbegegnung.php?courseid='.$courseid.'&amp;recid='.$begegnung->id.'">'.$begegnung->title.'</a></td>';
-      		echo '<td style="padding-left:15px;" class=""><a href="'.$CFG->wwwroot.'/blocks/desp/kulturbegegnung.php?courseid='.$courseid.'&amp;did='.$begegnung->id.'"><img src="'.$CFG->wwwroot.'/pix/t/delete.gif" alt="delete" /></a></td>';
+      		echo '<td style="padding-left:15px;" class=""><a href="'.$CFG->wwwroot.'/blocks/desp/kulturbegegnung.php?courseid='.$courseid.'&amp;did='.$begegnung->id.'"><img src="'.$CFG->wwwroot.'/blocks/desp/images/delete.gif" alt="delete" /></a></td>';
 	
       		echo '</tr>';
 
