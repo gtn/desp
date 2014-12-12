@@ -102,19 +102,6 @@ if($file) {
 	$imginfo = $file->get_imageinfo();
 
 }
-	
-//$OUTPUT->user_picture($USER, array('size'=>156,'class'=>'printpassbild'));
-
-
-/*$avatar = new user_picture($USER);
- $avatar->courseid = $courseid;
-$avatar->link = true;
-
-$inhalt_head_print.= @$OUTPUT->render($avatar);*/
-//$inhalt_head_print.=$OUTPUT->user_picture($USER, array('size'=>156,'class'=>'printpassbild'));
-//print_user_picture($USER, $course->id, $USER->picture, true, false, false);
-
-//print_r($USER);
 
 foreach ($myLanguages as $language){
 	if ($es==1){
@@ -182,14 +169,24 @@ foreach ($myLanguages as $language){
 		$inhalt2="";
 		$hist1="";$hist2="";$hist3="";$templhist1="";$templhist2="";$templhist3="";
 		foreach ($histories as $history){
-				
+			if($history->dossier == 0){
+				$dossier = false;
+				$dossier_entry = null;
+			}else{
+				$dossier = true;
+				$dossier_entry = $DB->get_record('block_exaportitem', array('id'=>$history->dossier));
+			}
 			if ($history->scope==1){
 				if ($scopeold!=$history->scope){
 					$templhist1=$templhist;
 					$temphisttheader=getSubpart($templhist, "###stheader###");
 					$temphisttheader = str_replace ( '###sh1###',get_string("sp_history_mitwem","block_desp"),$temphisttheader);
 					$temphisttheader = str_replace ( '###sh2###',get_string("sp_history_gelegenheit","block_desp"),$temphisttheader);
-					$temphisttheader = str_replace ( '###sh3###',get_string("sp_history_haefigkeit","block_desp"),$temphisttheader);
+					if($dossier){
+						$string = get_string("sp_history_haefigkeit", 'block_desp')."</th><th>".get_string('sp_history_dossier', 'block_desp');
+					}else 	
+						$string = get_string('sp_history_haefigkeit', 'block_desp');
+					$temphisttheader = str_replace ( '###sh3###',$string,$temphisttheader);
 					$templhist1=str_replace ( '###sp_history_header###',get_string("sp_history_familieheader","block_desp"),$templhist1);
 					$templhist1=substituteSubpart($templhist1,"###stheader###",$temphisttheader);
 					$scopeold=$history->scope;
@@ -197,7 +194,12 @@ foreach ($myLanguages as $language){
 				$temphisttzeile=getSubpart($templhist, "###stzeile###");
 				$temphisttzeile = str_replace ( '###s1###',htmlentities($history->partner),$temphisttzeile);
 				$temphisttzeile = str_replace ( '###s2###',htmlentities($history->reason),$temphisttzeile);
-				$temphisttzeile = str_replace ( '###s3###',htmlentities($history->period),$temphisttzeile);
+				if($dossier){
+						$string = htmlentities($history->period)."</td><td>".$dossier_entry->name;
+				}else 	
+					$string = htmlentities($history->period);
+					
+				$temphisttzeile = str_replace ( '###s3###',$string,$temphisttzeile);
 				$hist1.=$temphisttzeile;
 			}
 
@@ -207,7 +209,12 @@ foreach ($myLanguages as $language){
 					$temphisttheader=getSubpart($templhist, "###stheader###");
 					$temphisttheader = str_replace ( '###sh1###',get_string("sp_history_wo","block_desp"),$temphisttheader);
 					$temphisttheader = str_replace ( '###sh2###',get_string("sp_history_wielange","block_desp"),$temphisttheader);
-					$temphisttheader = str_replace ( '###sh3###',get_string("sp_history_gelegenheit","block_desp"),$temphisttheader);
+					if($dossier){
+						$string = get_string("sp_history_gelegenheit", 'block_desp')."</th><th>".get_string('sp_history_dossier', 'block_desp');
+					}else 	
+						$string = get_string('sp_history_gelegenheit', 'block_desp');
+					
+					$temphisttheader = str_replace ( '###sh3###',$string,$temphisttheader);
 					$templhist2=str_replace ( '###sp_history_header###',get_string("sp_history_bisherheader","block_desp"),$templhist2);
 					$templhist2=substituteSubpart($templhist2,"###stheader###",$temphisttheader);
 					$scopeold=$history->scope;
@@ -215,7 +222,12 @@ foreach ($myLanguages as $language){
 				$temphisttzeile=getSubpart($templhist, "###stzeile###");
 				$temphisttzeile = str_replace ( '###s1###',$history->partner,$temphisttzeile);
 				$temphisttzeile = str_replace ( '###s2###',$history->period,$temphisttzeile);
-				$temphisttzeile = str_replace ( '###s3###',$history->reason,$temphisttzeile);
+				if($dossier){
+						$string = htmlentities($history->reason)."</td><td>".$dossier_entry->name;
+				}else 	
+					$string = htmlentities($history->reason);
+					
+				$temphisttzeile = str_replace ( '###s3###',$string,$temphisttzeile);
 				$hist2.=$temphisttzeile;
 			}
 
@@ -226,7 +238,12 @@ foreach ($myLanguages as $language){
 					$temphisttheader=getSubpart($templhist, "###stheader###");
 					$temphisttheader = str_replace ( '###sh1###',get_string("sp_history_thema","block_desp"),$temphisttheader);
 					$temphisttheader = str_replace ( '###sh2###',get_string("sp_history_gegenst","block_desp"),$temphisttheader);
-					$temphisttheader = str_replace ( '###sh3###',get_string("sp_history_zeitraum","block_desp"),$temphisttheader);
+					if($dossier){
+						$string = get_string("sp_history_zeitraum", 'block_desp')."</th><th>".get_string('sp_history_dossier', 'block_desp');
+					}else 	
+						$string = get_string('sp_history_zeitraum', 'block_desp');
+					
+					$temphisttheader = str_replace ( '###sh3###',$string,$temphisttheader);
 					$templhist3=str_replace ( '###sp_history_header###',get_string("sp_history_schuleheader","block_desp"),$templhist3);
 					$templhist3=substituteSubpart($templhist3,"###stheader###",$temphisttheader);
 					$scopeold=$history->scope;
@@ -234,7 +251,12 @@ foreach ($myLanguages as $language){
 				$temphisttzeile=getSubpart($templhist, "###stzeile###");
 				$temphisttzeile = str_replace ( '###s1###',$history->reason,$temphisttzeile);
 				$temphisttzeile = str_replace ( '###s2###',$history->partner,$temphisttzeile);
-				$temphisttzeile = str_replace ( '###s3###',$history->period,$temphisttzeile);
+				if($dossier){
+					$string = htmlentities($history->period)."</td><td>".$dossier_entry->name;
+				}else 	
+					$string = htmlentities($history->period);
+					
+				$temphisttzeile = str_replace ( '###s3###',$string,$temphisttzeile);
 				$hist3.=$temphisttzeile;
 			}
 				
@@ -537,7 +559,6 @@ if ($es==1){
 if ($printversion==true){
 	$template = str_replace ( '###inhalt###',$inhalt,$template);
 
-	 
 	// convert in PDF
 	require_once($CFG->dirroot.'/lib/tcpdf/tcpdf.php');
 	try
@@ -546,10 +567,11 @@ if ($printversion==true){
 		$pdf->SetTitle('sprachenpass');
 		$pdf->AddPage();
 		if($file) $pdf->Image($newfile,510,122, 40, 40);
-		//if($file) $pdf->Image('@'.base64_encode($file->get_content()), $imginfo['width'], $imginfo['height']);
+		if($file) $pdf->Image('@'.base64_encode($file->get_content()), $imginfo['width'], $imginfo['height']);
 		$pdf->writeHTML($template1, true, false, true, false, '');
 		$pdf->AddPage();
 		$pdf->writeHTML($template, true, false, true, false, '');
+		ob_end_clean();
 		$pdf->Output('sprachenpass.pdf', 'I');
 		unlink($newfile);
 	}
@@ -567,7 +589,9 @@ if ($printversion==true){
 	$template = str_replace ( '###outputfooter###',$OUTPUT->footer($course),$template);
 	$template = str_replace ( '###inhalt###',$inhalt,$template);
 }
-echo $template;
+
+if($printversion==false)
+	echo $template;
 
 function get_score($skillid,$niveauid,$langid,$userid){
 	global $DB;

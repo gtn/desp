@@ -170,7 +170,6 @@
 #desp table.tableform1 td.tdlang {
 	width:160px;
 }
-
 #desp table.tableform1 td.tddelete {
 	width:11px;
 }
@@ -207,7 +206,7 @@
 
 #desp table.tableform1 textarea {
 	border: 0;
-	width: 100%;
+	width:95%;
 }
 
 #desp .txtsmall {
@@ -395,7 +394,7 @@
 
 #desp table.tableform3 textarea {
 	border: 0;
-	width: 100%;
+	width:95%;
 }
 
 #desp .tddate {
@@ -776,6 +775,7 @@ padding:15px;
 #desp #page_margins h1,#desp #page_margins h2,#desp h3, #desp h4,#desp h5,#desp h6, #desp p, #desp #page_margins ul, #desp #page_margins ol, #desp #page_margins dl, #desp input, #desp textarea {
     font-family: 'Trebuchet MS',Verdana,Arial,sans-serif !important;
 }
+#desp textarea {min-height:30px;}
 
 #desp .link_center {
 	 color: #F25F2C;

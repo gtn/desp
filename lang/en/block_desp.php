@@ -282,7 +282,8 @@ $string['wasbenutzenzumsprachenlernen_tabelle5'] = '<th class="tb131">Language(s
                     <th class="tb131">description / issue</th>
                     <th class="tb131">objects / partners</th>
                     <th class="tb131">period / year</th>
-                    <th class="tb132">portfolio #<input type="hidden" name="data" value="gesendet" /></th>';
+                    <th class="tb132">portfolio #<input type="hidden" name="data" value="gesendet" /></th>
+                    <th class="tb121"></th>';
 					
 $string['meinesprachlernplaene'] = '2. My language learning plans';
 $string['meinesprachlernplaene2'] = 'What are you doing over and over again? What do you have in mind doing in near future';
@@ -429,6 +430,7 @@ $string['sp_history_wielange'] = 'length';
 $string['sp_history_thema'] = 'description / subject';
 $string['sp_history_gegenst'] = 'topic / partners';
 $string['sp_history_zeitraum'] = 'duration / year';
+$string['sp_history_dossier'] = 'portfolio';
 $string['sp_sprachlerngeschichte'] = 'my language history';
 $string['sp_dossierviews'] = 'portfolio views';
 $string['sp_anzeigeoptionen'] = 'view options';

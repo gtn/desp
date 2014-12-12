@@ -169,7 +169,7 @@ else{$tdossier='<textarea cols="" rows="5" name="text2n[]" class="sk3"></textare
 										$inhalt.= '<td class="sk3"><textarea cols="" rows="5" name="text2['.$item->id.']" class="desp_cult_text2">'.$item->dossier.'</textarea></td>';
 									}
 									if ($item->userid>0){
-										$inhalt.= '<td class="tddelete"><a href="'.$CFG->wwwroot.$url.'?courseid='.$courseid.'&amp;catid='.$catid.'&amp;did='.$item->id.'"><img src="'.$CFG->wwwroot.'/pix/t/delete.gif" alt="delete" /></a></td>';
+										$inhalt.= '<td class="tddelete"><a href="'.$CFG->wwwroot.$url.'?courseid='.$courseid.'&amp;catid='.$catid.'&amp;did='.$item->id.'"><img src="'.$CFG->wwwroot.'/blocks/desp/images/delete.gif" alt="delete" /></a></td>';
 									}else{
 										$inhalt.= '<td>&nbsp;</td>';
 									}

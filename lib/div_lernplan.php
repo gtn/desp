@@ -111,7 +111,7 @@ function block_desp_slp_getTrRows($langid, $skid, $courseid, $possibleLernpartne
 			$inhalt.= '>'.kuerzename($user->lastname,12).' '.kuerzename($user->firstname,1).'</option>';
 		}
 		$inhalt.= '</select><br />'.nl2br(trim($rs->lernpartner_kommentar)).'</td>';
-		$inhalt.= '<td class="tddelete"><a href="'.$CFG->wwwroot.'/blocks/desp/sprachlernplan.php?courseid='.$courseid.'&amp;langid='.$langid.'&amp;skid='.$skid.'&amp;did='.$rs->id.'"><img src="'.$CFG->wwwroot.'/pix/t/delete.gif" alt="delete" /></a></td>';
+		$inhalt.= '<td class="tddelete"><a href="'.$CFG->wwwroot.'/blocks/desp/sprachlernplan.php?courseid='.$courseid.'&amp;langid='.$langid.'&amp;skid='.$skid.'&amp;did='.$rs->id.'"><img src="'.$CFG->wwwroot.'/blocks/desp/images/delete.gif" alt="delete" /></a></td>';
 		$inhalt.= '</tr>';
 		
 		$rs->kommentar_gelesen=1;

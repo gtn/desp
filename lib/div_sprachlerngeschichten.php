@@ -99,7 +99,7 @@ function block_desp_createLanguageSelector($selectedval,$scope=1){
 }
 function block_desp_slg_getEmptyRowTemplate($writetr=true,$scope,$felder="partner,reason,period",$courseid,$exaport,$dossier){
 	global $CFG;
-	if ($writetr==true) $inhalt = '<tr class="row">';
+	if ($writetr==true) $inhalt = '<tr>';
 	$inhalt.= '	<td class="tdlang"><input type="hidden" name="id[]" value="###id###" />###langid###</td>';
 
 	$feldarr=explode(",",$felder);
@@ -114,7 +114,7 @@ function block_desp_slg_getEmptyRowTemplate($writetr=true,$scope,$felder="partne
 	if($scope==2) $dateiname="sprachlerngeschichte_bisher";
 	else if($scope==3) $dateiname="sprachlerngeschichte_schule";
 	
-	$inhalt.='<td class="tddelete"><a href="'.$CFG->wwwroot.'/blocks/desp/'.$dateiname.'.php?courseid='.$courseid.'&amp;did=###id###"><img src="'.$CFG->wwwroot.'/pix/t/delete.gif" alt="delete" /></a></td>';
+	$inhalt.='<td class="tddelete"><a href="'.$CFG->wwwroot.'/blocks/desp/'.$dateiname.'.php?courseid='.$courseid.'&amp;did=###id###"><img src="'.$CFG->wwwroot.'/blocks/desp/images/delete.gif" alt="delete" /></a></td>';
 	if ($writetr==true) $inhalt.= '</tr>';
 	return $inhalt;
 }

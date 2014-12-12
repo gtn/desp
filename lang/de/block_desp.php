@@ -335,7 +335,8 @@ $string['wasbenutzenzumsprachenlernen_tabelle5'] = '<th class="tb131">Sprache(n)
                     <th class="tb131">Beschreibung / Thema</th>
                     <th class="tb131">Gegenst&auml;nde / Partner/innen</th>
                     <th class="tb131">Zeitraum / Jahr</th>
-                    <th class="tb132">Dossiereintrag<input type="hidden" name="data" value="gesendet" /></th>';
+                    <th class="tb132">Dossiereintrag<input type="hidden" name="data" value="gesendet" /></th>
+                    <th class="tb121"></th>';
 					
 $string['meinesprachlernplaene'] = '2. Meine Sprachlern-Pl&auml;ne';
 $string['meinesprachlernplaene2'] = 'Was tust du immer wieder? Was nimmst du dir f&uuml;r die n&auml;chste Zeit vor?';
@@ -439,10 +440,10 @@ $string['beispiel_tabelle6'] = '<th class="vzar1">Nr.</th>
                 <th class="vzar4">Aussortiert am</th>';
 				
 $string['keinelernpartnerschaft'] = 'Keine Lernpartnerschaften mit anderen Schülern vorhanden!';
-$string['lernplaene'] = 'Lernpl&auml;e';
+$string['lernplaene'] = 'Lernpl&auml;ne';
 $string['name'] = 'Name';
-$string['sprachebewertung'] = 'Sprache';
-$string['bereichbewertung'] = 'Bereich';
+//$string['sprachebewertung'] = 'Sprache';
+//$string['bereichbewertung'] = 'Bereich';
 $string['bereich'] = 'Bereich';
 $string['einschaetzung'] = 'Einsch&auml;tzung';
 $string['feedbackansehen'] = 'Feedback ansehen';
@@ -603,6 +604,7 @@ $string['sp_history_wielange'] = 'Wie lange';
 $string['sp_history_thema'] = 'Beschreibung / Thema';
 $string['sp_history_gegenst'] = 'Gegenstände / Partner/innen';
 $string['sp_history_zeitraum'] = 'Zeitraum / Jahr';
+$string['sp_history_dossier'] = 'Dossiereintrag';
 
 $string['sp_sprachlerngeschichte'] = 'Meine Sprachlerngeschichte';
 $string['sp_dossierviews'] = 'Dossier Views';
