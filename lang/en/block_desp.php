@@ -429,6 +429,7 @@ $string['sp_history_wielange'] = 'length';
 $string['sp_history_thema'] = 'description / subject';
 $string['sp_history_gegenst'] = 'topic / partners';
 $string['sp_history_zeitraum'] = 'duration / year';
+$string['sp_history_dossier'] = 'portfolio';
 $string['sp_sprachlerngeschichte'] = 'my language history';
 $string['sp_dossierviews'] = 'portfolio views';
 $string['sp_anzeigeoptionen'] = 'view options';

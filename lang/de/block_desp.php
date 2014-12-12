@@ -604,6 +604,7 @@ $string['sp_history_wielange'] = 'Wie lange';
 $string['sp_history_thema'] = 'Beschreibung / Thema';
 $string['sp_history_gegenst'] = 'Gegenstände / Partner/innen';
 $string['sp_history_zeitraum'] = 'Zeitraum / Jahr';
+$string['sp_history_dossier'] = 'Dossiereintrag';
 
 $string['sp_sprachlerngeschichte'] = 'Meine Sprachlerngeschichte';
 $string['sp_dossierviews'] = 'Dossier Views';
