@@ -62,7 +62,7 @@ $exaportitem=block_desp_pd_eportitems(0,$exaport);
 				
 				newTr.appendChild(td);
 				td = document.createElement('td');
-				td.innerHTML='<?php echo $exaportitem; ?>';
+				td.innerHTML='<?php echo str_replace("'",'"',$exaportitem); ?>';
 				
 				newTr.appendChild(td);
 				td = document.createElement('td');

@@ -65,7 +65,7 @@ $exaportitem=block_desp_pd_eportitems(0,$exaport);
 				td.innerHTML='<textarea name="period[]" cols="50" rows="1"></textarea>';
 				newTr.appendChild(td);
 				td = document.createElement('td');
-				td.innerHTML='<?php echo $exaportitem; ?>';
+				td.innerHTML='<?php echo str_replace("'",'"',$exaportitem); ?>';
 				newTr.appendChild(td);
 				td = document.createElement('td');
 				td.className = "tddelete";
