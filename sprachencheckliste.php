@@ -111,8 +111,8 @@ if ($do == 'save') {
 		// 'dprieler@gmail.com';
 
 		$text =
-			'Lieber '.fullname($user)."\n\n".
-			fullname($USER)." hat dich bei folgenden Deskriptoren als Lernpartner gewählt:\n".
+			'Lieber '.$user->firstname.' '.$user->lastname."\n\n".
+			$USER->firstname.' '.$USER->lastname." hat dich bei folgenden Deskriptoren als Lernpartner gewählt:\n".
 			join("\n", $changedDescriptors);
 			
 		// echo $text."\n\n\n";

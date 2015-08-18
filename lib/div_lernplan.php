@@ -44,8 +44,8 @@ function block_desp_splp_savedata(){
 	
 			
 			$text =
-				get_string('lieber', 'block_desp').fullname($user)."\n\n".
-				fullname($USER).get_string('alslernpartnerausgewaehlt', 'block_desp').
+				get_string('lieber', 'block_desp').' '.$user->firstname.' '.$user->lastname."\n\n".
+				$USER->firstname.' '.$USER->lastname.' '.get_string('alslernpartnerausgewaehlt', 'block_desp').
 				join("\n", $changedDescriptors);
 				
 			// echo $text."\n\n\n";

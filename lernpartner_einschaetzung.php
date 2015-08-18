@@ -80,7 +80,7 @@ if ($checkitemid = optional_param('checkitemid', null, PARAM_INT)) {
 	
 	block_desp_print_header("lernpartner_einschaetzung");
   echo '<div id="desp">';
-	echo "<h2>".get_string('bewertungfuer', 'block_desp').fullname($checkitem).' / '.$checkitem->language.' / '.$checkitem->skill.' '.$checkitem->niveau.'</h2>';
+	echo "<h2>".get_string('bewertungfuer', 'block_desp').' '.$checkitem->firstname.' '.$checkitem->lastname.' / '.$checkitem->language.' / '.$checkitem->skill.' '.$checkitem->niveau.'</h2>';
 
 	//action="'.$CFG->wwwroot.'/blocks/desp/lernpartner_einschaetzung.php?courseid='.$courseid.'&bl='.$bl.'&checkitemid='.optional_param('checkitemid', null, PARAM_INT).'"
 		echo '<form method="post">';
@@ -146,7 +146,7 @@ if (!$items) {
 	$lastUid = null;
 	foreach ($items as $item) {
 		if ($item->uid != $lastUid) {
-			echo '<br /><b>'.fullname($item).'</b><br />';
+			echo '<br /><b>'.$item->firstname.' '.$item->lastname.'</b><br />';
 			$lastUid = $item->uid;
 		}
 		echo get_string('sprachebewertung', 'block_desp').$item->language.'<br />';

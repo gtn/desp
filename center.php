@@ -30,7 +30,7 @@ if (!$items) {
 
 echo '<table class="tableform3 sprachlernplantab"><tr><th colspan="4">'.get_string('lernplaene','block_desp').'</th></tr><tr><th>'.get_string('name','block_desp').'</th><th>'.get_string('sprache','block_desp').'</th><th>'.get_string('bereich','block_desp').'</th><!--th>'.get_string('einschaetzung','block_desp').'</th--><th></th></tr>';
 	foreach ($items as $item) {
-		echo '<tr><td>'.fullname($item).'</td><td>'.$item->language.'</td>';
+		echo '<tr><td>'.$item->firstname.' '.$item->lastname.'</td><td>'.$item->language.'</td>';
 
 		echo '<td>'.block_desp_skilltitle($item->skill).'</td>';
 		echo '<!--td style="cursor:help;" title="'.$item->lernpartner_kommentar.'">'.full_bewertung($item->lernpartner_einschaetzung,"plan").'</td-->';
@@ -40,7 +40,7 @@ echo '<table class="tableform3 sprachlernplantab"><tr><th colspan="4">'.get_stri
 	echo '<tr><th colspan="4">'.get_string('checklisten', 'block_desp').'</th></tr>';
 	$items =get_lernpartner_check($USER->id);
 	foreach ($items as $item) {
-		echo '<tr><td>'.fullname($item).'</td><td>'.$item->language.'</td>';
+		echo '<tr><td>'.$item->firstname.' '.$item->lastname.'</td><td>'.$item->language.'</td>';
 		echo '<td>'.block_desp_skilltitle($item->skill).' '.$item->niveau.'</td><!--td>'.full_bewertung($item->einschaetzung_fremd,"check").'</td-->';
 		
 		echo '<td><a  class="link_center" style="color: #F25F2C !important;" href="'.$CFG->wwwroot.'/blocks/desp/lernpartner_einschaetzung.php?courseid='.$COURSE->id.'&amp;checkitemid='.$item->id.'&amp;bl=center">'.get_string("feedbackansehen","block_desp").'</a></td></tr>';
