@@ -26,8 +26,11 @@
 *  This copyright notice MUST APPEAR in all copies of the script!
 ***************************************************************/
 
+defined('MOODLE_INTERNAL') || die();
+
+$plugin->component = 'block_desp';
+$plugin->release = '3.0.0';
 $plugin->version = 2014121201;
-$plugin->maturity  = MATURITY_BETA;
-$plugin->release  = "1.0";
 $plugin->requires = 2010112400;
-$plugin->dependencies = array('block_exaport' => ANY_VERSION); 
+$plugin->maturity = MATURITY_STABLE;
+$plugin->dependencies = array('block_exaport' => ANY_VERSION);
